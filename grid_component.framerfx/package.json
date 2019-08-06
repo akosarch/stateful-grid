@@ -1,0 +1,23 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "1dd77e6a-4a82-45c7-9982-4f64757d5d55"
+	},
+	"author": "Anton Kosarchyn",
+	"dependencies": {
+		"@framer/benjamin.icon-generator": "^1.15.0",
+		"@framer/benjamin.input": "^1.2.0",
+		"@framer/ehmorris.remote-image-images-via-url": "^1.3.0",
+		"@framer/kasimir.iphone-x-kit": "^1.21.0",
+		"@framer/unsplash.unsplash": "^1.0.0",
+		"use-resize-observer": "^4.0.0"
+	}
+}
