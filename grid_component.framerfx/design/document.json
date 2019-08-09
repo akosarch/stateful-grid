@@ -472,7 +472,8 @@
               "margin" : 0,
               "marginPerSide" : false,
               "right" : 0,
-              "top" : 0
+              "top" : 0,
+              "wrap" : false
             },
             "codeOverrideEnabled" : true,
             "codeOverrideFile" : ".\/Change_text.tsx",
@@ -3166,7 +3167,8 @@
               "margin" : 0,
               "marginPerSide" : false,
               "right" : 0,
-              "top" : 0
+              "top" : 0,
+              "wrap" : false
             },
             "codeOverrideEnabled" : true,
             "codeOverrideFile" : ".\/Change_text.tsx",
@@ -5223,7 +5225,8 @@
               "margin" : 0,
               "marginPerSide" : false,
               "right" : 0,
-              "top" : 0
+              "top" : 0,
+              "wrap" : false
             },
             "codeOverrideEnabled" : true,
             "codeOverrideFile" : ".\/Change_text.tsx",
@@ -9515,10 +9518,7 @@
                   "dragEnabled" : true,
                   "wheelEnabled" : true
                 },
-                "codeOverrideEnabled" : true,
-                "codeOverrideFile" : ".\/Delete_many.tsx",
-                "codeOverrideIdentifier" : ".\/Delete_many.tsx_UpdateScrollHeight",
-                "codeOverrideName" : "UpdateScrollHeight",
+                "codeOverrideEnabled" : false,
                 "constraintsLocked" : true,
                 "deviceType" : null,
                 "exportOptions" : [
@@ -10482,105 +10482,6 @@
                 "top" : null,
                 "visible" : true,
                 "width" : 32,
-                "widthType" : 0
-              },
-              {
-                "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0.5,
-                "centerAnchorY" : 0.093220338983050849,
-                "children" : [
-
-                ],
-                "clip" : true,
-                "codeComponentIdentifier" : "@framer\/kasimir.iphone-x-kit\/.\/Status Bar\/Status_Bar.tsx_StatusBar",
-                "codeComponentProps" : {
-                  "appearance" : "dark",
-                  "back" : "",
-                  "batteryLevel" : 100,
-                  "liveTime" : true,
-                  "location" : "none",
-                  "mode" : "transparent",
-                  "signalLevel" : 100,
-                  "time" : "18.00",
-                  "twelveHour" : false,
-                  "wifiLevel" : 100
-                },
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "deviceType" : null,
-                "exportOptions" : [
-
-                ],
-                "fillColor" : "rgba(255,255,255,1)",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillLinearGradient" : {
-                  "__class" : "LinearGradient",
-                  "alpha" : 1,
-                  "angle" : 180,
-                  "stops" : [
-                    {
-                      "__class" : "GradientColorStop",
-                      "position" : 0,
-                      "value" : "rgba(0,0,0,0)"
-                    },
-                    {
-                      "__class" : "GradientColorStop",
-                      "position" : 1,
-                      "value" : "black"
-                    }
-                  ]
-                },
-                "fillRadialGradient" : {
-                  "__class" : "RadialGradient",
-                  "alpha" : 1,
-                  "centerAnchorX" : 0.5,
-                  "centerAnchorY" : 0.5,
-                  "heightFactor" : 0.5,
-                  "stops" : [
-                    {
-                      "__class" : "GradientColorStop",
-                      "position" : 0,
-                      "value" : "rgba(0,0,0,0)"
-                    },
-                    {
-                      "__class" : "GradientColorStop",
-                      "position" : 1,
-                      "value" : "black"
-                    }
-                  ],
-                  "widthFactor" : 0.5
-                },
-                "fillType" : "color",
-                "height" : 44,
-                "heightType" : 0,
-                "id" : "giCuJLAWY",
-                "intrinsicHeight" : 44,
-                "intrinsicWidth" : 375,
-                "left" : 0,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "jzW3ooemn",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusIsRelative" : false,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : 0,
-                "rotation" : 0,
-                "top" : 0,
-                "visible" : true,
-                "width" : 375,
                 "widthType" : 0
               }
             ],
@@ -14198,7 +14099,8 @@
                   "margin" : 0,
                   "marginPerSide" : false,
                   "right" : 0,
-                  "top" : 0
+                  "top" : 0,
+                  "wrap" : false
                 },
                 "codeOverrideEnabled" : true,
                 "codeOverrideFile" : ".\/Delete_one.tsx",
@@ -14465,10 +14367,7 @@
               "paddingTop" : 0,
               "wheelEnabled" : false
             },
-            "codeOverrideEnabled" : true,
-            "codeOverrideFile" : ".\/Delete_one.tsx",
-            "codeOverrideIdentifier" : ".\/Delete_one.tsx_PreventTapWhileScroll",
-            "codeOverrideName" : "PreventTapWhileScroll",
+            "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
             "deviceType" : null,
             "exportOptions" : [
@@ -14648,7 +14547,10 @@
           }
         ],
         "clip" : true,
-        "codeOverrideEnabled" : false,
+        "codeOverrideEnabled" : true,
+        "codeOverrideFile" : ".\/Delete_one.tsx",
+        "codeOverrideIdentifier" : ".\/Delete_one.tsx_PreventTapWhileScroll",
+        "codeOverrideName" : "PreventTapWhileScroll",
         "constraintsLocked" : false,
         "deviceType" : null,
         "exportOptions" : [
@@ -14752,10 +14654,7 @@
               "paddingTop" : 0,
               "wheelEnabled" : false
             },
-            "codeOverrideEnabled" : true,
-            "codeOverrideFile" : ".\/Delete_one.tsx",
-            "codeOverrideIdentifier" : ".\/Delete_one.tsx_PreventTapWhileScroll",
-            "codeOverrideName" : "PreventTapWhileScroll",
+            "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
             "deviceType" : null,
             "exportOptions" : [
@@ -14935,7 +14834,10 @@
           }
         ],
         "clip" : true,
-        "codeOverrideEnabled" : false,
+        "codeOverrideEnabled" : true,
+        "codeOverrideFile" : ".\/Delete_one.tsx",
+        "codeOverrideIdentifier" : ".\/Delete_one.tsx_PreventTapWhileScroll",
+        "codeOverrideName" : "PreventTapWhileScroll",
         "constraintsLocked" : false,
         "deviceType" : null,
         "exportOptions" : [
@@ -15020,7 +14922,7 @@
               "value" : "KkeUb3xXt"
             }
           ],
-          "direction" : "vertical",
+          "direction" : "horizontal",
           "initialOptions" : [
 
           ],
@@ -15031,7 +14933,8 @@
           "margin" : 0,
           "marginPerSide" : false,
           "right" : 0,
-          "top" : 0
+          "top" : 0,
+          "wrap" : true
         },
         "codeOverrideEnabled" : true,
         "codeOverrideFile" : ".\/Reorder_items.tsx",
@@ -15117,7 +15020,8 @@
           "margin" : 8,
           "marginPerSide" : false,
           "right" : 8,
-          "top" : 8
+          "top" : 8,
+          "wrap" : true
         },
         "codeOverrideEnabled" : true,
         "codeOverrideFile" : ".\/Delete_many.tsx",
@@ -15146,7 +15050,15 @@
         "opacity" : 1,
         "originalid" : null,
         "parentid" : "M7kkACvDM",
-        "previewSettings" : null,
+        "previewSettings" : {
+          "__class" : "PreviewSettings",
+          "bezel" : false,
+          "deviceType" : null,
+          "responsive" : false,
+          "rotate" : false,
+          "touch" : false,
+          "zoom" : -1
+        },
         "radius" : 0,
         "radiusBottomLeft" : 0,
         "radiusBottomRight" : 0,

@@ -10,7 +10,7 @@ const data: any = Data({
     options: [],
     updatedOptions: null,
     inputValue: "",
-    stateChange: false,
+    preventStateChange: false,
     itemTapped: null,
 })
 
@@ -50,7 +50,6 @@ export const HandleItemChange: Override = props => {
         onMount(options, active) {
             data.options = options
             data.active = active
-            console.log(options)
         },
         onActiveChange(active) {
             data.active = active
@@ -64,7 +63,7 @@ export const HandleItemChange: Override = props => {
             exit: { height: 0, opacity: 0 },
         },
         updatedOptions: data.updatedOptions,
-        ignoreEvents: { stateChange: data.stateChange },
+        ignoreEvents: { stateChange: data.preventStateChange },
     }
 }
 
@@ -87,18 +86,16 @@ export const DeleteItems: Override = () => {
     }
 }
 
-// export const PreventTapWhileScroll: Override = props => {
-//     const [stateChange, setStateChange] = useState(false)
-//     useEffect(() => {
-//         data.stateChange = stateChange
-//     }, [stateChange])
-//     return {
-//         onScroll(event) {
-//             const velocity = Math.round(event["velocity"].x * 10)
-//             setStateChange(velocity ? true : false)
-//         },
-//     }
-// }
+export const PreventTapWhileScroll: Override = props => {
+    return {
+        onPanStart() {
+            data.preventStateChange = true
+        },
+        onPanEnd() {
+            data.preventStateChange = false
+        },
+    }
+}
 
 export const SetTextValue: Override = () => {
     return {

@@ -14,8 +14,7 @@ interface Props {
     isMultiselect: boolean
     itemsNumber: number
     direction: string
-    rows: number
-    columns: number
+    wrap: boolean
     margin: number
     marginPerSide: boolean
     initialOptions: string[]
@@ -45,7 +44,6 @@ interface Props {
     left: number
     right: number
     bottom: number
-    useRef(ref): void
     animatePresence: {
         initial: any
         animate: any
@@ -128,7 +126,7 @@ export const StatefulGrid: React.FC<Props> = props => {
         if (!props.ignoreEvents.stateChange) {
             setActive(activeItems)
 
-            // callback is fired (to use via Overrides)
+            // After callback is fired (to use with Overrides)
 
             props.onActiveChange(activeItems)
         }
@@ -482,12 +480,14 @@ const emptyContainer = (props): React.CSSProperties => ({
     background: "rgba(136, 85, 255, 0.1)",
     fontSize: 14,
     lineHeight: 1,
+    height: "100%",
+    width: "100%",
 })
 
 const containerCSS = (props): React.CSSProperties => ({
     display: "flex",
     flexDirection: props.direction == "horizontal" ? "row" : "column",
-    flexWrap: "wrap",
+    flexWrap: props.wrap ? "wrap" : "nowrap",
     justifyContent: "start",
     alignContent: "start",
     background: null,
@@ -560,15 +560,22 @@ addPropertyControls(StatefulGrid, {
         type: ControlType.Number,
         title: "Items",
         defaultValue: 3,
-        // hidden(props) {
-        //     return props.initialOptions && props.json
-        // },
+        hidden(props) {
+            return props.initialOptions && props.json
+        },
     },
     direction: {
         type: ControlType.SegmentedEnum,
         title: "Direction",
         defaultValue: "vertical",
         options: ["horizontal", "vertical"],
+    },
+    wrap: {
+        type: ControlType.Boolean,
+        title: "Wrap items",
+        enabledTitle: "Wrap",
+        disabledTitle: "Nowrap",
+        defaultValue: false,
     },
     margin: {
         type: ControlType.FusedNumber,
