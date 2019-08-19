@@ -20,7 +20,7 @@ interface Props {
     initialOptions: string[]
     updatedOptions: { key: number | string; data: object }[]
     jsonPath: string
-    json: {}
+    json: { default: object[]; active?: object[]; hover?: object[] }
     activeIds: number[]
     animationCurve: string
     animationDuration: number
@@ -57,41 +57,9 @@ interface Props {
 
 export const StatefulGrid: React.FC<Props> = props => {
     const [options, setOptions] = useState([])
+    const [json, setJSON] = useState([])
     const [active, setActive] = useState([])
     const [hover, setHover] = useState({ key: null, data: null })
-
-    // Generate unique ID based on timestamp
-
-    const getTimeStamp = () => {
-        const date = new Date()
-        return Math.floor(date.getTime() * Math.random())
-    }
-
-    // Get options
-
-    const setInitialOptions = (
-        options: any[],
-        onMountCallback: (options: any[]) => void
-    ) => {
-        if (options) {
-            let optionsArray = []
-
-            // Check if options is passed by user
-            // Else, use plain numbers to populate options
-
-            if (options.length) {
-                optionsArray = Array.from(options, (x, i) => {
-                    return { key: getTimeStamp(), data: x }
-                })
-            } else {
-                optionsArray = Array.from(Array(props.itemsNumber), (x, i) => {
-                    return { key: getTimeStamp(), data: i }
-                })
-            }
-            setOptions(optionsArray)
-            onMountCallback(optionsArray)
-        }
-    }
 
     const setActiveItem = (key: number | string) => {
         // Define initial variables
@@ -147,7 +115,7 @@ export const StatefulGrid: React.FC<Props> = props => {
         }
         setActive(active)
 
-        // callback is fired (to use via Overrides)
+        // Callback is fired (to use via Overrides)
         props.onMount(options, active)
     }
 
@@ -164,12 +132,24 @@ export const StatefulGrid: React.FC<Props> = props => {
         }
     }
 
-    // Helper function to check is object is empty
+    // Get options
+    const setInitialOptions = (initialOptions: any[] | number) => {
+        let optionsArray = []
 
-    const objectIsntEmpy = obj => {
-        for (let key in obj) {
-            return key
+        // Check if options is passed by user
+        // Else, use items number to populate options
+
+        if (initialOptions instanceof Array) {
+            optionsArray = Array.from(initialOptions, (x, i) => {
+                return { key: getTimeStamp(), data: x }
+            })
+        } else if (typeof initialOptions === "number") {
+            optionsArray = Array.from(Array(initialOptions), (x, i) => {
+                return { key: getTimeStamp(), data: i }
+            })
         }
+        setOptions(optionsArray)
+        setActiveByDefault(props.activeIds, optionsArray)
     }
 
     const getJSONOptions = (json: {}) => {
@@ -190,36 +170,30 @@ export const StatefulGrid: React.FC<Props> = props => {
         }
     }
 
-    // Fetch and process data from JSON or Options
+    // Set json from jsonPath or json
 
     useEffect(() => {
-        fetch(props.jsonPath).then(response => {
-            const contentType = response.headers.get("content-type")
+        if (props.jsonPath) {
+            fetch(props.jsonPath)
+                .then(response => response.json())
+                .then(json => setJSON(getJSONOptions(json)))
+        } else if (props.json) {
+            setJSON(getJSONOptions(props.json))
+        }
+    }, [props.jsonPath, props.json])
 
-            // Check if request returns a JSON
-            // Set initial options and selected items
+    // Set initial values
 
-            if (contentType && contentType.includes("application/json")) {
-                response.json().then(json => {
-                    const JSONOptions = getJSONOptions(json)
-                    setInitialOptions(JSONOptions, options => {
-                        setActiveByDefault(props.activeIds, options)
-                    })
-                })
-            } else if (props.json) {
-                const JSONOptions = getJSONOptions(props.json)
-                setInitialOptions(JSONOptions, options => {
-                    setActiveByDefault(props.activeIds, options)
-                })
-            } else {
-                setInitialOptions(props.initialOptions, options => {
-                    setActiveByDefault(props.activeIds, options)
-                })
-            }
-        })
-    }, [props.initialOptions, props.itemsNumber, props.jsonPath, props.json])
+    useEffect(() => {
+        const target: any =
+            (json.length && json) ||
+            (props.initialOptions.length && props.initialOptions) ||
+            props.itemsNumber
 
-    // Check if JSON or Options was updated
+        setInitialOptions(target)
+    }, [props.initialOptions, props.itemsNumber, json])
+
+    // Check if updated options were passed
 
     useEffect(() => {
         if (props.updatedOptions) {
@@ -230,10 +204,13 @@ export const StatefulGrid: React.FC<Props> = props => {
                 )
                 return id >= 0
             })
+            // Set updated options and active items
             setActive(activeItems)
             setOptions(props.updatedOptions)
         }
     }, [props.updatedOptions])
+
+    // Reset options
 
     useEffect(() => {
         if (props.resetSelected) {
@@ -561,11 +538,12 @@ addPropertyControls(StatefulGrid, {
         type: ControlType.Array,
         title: "Options",
         propertyControl: { type: ControlType.String },
+        defaultValue: null,
     },
     itemsNumber: {
         type: ControlType.Number,
         title: "Items",
-        defaultValue: 3,
+        defaultValue: 5,
         hidden({ initialOptions, jsonPath, json }) {
             return initialOptions && jsonPath && json
         },
@@ -631,3 +609,19 @@ addPropertyControls(StatefulGrid, {
         defaultValue: [],
     },
 })
+
+// UTILITIES
+
+// Generate unique ID based on the timestamp
+const getTimeStamp = () => {
+    const date = new Date()
+    return Math.floor(date.getTime() * Math.random())
+}
+
+// Check if object is empty
+
+const objectIsntEmpy = obj => {
+    for (let key in obj) {
+        return key
+    }
+}
