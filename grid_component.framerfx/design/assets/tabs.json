@@ -6,7 +6,7 @@
         {"text": {"tab": "Moments"}, "icon": "camera", "background": "#7755CC", "textColor" : "#CCC"},
         {"text": {"tab": "Profile"}, "icon": "settings", "background": "#ccc", "textColor" : "#CCC"}
     ],
-"selected": 
+"active": 
     [
         {"text": {"tab": "Activity"}, "icon": "activity", "background": "#EAB00E", "color": "#EAB00E", "textColor": "#EAB00E"},
         {"text": {"tab": "Backpack"}, "icon": "compass", "background": "#22AA99", "color": "#22AA99", "textColor" : "#22AA99"},

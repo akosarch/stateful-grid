@@ -19,22 +19,22 @@ interface Props {
     marginPerSide: boolean
     initialOptions: string[]
     updatedOptions: { key: number | string; data: object }[]
-    json: string
+    jsonPath: string
+    json: {}
     activeIds: number[]
     animationCurve: string
     animationDuration: number
-    defaultState: React.ReactElement
-    activeState: React.ReactElement
-    hoverState: React.ReactElement
+    defaultState: React.ReactElement[]
+    activeState: React.ReactElement[]
+    hoverState: React.ReactElement[]
     onMount(active: object[], options?: object[]): void
     onActiveChange(active: any[]): void
-    onResize(width: number, height: number): void
     onHoverChange(hover: object[]): void
+    onResize(width: number, height: number): void
     itemTapped(item: any)
     ignoreEvents: {
         tap: boolean
         hover: boolean
-        drag: boolean
         stateChange: boolean
     }
     resetSelected: boolean
@@ -44,12 +44,15 @@ interface Props {
     left: number
     right: number
     bottom: number
-    animatePresence: {
-        initial: any
-        animate: any
-        exit: any
-        transition: any
+    animateChildren: {
+        initialEnabled: boolean
+        variants: {}
+        initial: {} | string
+        animate: {} | string
+        exit: {} | string
+        transition: {}
     }
+    positionTransition: {}
 }
 
 export const StatefulGrid: React.FC<Props> = props => {
@@ -127,7 +130,6 @@ export const StatefulGrid: React.FC<Props> = props => {
             setActive(activeItems)
 
             // After callback is fired (to use with Overrides)
-
             props.onActiveChange(activeItems)
         }
     }
@@ -146,7 +148,6 @@ export const StatefulGrid: React.FC<Props> = props => {
         setActive(active)
 
         // callback is fired (to use via Overrides)
-
         props.onMount(options, active)
     }
 
@@ -161,12 +162,6 @@ export const StatefulGrid: React.FC<Props> = props => {
                 props.onHoverChange(item)
             }
         }
-    }
-
-    const fetchJSON = async (jsonPath: string) => {
-        return await fetch(jsonPath).then(response => {
-            return response
-        })
     }
 
     // Helper function to check is object is empty
@@ -198,7 +193,7 @@ export const StatefulGrid: React.FC<Props> = props => {
     // Fetch and process data from JSON or Options
 
     useEffect(() => {
-        fetchJSON(props.json).then(response => {
+        fetch(props.jsonPath).then(response => {
             const contentType = response.headers.get("content-type")
 
             // Check if request returns a JSON
@@ -211,13 +206,18 @@ export const StatefulGrid: React.FC<Props> = props => {
                         setActiveByDefault(props.activeIds, options)
                     })
                 })
+            } else if (props.json) {
+                const JSONOptions = getJSONOptions(props.json)
+                setInitialOptions(JSONOptions, options => {
+                    setActiveByDefault(props.activeIds, options)
+                })
             } else {
                 setInitialOptions(props.initialOptions, options => {
                     setActiveByDefault(props.activeIds, options)
                 })
             }
         })
-    }, [props.initialOptions, props.itemsNumber, props.json])
+    }, [props.initialOptions, props.itemsNumber, props.jsonPath, props.json])
 
     // Check if JSON or Options was updated
 
@@ -234,6 +234,12 @@ export const StatefulGrid: React.FC<Props> = props => {
             setOptions(props.updatedOptions)
         }
     }, [props.updatedOptions])
+
+    useEffect(() => {
+        if (props.resetSelected) {
+            setActive([])
+        }
+    }, [props.resetSelected])
 
     // The function bellow handel the props change to the desired
     // Eg text, colors, icons etc
@@ -356,8 +362,8 @@ export const StatefulGrid: React.FC<Props> = props => {
         // Is custom props was passed
 
         const defaultStateProps = item.data.default ? item.data.default : {}
-        const activeStateProps = item.data.selected
-            ? item.data.selected
+        const activeStateProps = item.data.active
+            ? item.data.active
             : defaultStateProps
         const hoverStateProps = item.data.hover
             ? item.data.hover
@@ -423,53 +429,51 @@ export const StatefulGrid: React.FC<Props> = props => {
                     : emptyContainer(props)
             }
         >
-            <AnimatePresence initial={false}>
-                {props.defaultState[0] ? (
-                    options.map(option => {
-                        const key = option.key
-                        const element = renderChildren(option)
-                        const itemHeight = element.props.height
-                        const itemWidth = element.props.width
+            {props.defaultState[0] ? (
+                options.map((option, i) => {
+                    const key = option.key
+                    const element = renderChildren(option)
+                    const itemHeight = element.props.height
+                    const itemWidth = element.props.width
 
-                        // Create a Frame for the react component
-                        return (
-                            <Frame
-                                onTap={event =>
-                                    !props.ignoreEvents.tap &&
-                                    setActiveItem(key)
-                                }
-                                onMouseEnter={() =>
-                                    !props.ignoreEvents.hover &&
-                                    setHoverItem(key, true)
-                                }
-                                onMouseLeave={() =>
-                                    !props.ignoreEvents.hover &&
-                                    setHoverItem(key, false)
-                                }
-                                width={itemWidth}
-                                height={itemHeight}
-                                style={elementCSS(props)}
-                                positionTransition={{
-                                    duration: props.animationDuration,
-                                    curve: props.animationCurve,
-                                }}
-                                initial={props.animatePresence.initial}
-                                animate={props.animatePresence.animate}
-                                exit={props.animatePresence.exit}
-                                transition={props.animatePresence.transition}
-                                key={key}
-                            >
-                                {element}
-                            </Frame>
-                        )
-                    })
-                ) : (
-                    <span>Connect a DEFAULT state</span>
-                )}
-            </AnimatePresence>
+                    // Create a Frame for the react component
+                    return (
+                        <Frame
+                            onTap={event =>
+                                !props.ignoreEvents.tap && setActiveItem(key)
+                            }
+                            onMouseEnter={() =>
+                                !props.ignoreEvents.hover &&
+                                setHoverItem(key, true)
+                            }
+                            onMouseLeave={() =>
+                                !props.ignoreEvents.hover &&
+                                setHoverItem(key, false)
+                            }
+                            width={itemWidth}
+                            height={itemHeight}
+                            style={elementCSS(props)}
+                            variants={props.animateChildren.variants}
+                            initial={props.animateChildren.initial}
+                            animate={props.animateChildren.animate}
+                            exit={props.animateChildren.exit}
+                            transition={props.animateChildren.transition}
+                            positionTransition={props.positionTransition}
+                            custom={i}
+                            key={key}
+                        >
+                            {element}
+                        </Frame>
+                    )
+                })
+            ) : (
+                <span>Connect a DEFAULT state</span>
+            )}
         </Frame>
     )
 }
+
+// export const StatefulGrid: React.FC<Props> = React.memo(SG)
 
 const emptyContainer = (props): React.CSSProperties => ({
     padding: 24,
@@ -516,10 +520,10 @@ StatefulGrid.defaultProps = {
     updatedOptions: null,
     initialOptions: null,
     json: null,
+    jsonPath: null,
     ignoreEvents: {
         tap: false,
         hover: false,
-        drag: true,
         stateChange: false,
     },
     width: "100%",
@@ -532,12 +536,15 @@ StatefulGrid.defaultProps = {
     bottom: 0,
     animationCurve: "ease",
     animationDuration: 0.2,
-    animatePresence: {
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        exit: { opacity: 0 },
-        transition: { curve: "ease", time: 0.2 },
+    animateChildren: {
+        initialEnabled: false,
+        variants: {},
+        initial: {},
+        animate: {},
+        exit: {},
+        transition: { curve: "easeOut", duration: 0.2 },
     },
+    positionTransition: { curve: "easeOut", duration: 0.2 },
 }
 
 // Items shown in property panel
@@ -554,14 +561,13 @@ addPropertyControls(StatefulGrid, {
         type: ControlType.Array,
         title: "Options",
         propertyControl: { type: ControlType.String },
-        defaultValue: [],
     },
     itemsNumber: {
         type: ControlType.Number,
         title: "Items",
         defaultValue: 3,
-        hidden(props) {
-            return props.initialOptions && props.json
+        hidden({ initialOptions, jsonPath, json }) {
+            return initialOptions && jsonPath && json
         },
     },
     direction: {
@@ -613,7 +619,7 @@ addPropertyControls(StatefulGrid, {
         type: ControlType.ComponentInstance,
         title: "Hover",
     },
-    json: {
+    jsonPath: {
         type: ControlType.File,
         title: "JSON",
         allowedFileTypes: ["json"],

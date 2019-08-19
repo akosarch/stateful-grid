@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { Data, animate, Override, Animatable } from "framer"
-import { createStore } from "./Store"
 
 const textHeight = 48
 const topOffset = 156

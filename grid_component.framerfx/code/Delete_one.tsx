@@ -1,5 +1,17 @@
 import { Data, animate, Override, Animatable, Draggable } from "framer"
 import { useState, useEffect } from "react"
+import { createStore } from "./Store"
+
+const useStore = createStore({
+    active: [],
+    itemToDelete: [],
+    options: [],
+    updatedOptions: null,
+    inputValue: "",
+    preventStateChange: false,
+    itemTapped: null,
+    pageScroll: 0,
+})
 
 const textHeight = 48
 const topOffset = 156
@@ -12,14 +24,16 @@ const data: any = Data({
     inputValue: "",
     preventStateChange: false,
     itemTapped: null,
+    pageScroll: 0,
 })
 
 export const UpdateLabel: Override = () => {
+    const [store, setStore] = useStore()
     const [text, setText] = useState()
     const [textOffset, setTextOffset] = useState(topOffset)
 
     useEffect(() => {
-        const active = data.active
+        const active = store.active
         if (active) {
             let linebreak = active.length > 1 ? ",\n" : ""
             let text = active.reduce(
@@ -30,7 +44,7 @@ export const UpdateLabel: Override = () => {
             setText(text ? text : "Options")
             setTextOffset(active.length > 0 ? textOffset : topOffset)
         }
-    }, [data.active])
+    }, [store.active])
     return {
         text: text,
         top: textOffset,
@@ -38,7 +52,8 @@ export const UpdateLabel: Override = () => {
 }
 
 export const HideOnEmpty: Override = props => {
-    const options = data.updatedOptions || data.options
+    const [store, setStore] = useStore()
+    const options = store.updatedOptions || store.options
     const opacity = +(options.length > 0)
     return {
         opacity: opacity,
@@ -46,24 +61,35 @@ export const HideOnEmpty: Override = props => {
 }
 
 export const HandleItemChange: Override = props => {
+    const [store, setStore] = useStore()
     return {
         onMount(options, active) {
-            data.options = options
-            data.active = active
+            setStore({
+                options: options,
+                active: active,
+            })
+            // data.options = options
+            // data.active = active
         },
         onActiveChange(active) {
-            data.active = active
+            setStore({
+                active: active,
+            })
+            // data.active = active
         },
         itemTapped(item) {
-            data.itemTapped = item
+            setStore({
+                itemTapped: item,
+            })
+            // data.itemTapped = item
         },
         animatePresence: {
             initial: { height: 0, opacity: 0 },
             animate: { height: 48, opacity: 1 },
             exit: { height: 0, opacity: 0 },
         },
-        updatedOptions: data.updatedOptions,
-        ignoreEvents: { stateChange: data.preventStateChange },
+        updatedOptions: store.updatedOptions,
+        ignoreEvents: { stateChange: store.preventStateChange },
     }
 }
 
