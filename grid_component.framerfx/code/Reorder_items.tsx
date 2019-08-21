@@ -59,11 +59,6 @@ export const AdjustHeight: Override = props => {
 export const HandleScroll: Override = props => {
     const [store, setStore] = useStore()
     return {
-        // onScroll(info) {
-        //     setStore({
-        //         pageScroll: info["point"].y,
-        //     })
-        // },
         contentOffsetY: scrollY,
         contentHeight: store.height + 236,
     }

@@ -822,42 +822,42 @@
                       ],
                       "inlineStyleRanges" : [
                         {
-                          "length" : 5,
+                          "length" : 6,
                           "offset" : 0,
                           "style" : "FONT:HelveticaNeue"
                         },
                         {
-                          "length" : 5,
+                          "length" : 6,
                           "offset" : 0,
                           "style" : "SIZE:16"
                         },
                         {
-                          "length" : 5,
+                          "length" : 6,
                           "offset" : 0,
                           "style" : "LETTERSPACING:0"
                         },
                         {
-                          "length" : 5,
+                          "length" : 6,
                           "offset" : 0,
                           "style" : "LINEHEIGHT:1.2"
                         },
                         {
-                          "length" : 5,
+                          "length" : 6,
                           "offset" : 0,
                           "style" : "COLOR:#BBBBBB"
                         }
                       ],
                       "key" : "bhv04",
-                      "text" : "label",
+                      "text" : "$Label",
                       "type" : "unstyled"
                     }
                   ],
                   "cached" : {
-                    "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#BBBBBB;font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">label<\/span><\/span><\/div>",
+                    "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#BBBBBB;font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">$Label<\/span><\/span><\/div>",
                     "os" : "10_14",
                     "size" : {
                       "height" : 19,
-                      "width" : 35
+                      "width" : 50
                     },
                     "width" : 0
                   },
@@ -867,7 +867,7 @@
                 },
                 "top" : 0,
                 "visible" : true,
-                "width" : 35,
+                "width" : 50,
                 "widthType" : 0
               }
             ],
@@ -1347,42 +1347,42 @@
                       ],
                       "inlineStyleRanges" : [
                         {
-                          "length" : 5,
+                          "length" : 6,
                           "offset" : 0,
                           "style" : "FONT:HelveticaNeue"
                         },
                         {
-                          "length" : 5,
+                          "length" : 6,
                           "offset" : 0,
                           "style" : "SIZE:16"
                         },
                         {
-                          "length" : 5,
+                          "length" : 6,
                           "offset" : 0,
                           "style" : "LETTERSPACING:0"
                         },
                         {
-                          "length" : 5,
+                          "length" : 6,
                           "offset" : 0,
                           "style" : "LINEHEIGHT:1.2"
                         },
                         {
-                          "length" : 5,
+                          "length" : 6,
                           "offset" : 0,
                           "style" : "COLOR:rgba(235, 176, 14, 1.00)"
                         }
                       ],
                       "key" : "bhv04",
-                      "text" : "label",
+                      "text" : "$Label",
                       "type" : "unstyled"
                     }
                   ],
                   "cached" : {
-                    "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(235, 176, 14, 1.00);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">label<\/span><\/span><\/div>",
+                    "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(235, 176, 14, 1.00);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">$Label<\/span><\/span><\/div>",
                     "os" : "10_14",
                     "size" : {
                       "height" : 19,
-                      "width" : 35
+                      "width" : 50
                     },
                     "width" : 0
                   },
@@ -1392,7 +1392,7 @@
                 },
                 "top" : 0,
                 "visible" : true,
-                "width" : 35,
+                "width" : 50,
                 "widthType" : 0
               }
             ],
@@ -1957,47 +1957,47 @@
                       ],
                       "inlineStyleRanges" : [
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "LETTERSPACING:0"
                         },
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "LINEHEIGHT:1.2"
                         },
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "ALIGN:left"
                         },
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "COLOR:rgba(234, 176, 14, 1.00)"
                         },
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "SIZE:14"
                         },
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "FONT:HelveticaNeue-Medium"
                         }
                       ],
                       "key" : "bhv04",
-                      "text" : "tab",
+                      "text" : "$tab",
                       "type" : "unstyled"
                     }
                   ],
                   "cached" : {
-                    "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue-Medium&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(234, 176, 14, 1.00);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">tab<\/span><\/span><\/div><\/div>",
+                    "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue-Medium&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(234, 176, 14, 1.00);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">$tab<\/span><\/span><\/div><\/div>",
                     "os" : "10_14",
                     "size" : {
                       "height" : 16,
-                      "width" : 22
+                      "width" : 30
                     },
                     "width" : 0
                   },
@@ -2007,7 +2007,7 @@
                 },
                 "top" : null,
                 "visible" : true,
-                "width" : 22,
+                "width" : 30,
                 "widthType" : 0
               }
             ],
@@ -2435,7 +2435,7 @@
                 "invert" : 0,
                 "invertEnabled" : 0,
                 "isTarget" : true,
-                "left" : 8,
+                "left" : 4,
                 "locked" : false,
                 "name" : "Label",
                 "opacity" : 1,
@@ -2469,42 +2469,42 @@
                       ],
                       "inlineStyleRanges" : [
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "LETTERSPACING:0"
                         },
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "LINEHEIGHT:1.2"
                         },
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "SIZE:14"
                         },
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "FONT:HelveticaNeue-Medium"
                         },
                         {
-                          "length" : 3,
+                          "length" : 4,
                           "offset" : 0,
                           "style" : "COLOR:rgba(234, 176, 14, 1.00)"
                         }
                       ],
                       "key" : "bhv04",
-                      "text" : "tab",
+                      "text" : "$tab",
                       "type" : "unstyled"
                     }
                   ],
                   "cached" : {
-                    "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue-Medium&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(234, 176, 14, 1.00);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">tab<\/span><\/span><\/div>",
+                    "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue-Medium&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(234, 176, 14, 1.00);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">$tab<\/span><\/span><\/div>",
                     "os" : "10_14",
                     "size" : {
                       "height" : 16,
-                      "width" : 22
+                      "width" : 30
                     },
                     "width" : 0
                   },
@@ -2514,7 +2514,7 @@
                 },
                 "top" : null,
                 "visible" : true,
-                "width" : 22,
+                "width" : 30,
                 "widthType" : 0
               }
             ],
@@ -3114,7 +3114,16 @@
             "codeComponentIdentifier" : ".\/Stateful_grid.tsx_StatefulGrid",
             "codeComponentProps" : {
               "activeIds" : [
-
+                {
+                  "enabled" : true,
+                  "type" : "number",
+                  "value" : 0
+                },
+                {
+                  "enabled" : true,
+                  "type" : "number",
+                  "value" : 2
+                }
               ],
               "activeState" : [
                 {
@@ -3833,43 +3842,43 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "FONT:HelveticaNeue"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "SIZE:16"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LETTERSPACING:0"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1.2"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "ALIGN:left"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "COLOR:hsl(0, 0%, 0%)"
                     }
                   ],
                   "key" : "1bo75",
-                  "text" : "label",
+                  "text" : "$Label",
                   "type" : "unstyled"
                 }
               ],
               "cached" : {
-                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">label<\/span><\/span><\/div><\/div>",
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">$Label<\/span><\/span><\/div><\/div>",
                 "os" : "10_14",
                 "size" : {
                   "height" : 19,
@@ -4689,43 +4698,43 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "FONT:HelveticaNeue"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "SIZE:16"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LETTERSPACING:0"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1.2"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "ALIGN:left"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "COLOR:hsl(0, 0%, 0%)"
                     }
                   ],
                   "key" : "1bo75",
-                  "text" : "label",
+                  "text" : "$Label",
                   "type" : "unstyled"
                 }
               ],
               "cached" : {
-                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">label<\/span><\/span><\/div><\/div>",
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">$Label<\/span><\/span><\/div><\/div>",
                 "os" : "10_14",
                 "size" : {
                   "height" : 19,
@@ -6916,43 +6925,43 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "FONT:HelveticaNeue"
                     },
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "SIZE:16"
                     },
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "LETTERSPACING:0"
                     },
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1"
                     },
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "ALIGN:left"
                     },
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "COLOR:rgba(255, 255, 255, 1.00)"
                     }
                   ],
                   "key" : "f9al8",
-                  "text" : "name",
+                  "text" : "$name",
                   "type" : "unstyled"
                 }
               ],
               "cached" : {
-                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"f9al8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"f9al8-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(255, 255, 255, 1.00);font-size:16px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">name<\/span><\/span><\/div><\/div>",
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"f9al8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"f9al8-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(255, 255, 255, 1.00);font-size:16px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$name<\/span><\/span><\/div><\/div>",
                 "os" : "10_14",
                 "size" : {
                   "height" : 16,
@@ -7012,43 +7021,43 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "FONT:HelveticaNeue"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LETTERSPACING:0"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "SIZE:14"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "ALIGN:left"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "COLOR:#999999"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1"
                     }
                   ],
                   "key" : "f9al8",
-                  "text" : "album",
+                  "text" : "$album",
                   "type" : "unstyled"
                 }
               ],
               "cached" : {
-                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"f9al8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"f9al8-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#999999;font-size:14px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">album<\/span><\/span><\/div><\/div>",
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"f9al8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"f9al8-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#999999;font-size:14px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$album<\/span><\/span><\/div><\/div>",
                 "os" : "10_14",
                 "size" : {
                   "height" : 14,
@@ -7757,43 +7766,43 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "FONT:HelveticaNeue"
                     },
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "SIZE:16"
                     },
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "LETTERSPACING:0"
                     },
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1"
                     },
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "ALIGN:left"
                     },
                     {
-                      "length" : 4,
+                      "length" : 5,
                       "offset" : 0,
                       "style" : "COLOR:rgba(255, 255, 255, 1.00)"
                     }
                   ],
                   "key" : "f9al8",
-                  "text" : "name",
+                  "text" : "$name",
                   "type" : "unstyled"
                 }
               ],
               "cached" : {
-                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"f9al8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"f9al8-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(255, 255, 255, 1.00);font-size:16px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">name<\/span><\/span><\/div><\/div>",
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"f9al8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"f9al8-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(255, 255, 255, 1.00);font-size:16px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$name<\/span><\/span><\/div><\/div>",
                 "os" : "10_14",
                 "size" : {
                   "height" : 16,
@@ -7853,43 +7862,43 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "FONT:HelveticaNeue"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LETTERSPACING:0"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "SIZE:14"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "ALIGN:left"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "COLOR:#999999"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1"
                     }
                   ],
                   "key" : "f9al8",
-                  "text" : "album",
+                  "text" : "$album",
                   "type" : "unstyled"
                 }
               ],
               "cached" : {
-                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"f9al8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"f9al8-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#999999;font-size:14px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">album<\/span><\/span><\/div><\/div>",
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"f9al8-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"f9al8-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#999999;font-size:14px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$album<\/span><\/span><\/div><\/div>",
                 "os" : "10_14",
                 "size" : {
                   "height" : 14,
@@ -12710,43 +12719,43 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "FONT:HelveticaNeue"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "SIZE:16"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LETTERSPACING:0"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1.2"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "ALIGN:left"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "COLOR:hsl(0, 0%, 0%)"
                     }
                   ],
                   "key" : "1bo75",
-                  "text" : "label",
+                  "text" : "$Label",
                   "type" : "unstyled"
                 }
               ],
               "cached" : {
-                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">label<\/span><\/span><\/div><\/div>",
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">$Label<\/span><\/span><\/div><\/div>",
                 "os" : "10_14",
                 "size" : {
                   "height" : 19,
@@ -13362,43 +13371,43 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "FONT:HelveticaNeue"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "SIZE:16"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LETTERSPACING:0"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1.2"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "ALIGN:left"
                     },
                     {
-                      "length" : 5,
+                      "length" : 6,
                       "offset" : 0,
                       "style" : "COLOR:hsl(0, 0%, 0%)"
                     }
                   ],
                   "key" : "1bo75",
-                  "text" : "label",
+                  "text" : "$Label",
                   "type" : "unstyled"
                 }
               ],
               "cached" : {
-                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">label<\/span><\/span><\/div><\/div>",
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">$Label<\/span><\/span><\/div><\/div>",
                 "os" : "10_14",
                 "size" : {
                   "height" : 19,

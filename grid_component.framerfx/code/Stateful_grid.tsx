@@ -8,137 +8,79 @@ import {
 } from "framer"
 import useResizeObserver from "use-resize-observer"
 
-// Define type of property
+// COPYRIGHT 2019, ANTON KOSARCHYN, ALL RIGHTS RESERVED
+// If YOU'D LIKE TO CONTRIBUTE — WELCOME HERE:
+// https://github.com/akosarch/stateful-grid
 
-interface Props {
-    isMultiselect: boolean
-    itemsNumber: number
-    direction: string
-    wrap: boolean
-    margin: number
-    marginPerSide: boolean
-    initialOptions: string[]
-    updatedOptions: { key: number | string; data: object }[]
-    jsonPath: string
-    json: { default: object[]; active?: object[]; hover?: object[] }
-    activeIds: number[]
-    animationCurve: string
-    animationDuration: number
-    defaultState: React.ReactElement[]
-    activeState: React.ReactElement[]
-    hoverState: React.ReactElement[]
-    onMount(active: object[], options?: object[]): void
-    onActiveChange(active: any[]): void
-    onHoverChange(hover: object[]): void
-    onResize(width: number, height: number): void
-    itemTapped(item: any)
-    ignoreEvents: {
-        tap: boolean
-        hover: boolean
-        stateChange: boolean
-    }
-    resetSelected: boolean
-    width: number | string
-    height: number | string
-    top: number
-    left: number
-    right: number
-    bottom: number
-    animateChildren: {
-        initialEnabled: boolean
-        variants: {}
-        initial: {} | string
-        animate: {} | string
-        exit: {} | string
-        transition: {}
-    }
-    positionTransition: {}
-}
-
-export const StatefulGrid: React.FC<Props> = props => {
+export function StatefulGrid(props: Props) {
     const [options, setOptions] = useState([])
-    const [json, setJSON] = useState([])
+    const [jsonOptions, setJSONOptions] = useState([])
     const [active, setActive] = useState([])
-    const [hover, setHover] = useState({ key: null, data: null })
+    const [hover, setHover] = useState()
 
-    const setActiveItem = (key: number | string) => {
-        // Define initial variables
+    //FUNCTIONS
+    //---------------------------------------------------------------------
 
-        const activeItems = [...active]
+    // Generate unique ID based on the timestamp (used for the objects key)
+    function getTimeStamp() {
+        const date = new Date()
+        return Math.floor(date.getTime() * Math.random())
+    }
 
-        // Toggle selected based on input indexes
-
+    // Toggle selected based on input indexes
+    function setActiveItem(key: number | string) {
+        // Get the actual item from given key
         const itemId = options.findIndex(item => item.key === key)
         const item = options[itemId]
-        const activeId = activeItems.findIndex(item => item.key === key)
-
-        // Return selected item
-
-        props.itemTapped(item)
-
-        // If type of logic is multiselect
-
-        if (props.isMultiselect) {
-            if (activeId < 0) {
-                activeItems.push(item) // Select item
-            } else {
-                activeItems.splice(activeId, 1) // Deselect item
-            }
-        }
-
-        // If type of logic is singleselect
-
-        if (!props.isMultiselect) {
-            activeItems[0] = item // Select item
-        }
+        // Check if item already exists in active array
+        const activeId = active.findIndex(item => item.key === key)
+        const activeItems = props.isMultiselect
+            ? activeId < 0
+                ? [...active, item] // Select item
+                : active.filter((item, id) => id !== activeId) // Deselect item
+            : [item]
 
         // Finaly, set the new state of selected items
-
-        if (!props.ignoreEvents.stateChange) {
-            setActive(activeItems)
-
-            // After callback is fired (to use with Overrides)
-            props.onActiveChange(activeItems)
-        }
+        !props.ignoreEvents.stateChange && setActive(activeItems)
+        // Callback the active items (for overrides)
+        !props.ignoreEvents.stateChange && props.onActiveChange(activeItems)
+        // Callback recent tapped item (for overrides)
+        !props.ignoreEvents.tap && props.itemTapped(item)
     }
 
-    const setActiveByDefault = (activeIds: number[], options: object[]) => {
-        const active = []
-        for (let i = 0; i < activeIds.length; i++) {
-            const index = activeIds[i]
-            if (index < options.length) {
-                active.push(options[index])
-            }
-            if (!props.isMultiselect) {
-                break
-            }
-        }
+    // Select items at given indexes (props.activeIds)
+    function setActiveByDefault(activeIds: number[], options: any[]) {
+        // Filter the options with given indexes
+        const filteredOptions = options.filter((elem, id) => {
+            return activeIds.indexOf(id) > -1
+        })
+        const active = props.isMultiselect
+            ? filteredOptions
+            : [filteredOptions[0]]
+        // Finaly, set the new state of selected items
+        // And callback the active items
         setActive(active)
-
-        // Callback is fired (to use via Overrides)
         props.onMount(options, active)
     }
 
-    const setHoverItem = (key: number | string, condition: true | false) => {
-        if (props.hoverState[0]) {
+    // Filter the hovered item
+    function setHoverItem(key: number | string, condition: boolean) {
+        if (!props.ignoreEvents.hover) {
+            // Get the actual item from given key
             const itemId = options.findIndex(item => item.key === key)
-
-            const item = condition ? options[itemId] : { key: null, data: null }
-
-            if (hover["key"] !== item.key) {
-                setHover(item)
-                props.onHoverChange(item)
-            }
+            const item = condition ? options[itemId] : null
+            // Finaly, set the new state of selected items
+            // And callback the active items
+            props.hoverState[0] && setHover(item)
+            props.onHoverChange(item)
         }
     }
 
-    // Get options
-    const setInitialOptions = (initialOptions: any[] | number) => {
-        let optionsArray = []
-
+    // Set initial options
+    function setInitialOptions(initialOptions: any[] | number) {
+        let optionsArray
         // Check if options is passed by user
         // Else, use items number to populate options
-
         if (initialOptions instanceof Array) {
             optionsArray = Array.from(initialOptions, (x, i) => {
                 return { key: getTimeStamp(), data: x }
@@ -148,53 +90,164 @@ export const StatefulGrid: React.FC<Props> = props => {
                 return { key: getTimeStamp(), data: i }
             })
         }
+        // Finaly, set the initial options
+        // And active items set by default
         setOptions(optionsArray)
         setActiveByDefault(props.activeIds, optionsArray)
     }
 
-    const getJSONOptions = (json: {}) => {
-        const optionsArray = []
-
-        if (objectIsntEmpy(json)) {
+    // Parse JSON and turn into array with states and props
+    function getJSONOptions(json: {
+        default: any[]
+        active?: any[]
+        hover?: any[]
+    }) {
+        // This should be explicitly set to empty array
+        // So the typecheck later wont fail
+        let optionsArray = []
+        if (Object.keys(json).length) {
             for (let key in json) {
                 const value = json[key]
-                if (value.length > 0) {
-                    value.map((val, i) => {
-                        const obj = {}
-                        obj[key] = val
-                        optionsArray[i] = { ...optionsArray[i], ...obj }
-                    })
-                }
+                optionsArray = value.map((val, i) => ({
+                    ...optionsArray[i],
+                    [key]: val,
+                }))
             }
             return optionsArray
         }
     }
 
-    // Set json from jsonPath or json
+    // The function bellow handel the props change to the desired
+    // Eg text, colors, icons etc
+    function updateProps(fromState, to, item, transition) {
+        const [toState, toProps] = to
+        let props = toState.props
+        let updatedProps = {}
+        let updatedChildren = []
+        let updatedStyle = {
+            ...props.style,
+            transition: transition,
+        }
+        const tmplt = "$"
+        // Iterate throught all the props from json
+        // If prop exists - assing newProp
+        for (let key in toProps) {
+            if (props[key]) {
+                updatedProps = { ...updatedProps, [key]: toProps[key] }
+            }
+        }
+        // Replace text with the given options
+        if (props.rawHTML) {
+            let rawHTML = props.rawHTML
+            // If text is populated through json
+            // else use simple options
+            if (toProps.text) {
+                for (let key in toProps.text) {
+                    rawHTML = rawHTML.replace(
+                        new RegExp(`\\${tmplt}${key}`, "gi"),
+                        toProps.text[key]
+                    )
+                }
+            } else {
+                rawHTML = rawHTML.replace(
+                    new RegExp(`\\${tmplt}\\w+`, "g"),
+                    item.data
+                )
+            }
+            // Replace the text color if given
+            if (toProps.textColor) {
+                rawHTML = rawHTML.replace(
+                    new RegExp("-webkit-text-fill-color:.*?;"),
+                    `-webkit-text-fill-color:${toProps.textColor};`
+                )
+            }
+            updatedProps = { ...updatedProps, rawHTML: rawHTML }
+        }
+        // Iterate through each of the child if there is any
+        // And recursively call the function to update props on child elements
+        // Assing returned object as a new child
+        if (props["children"] && props["children"].length > 0) {
+            updatedChildren = props["children"].map((toChild, id) =>
+                updateProps(
+                    fromState.props["children"][id],
+                    [toChild, toProps],
+                    item,
+                    transition
+                )
+            )
+        }
+        // Return new object with updated props
+        return React.cloneElement(
+            fromState,
+            { ...props, ...updatedProps, style: updatedStyle },
+            updatedChildren
+        )
+    }
 
+    // Render childen with the updated props and desired state and return it
+    function renderChildren(item: any) {
+        // Gather the design components for each state
+        const defaultState = props.defaultState[0]
+        const activeState = props.activeState[0]
+            ? props.activeState[0]
+            : defaultState
+        const hoverState = props.hoverState[0]
+        const resCoord = true
+        // Is custom props was passed
+        const defaultStateProps = item.data.default ? item.data.default : {}
+        const activeStateProps = item.data.active
+            ? item.data.active
+            : defaultStateProps
+        const hoverStateProps = item.data.hover
+            ? item.data.hover
+            : activeStateProps
+        // Assemble the state from the design components and props
+        const states = {
+            default: [defaultState, defaultStateProps],
+            active: [activeState, activeStateProps],
+            hover: [hoverState, hoverStateProps],
+        }
+        // Find if the item is active
+        const activeId = active.findIndex(elem => elem.key == item.key)
+        const transition = `all ${props.animationDuration}s ${props.animationCurve}`
+        // Find if the item is hovered
+        const currState =
+            activeId < 0
+                ? hover && hover.key === item.key
+                    ? "hover"
+                    : "default"
+                : "active"
+        // Finaly update the state of the item
+        return updateProps(defaultState, states[currState], item, transition)
+    }
+
+    // EFFECTS
+    //---------------------------------------------------------------------
+
+    // Use resize observer to calculate the exact content size
+    const [ref, updatedWidth, updatedHeight] = useResizeObserver()
+
+    // Parse JSON obtained from props.jsonPath or props.json
     useEffect(() => {
         if (props.jsonPath) {
             fetch(props.jsonPath)
                 .then(response => response.json())
-                .then(json => setJSON(getJSONOptions(json)))
+                .then(json => setJSONOptions(getJSONOptions(json)))
         } else if (props.json) {
-            setJSON(getJSONOptions(props.json))
+            setJSONOptions(getJSONOptions(props.json))
         }
     }, [props.jsonPath, props.json])
 
     // Set initial values
-
     useEffect(() => {
-        const target: any =
-            (json.length && json) ||
-            (props.initialOptions.length && props.initialOptions) ||
-            props.itemsNumber
-
-        setInitialOptions(target)
-    }, [props.initialOptions, props.itemsNumber, json])
+        setInitialOptions(
+            (jsonOptions.length && jsonOptions) ||
+                (props.initialOptions.length && props.initialOptions) ||
+                props.itemsNumber
+        )
+    }, [props.initialOptions, props.itemsNumber, jsonOptions])
 
     // Check if updated options were passed
-
     useEffect(() => {
         if (props.updatedOptions) {
             // if item was removed => remove it from selected as well
@@ -211,195 +264,23 @@ export const StatefulGrid: React.FC<Props> = props => {
     }, [props.updatedOptions])
 
     // Reset options
-
     useEffect(() => {
-        if (props.resetSelected) {
-            setActive([])
-        }
-    }, [props.resetSelected])
-
-    // The function bellow handel the props change to the desired
-    // Eg text, colors, icons etc
-
-    const updateProps = (fromState, to, item, transition) => {
-        const [toState, toProps] = to
-        let props = toState.props
-        let newProps = {}
-        let newProp = {}
-        let newStyle = {
-            ...props.style,
-            transition: transition,
-        }
-
-        // Iterate throught all the props from json
-        // If prop exists - assing newProp
-
-        let newChildren = []
-
-        for (let key in toProps) {
-            if (props[key]) {
-                newProp[key] = toProps[key]
-                newProps = { ...newProps, ...newProp }
-            }
-        }
-
-        // Replace text with the given options
-
-        if (props.rawHTML) {
-            let rawHTML = props.rawHTML
-            rawHTML = new DOMParser().parseFromString(rawHTML, "text/xml")
-            let textNode = rawHTML.getElementsByTagName("span")
-
-            // Assigning new text to the span
-
-            let text = textNode[1].textContent
-
-            // If text is populated through json
-            // else use options
-
-            if (toProps.text) {
-                for (let key in toProps.text) {
-                    if (text === key) {
-                        textNode[1].textContent = toProps.text[key]
-                    }
-                }
-            } else {
-                textNode[1].textContent = item.data
-            }
-
-            // If text color is defined in json - asign it to the wrapper span
-
-            if (toProps.textColor) {
-                let style = {}
-                let styleString = textNode[0].getAttribute("style")
-                let attributes = styleString.split(";")
-
-                attributes.map(attribute => {
-                    let entry = attribute.split(":")
-                    style[entry.splice(0, 1)[0]] = entry.join(":")
-                })
-
-                style["-webkit-text-fill-color"] = toProps.textColor
-
-                styleString = Object["entries"](style).reduce(
-                    (styleString, [propName, propValue]) => {
-                        return `${styleString}${propName}:${propValue};`
-                    },
-                    ""
-                )
-
-                textNode[0].setAttribute("style", styleString)
-            }
-
-            rawHTML = new XMLSerializer().serializeToString(rawHTML)
-            newProps = { ...newProps, rawHTML: rawHTML }
-        }
-
-        // Assian all the new props newProp to the object props
-
-        props = { ...props, ...newProps, style: newStyle }
-
-        // Iterate through each of the child if there is any
-
-        if (props["children"] && props["children"].length > 0) {
-            React.Children.map(props["children"], (toChild, id) => {
-                let fromChild = fromState.props["children"][id]
-
-                // Recursively call the function to update props on child elements
-                // Assing returned object as a new child
-
-                let newChild = updateProps(
-                    fromChild,
-                    [toChild, toProps],
-                    item,
-                    transition
-                )
-
-                // Update parent object children array with new children
-
-                newChildren.push(newChild)
-            })
-        }
-
-        // Return new object with updated props
-
-        return React.cloneElement(fromState, props, newChildren)
-    }
-
-    // Render childen with the updated props and desired state and return it
-
-    const renderChildren = (item: any) => {
-        const defaultState = props.defaultState[0]
-        const activeState = props.activeState[0]
-            ? props.activeState[0]
-            : defaultState
-        const hoverState = props.hoverState[0]
-        const resCoord = true
-
-        // Is custom props was passed
-
-        const defaultStateProps = item.data.default ? item.data.default : {}
-        const activeStateProps = item.data.active
-            ? item.data.active
-            : defaultStateProps
-        const hoverStateProps = item.data.hover
-            ? item.data.hover
-            : activeStateProps
-
-        const states = {
-            default: [defaultState, defaultStateProps],
-            active: [activeState, activeStateProps],
-            hover: [hoverState, hoverStateProps],
-        }
-
-        // Decide which state to return based on the selectedItems
-
-        const activeId = active.findIndex(elem => elem.key == item.key)
-        const transition = `all ${props.animationDuration}s ${props.animationCurve}`
-
-        const currState =
-            activeId < 0
-                ? hover.key === item.key
-                    ? "hover"
-                    : "default"
-                : "active"
-        return updateProps(defaultState, states[currState], item, transition)
-    }
-
-    // Calculate the width and height of the container
-
-    const width = props.margin
-        ? props.marginPerSide
-            ? -props.right + -props.left
-            : -props.margin * 2
-        : "auto"
-
-    const height = props.margin
-        ? props.marginPerSide
-            ? -props.top + -props.bottom
-            : -props.margin * 2
-        : "auto"
-
-    // Use resize observer to calculate the exact content size
-
-    const [ref, updatedWidth, updatedHeight] = useResizeObserver({
-        defaultWidth: width,
-        defaultHeight: height,
-    })
+        props.activeItems && setActive(props.activeItems)
+    }, [props.activeItems])
 
     // On content size change pass it to the callback
-
     useEffect(() => {
         if (updatedWidth >= 0 && updatedHeight >= 0) {
             props.onResize(updatedWidth, updatedHeight)
         }
     }, [updatedWidth, updatedHeight])
 
+    // RENDER
+    //---------------------------------------------------------------------
+
     return (
         <Frame
             ref={ref}
-            width={width}
-            height={height}
             style={
                 props.defaultState[0]
                     ? containerCSS(props)
@@ -416,26 +297,19 @@ export const StatefulGrid: React.FC<Props> = props => {
                     // Create a Frame for the react component
                     return (
                         <Frame
-                            onTap={event =>
-                                !props.ignoreEvents.tap && setActiveItem(key)
-                            }
-                            onMouseEnter={() =>
-                                !props.ignoreEvents.hover &&
-                                setHoverItem(key, true)
-                            }
-                            onMouseLeave={() =>
-                                !props.ignoreEvents.hover &&
-                                setHoverItem(key, false)
-                            }
+                            onTap={event => setActiveItem(key)}
+                            onHoverStart={() => setHoverItem(key, true)}
+                            onHoverEnd={() => setHoverItem(key, false)}
                             width={itemWidth}
                             height={itemHeight}
                             style={elementCSS(props)}
                             variants={props.animateChildren.variants}
                             initial={props.animateChildren.initial}
                             animate={props.animateChildren.animate}
-                            exit={props.animateChildren.exit}
                             transition={props.animateChildren.transition}
-                            positionTransition={props.positionTransition}
+                            positionTransition={
+                                props.animateChildren.positionTransition
+                            }
                             custom={i}
                             key={key}
                         >
@@ -450,7 +324,8 @@ export const StatefulGrid: React.FC<Props> = props => {
     )
 }
 
-// export const StatefulGrid: React.FC<Props> = React.memo(SG)
+// STYLES
+//---------------------------------------------------------------------
 
 const emptyContainer = (props): React.CSSProperties => ({
     padding: 24,
@@ -475,6 +350,16 @@ const containerCSS = (props): React.CSSProperties => ({
     margin: props.marginPerSide
         ? `${-props.top}px ${-props.right}px ${-props.bottom}px ${-props.left}px`
         : -props.margin,
+    width: props.margin
+        ? props.marginPerSide
+            ? -props.right + -props.left
+            : -props.margin * 2
+        : "auto",
+    height: props.margin
+        ? props.marginPerSide
+            ? -props.top + -props.bottom
+            : -props.margin * 2
+        : "auto",
 })
 
 const elementCSS = (props): React.CSSProperties => ({
@@ -486,7 +371,54 @@ const elementCSS = (props): React.CSSProperties => ({
     background: null,
 })
 
-// Set default properties
+// PROP TYPES
+//---------------------------------------------------------------------
+
+interface Props {
+    width: number | string
+    height: number | string
+    isMultiselect: boolean
+    itemsNumber: number
+    direction: string
+    wrap: boolean
+    margin: number
+    marginPerSide: boolean
+    top: number
+    left: number
+    right: number
+    bottom: number
+    initialOptions: string[]
+    updatedOptions: { key: number | string; data: object }[]
+    activeItems: { key: number | string; data: object }[]
+    jsonPath: string
+    json: { default: any[]; active?: any[]; hover?: any[] }
+    activeIds: number[]
+    animationCurve: string
+    animationDuration: number
+    defaultState: React.ReactElement[]
+    activeState: React.ReactElement[]
+    hoverState: React.ReactElement[]
+    onMount(active: any[], options?: any[]): void
+    onActiveChange(active: any[]): void
+    onHoverChange(hover: {} | null): void
+    onResize(width: number, height: number): void
+    itemTapped(item: {})
+    ignoreEvents: {
+        tap: boolean
+        hover: boolean
+        stateChange: boolean
+    }
+    animateChildren: {
+        initialEnabled: boolean
+        variants: {}
+        initial: {} | string
+        animate: {} | string
+        transition: {}
+        positionTransition: {}
+    }
+}
+
+// DEFAULT PROPERTIES
 
 StatefulGrid.defaultProps = {
     onMount: function() {},
@@ -494,37 +426,29 @@ StatefulGrid.defaultProps = {
     onActiveChange: function() {},
     onHoverChange: function() {},
     onResize: function() {},
-    updatedOptions: null,
-    initialOptions: null,
-    json: null,
-    jsonPath: null,
+    marginPerSide: false,
     ignoreEvents: {
         tap: false,
         hover: false,
         stateChange: false,
     },
-    width: "100%",
-    height: "100%",
-    marginPerSide: false,
-    margin: 0,
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
     animationCurve: "ease",
-    animationDuration: 0.2,
+    animationDuration: 0.25,
     animateChildren: {
         initialEnabled: false,
         variants: {},
         initial: {},
         animate: {},
-        exit: {},
-        transition: { curve: "easeOut", duration: 0.2 },
+        transition: {
+            ease: "easeInOut",
+            duration: 0.25,
+        },
+        positionTransition: { ease: "easeInOut", duration: 0.25 },
     },
-    positionTransition: { curve: "easeOut", duration: 0.2 },
 }
 
-// Items shown in property panel
+// PROPERTY CONTROLS
+//---------------------------------------------------------------------
 
 addPropertyControls(StatefulGrid, {
     isMultiselect: {
@@ -563,7 +487,7 @@ addPropertyControls(StatefulGrid, {
     },
     margin: {
         type: ControlType.FusedNumber,
-        title: "Margin",
+        title: "Gap",
         defaultValue: 0,
         toggleKey: "marginPerSide",
         toggleTitles: ["All", "Sides"],
@@ -609,19 +533,3 @@ addPropertyControls(StatefulGrid, {
         defaultValue: [],
     },
 })
-
-// UTILITIES
-
-// Generate unique ID based on the timestamp
-const getTimeStamp = () => {
-    const date = new Date()
-    return Math.floor(date.getTime() * Math.random())
-}
-
-// Check if object is empty
-
-const objectIsntEmpy = obj => {
-    for (let key in obj) {
-        return key
-    }
-}

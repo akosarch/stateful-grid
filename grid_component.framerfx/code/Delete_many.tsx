@@ -20,7 +20,6 @@ const useStore = createStore({
     updatedOptions: null,
     editMode: false,
     showToast: false,
-    resetSelected: false,
     height: null,
     target: null,
 })
@@ -35,6 +34,11 @@ export const HandleItemChange: Override = props => {
         load: (custom: number) => ({
             y: 0,
             opacity: 1,
+            transition: { ...transition2, delay: 0.05 * custom },
+        }),
+        exit: (custom: number) => ({
+            opacity: 0,
+            scale: 0,
             transition: { ...transition2, delay: 0.05 * custom },
         }),
     }
@@ -76,11 +80,12 @@ export const HandleItemChange: Override = props => {
         onResize,
         updatedOptions: store.updatedOptions,
         ignoreEvents: { tap: !store.editMode },
-        resetSelected: store.resetSelected,
+        activeItems: store.editMode ? store.active : [],
         animateChildren: {
             variants: variants,
             initial: "initial",
             animate: "load",
+            exit: "exit",
         },
         positionTransition: transition2,
         json: images,
