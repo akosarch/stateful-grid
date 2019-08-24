@@ -40,8 +40,8 @@ For example, if we're making the tracklist for some music band (eg. Pantera), we
 {
 "default": [
         {
-            "text": {"name": "Walk", "album": "Vulgar Display of Power",},
-        ...
-    ]}
+            "text": {"name": "Walk", "album": "Vulgar Display of Power"},
+        }
+]}
 ```
 So to render that data in our design component we should use the following design component structure.
