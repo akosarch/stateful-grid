@@ -45,5 +45,5 @@ For example, if we're making the tracklist for some music band (eg. Pantera), we
 ]}
 ```
 So to render that data in our design component we should use the following design component structure.
-
+ 
 ![design_component](readme_images/design_component.png)
