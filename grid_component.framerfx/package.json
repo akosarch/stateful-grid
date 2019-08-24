@@ -6,7 +6,7 @@
 		"@types/react": "^16.8"
 	},
 	"peerDependencies": {
-		"framer": "^1.0",
+		"framer": "^1.0 || ^0.9",
 		"react": "^16.8"
 	},
 	"framer": {

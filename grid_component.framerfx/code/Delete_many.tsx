@@ -11,7 +11,8 @@ import { colors } from "./Canvas"
 
 const transition = { type: "spring", stiffness: 300, damping: 20 }
 const transition2 = { type: "spring", stiffness: 300, damping: 30 }
-const duration = 0.25
+const duration = 0.4
+const delay = duration * 1.5
 
 const useStore = createStore({
     active: [],
@@ -64,7 +65,6 @@ export const HandleItemChange: Override = props => {
     }, [])
     const onActiveChange = useCallback(active => {
         setStore({
-            resetSelected: false,
             active: active,
         })
     }, [])
@@ -86,8 +86,8 @@ export const HandleItemChange: Override = props => {
             initial: "initial",
             animate: "load",
             exit: "exit",
+            positionTransition: transition2,
         },
-        positionTransition: transition2,
         json: images,
     }
 }
@@ -117,47 +117,38 @@ export const ShowCounter: Override = props => {
     const variants = {
         on: { scale: 1, opacity: 1 },
         off: {
+            x: 0,
+            y: 0,
             scale: 0,
             opacity: 0,
-            transition: { when: "afterChildren", delay: duration * 0.85 },
+            background: colors.blue,
         },
-    }
-
-    async function animateRemove(target) {
-        let targetX, background
-        switch (target) {
-            case "folder_ico":
-                targetX = 0
-                background = colors.blue
-                break
-            case "delete_ico":
-                targetX = 123
-                background = colors.red
-                break
-        }
-        const targetY = 24
-        await controls.start({
-            top: -100,
-            y: 100 + targetY,
+        remove: ({ targetX, background }) => ({
             x: targetX,
+            y: [0, -40, 24],
             background: background,
+            scaleY: [0.4, 1, 1],
+            scale: [1, 1, 0.6],
             transition: {
-                x: { ease: "easeOut" },
-                y: { ease: "easeIn" },
-                default: { duration: duration },
+                x: { ease: "linear", duration: duration },
+                default: {
+                    ease: ["easeOut", "easeIn", "easeOut"],
+                    duration: duration,
+                },
                 background: { duration: 0 },
             },
-        })
-        await controls.start({
-            top: -16,
-            y: 0,
-            x: 0,
-            scale: 0,
-            background: colors.blue,
-            transition: {
-                default: { duration: 0 },
-            },
-        })
+        }),
+    }
+    let targetX, background
+    switch (store.target) {
+        case "folder_ico":
+            targetX = 0
+            background = colors.blue
+            break
+        case "delete_ico":
+            targetX = 123
+            background = colors.red
+            break
     }
 
     useEffect(() => {
@@ -165,14 +156,18 @@ export const ShowCounter: Override = props => {
     }, [store.active])
 
     useEffect(() => {
-        store.target && animateRemove(store.target)
+        store.target && controls.start("remove")
     }, [store.target])
 
     return {
+        onAnimationComplete() {
+            store.target && controls.set("off")
+        },
         initial: "off",
         variants: variants,
         animate: controls,
         transition: transition,
+        custom: { targetX: targetX, background: background },
     }
 }
 
@@ -180,11 +175,14 @@ export const ShowEmptyPlaceholder: Override = props => {
     const [store, setStore] = useStore()
     const options = store.updatedOptions || store.options
     const isEmpty = !(options.length > 0)
+    const variants = {
+        on: { scale: 1, opacity: 1, transition: { delay: delay } },
+        off: { scale: 0, opacity: 0 },
+    }
     return {
-        initial: { scale: 0, opacity: 0 },
-        animate: isEmpty
-            ? { scale: 1, opacity: 1, transition: { delay: duration * 2 } }
-            : { scale: 0, opacity: 0 },
+        variants: variants,
+        initial: "off",
+        animate: isEmpty ? "on" : "off",
         transition: transition,
     }
 }
@@ -196,7 +194,6 @@ export const ToggleEditMode: Override = props => {
             setStore({
                 editMode: !store.editMode,
                 active: [],
-                resetSelected: store.editMode,
             })
         },
     }
@@ -304,9 +301,6 @@ export const DeleteItems: Override = props => {
         await controls.start("off")
     }
     return {
-        onAnimationComplete() {
-            store.target && setStore({ showToast: true, target: null })
-        },
         onTap() {
             const selectedItems = store.active
             const options = store.updatedOptions
@@ -326,10 +320,17 @@ export const DeleteItems: Override = props => {
             }
             setStore({
                 target: props.name,
-                updatedOptions: filteredOptions,
-                deletedItems: selectedItems.length,
-                active: [],
             })
+            const timeout = setTimeout(() => {
+                setStore({
+                    updatedOptions: filteredOptions,
+                    deletedItems: selectedItems.length,
+                    active: [],
+                    showToast: true,
+                    target: null,
+                })
+                clearTimeout(timeout)
+            }, delay * 1000)
             selectedItems.length && animateTrash()
         },
         variants: variants,
