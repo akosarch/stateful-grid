@@ -5,7 +5,7 @@ It supports the `default`, `active` and `hover` states so far.
 
 
 **NOTE**: 
-`This component is still under the development so use it on your own risk.
+`This component is still under the development so use it at your own risk.
 Keep in mind that any of the further changes might break some stuff in your prototype ☠️`
 
 ## Table of content
