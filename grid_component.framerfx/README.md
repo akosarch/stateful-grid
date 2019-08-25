@@ -1,6 +1,6 @@
-# Statefull grid component (_βeta_)
+# Stateful grid (_βeta_)
 
-This component is aimed at rendering the data grids and lists with the stateful logic behind it.
+This FramerX component is aimed at rendering the data grids and lists with the stateful logic behind it.
 It supports the `default`, `active` and `hover` states so far.
 
 
