@@ -32,7 +32,7 @@ There are several ways of populate items inside the grid component. Briefly `num
 By default, the component uses `numbers generator` to populate items. It's useful if you want to render the fixed number of elements, eg. images grid. You can override this behavior passing the `options` item. It accepts an array of strings to populate items. It's useful if you want a simple list eg. ToDo, where each item has only one text element you want to override. If you'd like to render complex items with several texts and other properties to override use `JSON` instead.
 If you pass both `options` and `JSON` the `JSON` will have the priority over `options` 
 
-To render the text from your `options` or `JSON` rendered inside your design component you should use a special template sign `$` in a text. While using `JSON` it's also required to name your texts accordingly. 
+To render the text from your `options` or `JSON` inside your design component you should use a special template sign `$` in a text. While using `JSON` it's also required to name your texts accordingly. 
 
 For example, if we're making the tracklist for some music band (eg. Pantera), we probably would have the `name`, `album` in our `JSON` data.
  
