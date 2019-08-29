@@ -38,7 +38,7 @@ To render the text from your `options` or `JSON` inside your design component yo
 
 For example, if we're making the tracklist for some music band (eg. Pantera), we probably would have the `name`, `album` in our `JSON` data. So to render that data in our design component we should use the following design component structure.
 
-```json
+```js
 "default": [
   {
     "text": {"name": "Walk", "album": "Vulgar Display of Power"},
@@ -46,7 +46,7 @@ For example, if we're making the tracklist for some music band (eg. Pantera), we
   // other items
 ]
 ```
-![design_component](https://github.com/akosarch/stateful-grid/blob/master/readme_images/design_component.png?raw=true) 
+![design_component](https://github.com/akosarch/stateful-grid/blob/master/readme_images/design_component.png?raw=true)  
 
 As you may noticed we named our text `$name` and `$album` so the component knows where to render the appropriate data from `JSON`. 
 
@@ -54,7 +54,7 @@ As you may noticed we named our text `$name` and `$album` so the component knows
 
 You can pass other properties unlike text. To display the album cover, for example, I used the [Remote Image component](https://store.framer.com/package/ehmorris/remote-image-images-via-url)  which accepts a url property to display an image. So to pass the url I simply added `url` prop to my `JSON` scheme.
 
-```json
+```js
 "default": [
   {
     "text": {"name": "Walk", "album": "Vulgar Display of Power"},
@@ -70,7 +70,7 @@ The component checks if a `url` prop in the child component exists and not equal
 
 To create the tab bar with icons I used another great store component, [Icon Generator](https://store.framer.com/package/benjamin/icon-generator). It accepts the `icon` prop — a string with icon's name. Also I wanted the background and text color on each tab to be different when active. So my `JSON` schema for one tab is the following:
 
-```json
+```js
 "default": [
  	{
     "text": {"tab": "Activity"}, 
@@ -92,4 +92,6 @@ To create the tab bar with icons I used another great store component, [Icon Gen
 ]
 ```
 
-As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state changes.
+As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state changed.
+
+![tab_bar](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar.png?raw=true)
