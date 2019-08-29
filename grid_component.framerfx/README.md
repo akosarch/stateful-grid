@@ -32,11 +32,11 @@ By default, the component uses `numbers generator` to populate items. It's usefu
 
 > If you pass both `options` and `JSON` the `JSON` will have the priority.
 
-###Using text templates
+### Using text templates
 
 To render the text from your `options` or `JSON` inside your design component you should use a special template sign `$` in a text. While using `JSON` it's also required to name your texts accordingly. 
 
-For example, if we're making the tracklist for some music band (eg. Pantera), we probably would have the `name`, `album` in our `JSON` data. So to render that data in our design component we should use the following design component structure.
+For example, if we're making the tracklist for some music band (eg. Pantera), we probably would have the `name`, `album` in our `JSON` data. So to render that data in our design component we should use the following design component structure:
 
 ```js
 "default": [
@@ -50,7 +50,7 @@ For example, if we're making the tracklist for some music band (eg. Pantera), we
 
 As you may noticed we named our text `$name` and `$album` so the component knows where to render the appropriate data from `JSON`. 
 
-###Passing other props
+### Passing other props
 
 You can pass other properties unlike text. To display the album cover, for example, I used the [Remote Image component](https://store.framer.com/package/ehmorris/remote-image-images-via-url)  which accepts a url property to display an image. So to pass the url I simply added `url` prop to my `JSON` scheme.
 
@@ -64,7 +64,7 @@ You can pass other properties unlike text. To display the album cover, for examp
 ]
 ```
 
-The component checks if a `url` prop in the child component exists and not equal `null`. Then it will pass the link I provided via the `JSON`.  
+The component checks if a `url` prop in the child component exists and isn't `null`. Then it will pass the link I provided via the `JSON`.  
 
 **Here is another example:**
 
