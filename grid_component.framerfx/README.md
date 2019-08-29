@@ -10,7 +10,8 @@ It supports the `default`, `active` and `hover` states so far.
 - **How to use**
   - Passing desing states
   - Passing options
-  - Logic and other adjustments
+  - Using text templates
+  - Passing other props
 - **API guide and override examples**
 
 ## How to use
@@ -24,23 +25,71 @@ But while keeping the structure intact between the states you are free to make a
 
 ### Passing options
 
-There are several ways of populate items inside the grid component. Briefly `numbers generator`, `options` or `JSON` .
+There are several ways of populate items inside the grid component. 
+Briefly `numbers generator`, `options` or `JSON` .
 
 By default, the component uses `numbers generator` to populate items. It's useful if you want to render the fixed number of elements, eg. images grid. You can override this behavior passing the `options` item. It accepts an array of strings to populate items. It's useful if you want a simple list eg. ToDo, where each item has only one text element you want to override. If you'd like to render complex items with several texts and other properties to override use `JSON` instead.
-If you pass both `options` and `JSON` the `JSON` will have the priority over `options` 
+
+> If you pass both `options` and `JSON` the `JSON` will have the priority.
+
+###Using text templates
 
 To render the text from your `options` or `JSON` inside your design component you should use a special template sign `$` in a text. While using `JSON` it's also required to name your texts accordingly. 
 
 For example, if we're making the tracklist for some music band (eg. Pantera), we probably would have the `name`, `album` in our `JSON` data. So to render that data in our design component we should use the following design component structure.
 
 ```json
-{
 "default": [
-        {
-            "text": {"name": "Walk", "album": "Vulgar Display of Power"},
-        }
-]}
+  {
+    "text": {"name": "Walk", "album": "Vulgar Display of Power"},
+  },
+  // other items
+]
 ```
-![design_component](https://github.com/akosarch/stateful-grid/blob/master/readme_images/design_component.png?raw=true)
+![design_component](https://github.com/akosarch/stateful-grid/blob/master/readme_images/design_component.png?raw=true) 
 
-When redered by the component the list will have the following look.
+As you may noticed we named our text `$name` and `$album` so the component knows where to render the appropriate data from `JSON`. 
+
+###Passing other props
+
+You can pass other properties unlike text. To display the album cover, for example, I used the [Remote Image component](https://store.framer.com/package/ehmorris/remote-image-images-via-url)  which accepts a url property to display an image. So to pass the url I simply added `url` prop to my `JSON` scheme.
+
+```json
+"default": [
+  {
+    "text": {"name": "Walk", "album": "Vulgar Display of Power"},
+    "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/PanteraVulgarDisplayofPower.jpg/220px-PanteraVulgarDisplayofPower.jpg"
+	},
+  // other items
+]
+```
+
+The component checks if a `url` prop in the child component exists and not equal `null`. Then it will pass the link I provided via the `JSON`.  
+
+**Here is another example:**
+
+To create the tab bar with icons I used another great store component, [Icon Generator](https://store.framer.com/package/benjamin/icon-generator). It accepts the `icon` prop — a string with icon's name. Also I wanted the background and text color on each tab to be different when active. So my `JSON` schema for one tab is the following:
+
+```json
+"default": [
+ 	{
+    "text": {"tab": "Activity"}, 
+    "icon": "activity",
+    "background": "#EAB00E",
+    "textColor": "#CCC"
+  }, 
+  // other items
+],
+"active": [
+	{
+    "text": {"tab": "Activity"},
+    "icon": "activity",
+    "background": "#EAB00E",
+    "color": "#EAB00E",
+    "textColor": "#EAB00E"
+  },
+  // other items
+]
+```
+
+As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state changes.
