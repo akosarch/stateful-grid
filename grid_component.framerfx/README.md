@@ -6,13 +6,15 @@ It supports the `default`, `active` and `hover` states so far.
 > This component is still under the development so use it at your own risk.
 > Keep in mind that any of the further changes might break some stuff in your prototype ☠️
 
-## Table of content
+### Table of content
+
 - **How to use**
   - Passing desing states
   - Passing options
   - Using text templates
   - Passing other props
-- **API guide and override examples**
+- **API overview**
+- **Override examples**
 
 ## How to use
 ### Passing states
@@ -59,7 +61,6 @@ You can pass other properties unlike text. To display the album cover, for examp
     "text": {"name": "Walk", "album": "Vulgar Display of Power"},
     "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/PanteraVulgarDisplayofPower.jpg/220px-PanteraVulgarDisplayofPower.jpg"
 	},
-  // other items
 ]
 ```
 
@@ -77,7 +78,6 @@ To create the tab bar with icons I used another great store component, [Icon Gen
     "background": "#EAB00E",
     "textColor": "#CCC"
   }, 
-  // other items
 ],
 "active": [
 	{
@@ -87,10 +87,34 @@ To create the tab bar with icons I used another great store component, [Icon Gen
     "color": "#EAB00E",
     "textColor": "#EAB00E"
   },
-  // other items
 ]
 ```
 
-As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state changed.
+![tab_bar](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar.png?raw=true)    
 
-![tab_bar](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar.png?raw=true)  
+As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state change.
+
+## API overview
+
+Here is a basic component API.
+
+| Prop name        | Value type                         | Description                                                  |
+| ---------------- | ---------------------------------- | ------------------------------------------------------------ |
+| `isMultiselect`  | `Boolean`                          | Defines whether couple of items could be selected simultaneously (consider the checkboxes vs radio buttons) |
+| `itemsNumber`    | `Number`                           | If options or JSON aren't passed component will generate the fixed number of items. Use case - images grid |
+| `initialOptions` | `String[]`                         | Use to only pass the *initial properties* to the component. Will cause the component's reset. To change options dynamicaly use `updatedOptions` instead |
+| `json`           | `JSON`                             | Accepts JSON object with props and texts in a format of `{"default": [...], "active": [...], "hover": [...]}` where "active" and "hover" are optional. See the *How to use section* for an example |
+| `jsonPath`       | `String`                           | Accepts a URL to fetch a JSON object in a format described above. Make sure you're passing a valid JSON (keys and values should be wrapped in quotes) or it will throw an error |
+| `activeIds`      | `Number[]`                         | Use to only pass the *initial properties* to the component. Will cause the component's reset. To change the active items dynamically use `activeItems` instead |
+| `onMount`        | `function(active, options)`        | This callback provides you with the `options` and `active` items when component 'mounts'. It means not the actual component lifecycle 'mount', but rather the state when the first options and active items are obtained and rendered. This is a good way of grabbing the options to modify them later |
+| `onActiveChange` | `function(active)`                 | This callback provides you with the `active` items when they change. For example when a user taps on some item. |
+| `onHoverChange`  | `function(hover)`                  | This callback provides you with the `hover` item when it changes. For example when a user hovers over some item |
+| `itemTapped`     | `Function(lastTapped`)             | This callback provides you with the `lastTapped` item when it changes. For example when a user hovers over some item |
+| `onResize`       | `Function(lastTapped)`             |                                                              |
+| `updatedOptions` | `null | Object[]`                  | Each item is an object with `key` and `data` keys on the top level. You can modify the options array obtained from the `onMount` callback and push it back to the component via the `updatedOptions` prop. If you want to push new item in an array make sure it has a unique `key`. If `null` is passed component will opt-out from updated options render |
+| `activeItems`    | `Object[]`                         | You can dynamicaly pass the selected items. The items you pass should be valid objects with the `key` and `data` props. The best way is to modify the items array you obtained from the `onMount` callback |
+| `direction`      | `String('horizontal' |'vertical')` | This property defines the direction of the items in the layout. Similar to [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) CSS property |
+|                  |                                    |                                                              |
+|                  |                                    |                                                              |
+|                  |                                    |                                                              |
+
