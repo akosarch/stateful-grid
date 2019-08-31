@@ -15,6 +15,9 @@ It supports the `default`, `active` and `hover` states so far.
   - Passing other props
 - **API overview**
 - **Override examples**
+  - Adding item
+  - Removind item
+  - Sorting and filtering
 
 
 
@@ -69,7 +72,9 @@ You can pass other properties unlike text. To display the album cover, for examp
 
 The component checks if a `url` prop in the child component exists and isn't `null`. Then it will pass the link I provided via the `JSON`.  
 
-**Here is another example:**
+**Here is another example**
+
+![tab_bar_live](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar_live?raw=true)
 
 To create the tab bar with icons I used another great store component, [Icon Generator](https://store.framer.com/package/benjamin/icon-generator). It accepts the `icon` prop — a string with icon's name. Also I wanted the background and text color on each tab to be different when active. So my `JSON` schema for one tab is the following:
 
@@ -93,9 +98,7 @@ To create the tab bar with icons I used another great store component, [Icon Gen
 ]
 ```
 
-![tab_bar](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar.png?raw=true)    
-
-![tab_bar_live](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar_live?raw=true)  
+![tab_bar](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar.png?raw=true)       
 
 As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state change.
 
