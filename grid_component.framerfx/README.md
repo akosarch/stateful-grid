@@ -95,6 +95,7 @@ To create the tab bar with icons I used another great store component, [Icon Gen
 
 ![tab_bar](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar.png?raw=true)    
 
+![tab_bar_live](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar_live?raw=true) 
 As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state change.
 
 
@@ -126,4 +127,3 @@ Here is a basic component API.
 
 
 ## Override examples
-
