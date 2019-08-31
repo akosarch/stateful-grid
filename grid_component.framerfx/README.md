@@ -16,7 +16,10 @@ It supports the `default`, `active` and `hover` states so far.
 - **API overview**
 - **Override examples**
 
+
+
 ## How to use
+
 ### Passing states
 
 To use the component you need to pass it at least one design state - `default`. It could be some frame from your canvas or design component. Use vertical '...' sign at the right side to attach the desired component to it. The same way you can pass another state of the component like `active` or `hover` if you need one. 
@@ -94,27 +97,33 @@ To create the tab bar with icons I used another great store component, [Icon Gen
 
 As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state change.
 
+
+
 ## API overview
 
 Here is a basic component API.
 
-| Prop name        | Value type                         | Description                                                  |
-| ---------------- | ---------------------------------- | ------------------------------------------------------------ |
-| `isMultiselect`  | `Boolean`                          | Defines whether couple of items could be selected simultaneously (consider the checkboxes vs radio buttons) |
-| `itemsNumber`    | `Number`                           | If options or JSON aren't passed component will generate the fixed number of items. Use case - images grid |
-| `initialOptions` | `String[]`                         | Use to only pass the *initial properties* to the component. Will cause the component's reset. To change options dynamicaly use `updatedOptions` instead |
-| `json`           | `JSON`                             | Accepts JSON object with props and texts in a format of `{"default": [...], "active": [...], "hover": [...]}` where "active" and "hover" are optional. See the *How to use section* for an example |
-| `jsonPath`       | `String`                           | Accepts a URL to fetch a JSON object in a format described above. Make sure you're passing a valid JSON (keys and values should be wrapped in quotes) or it will throw an error |
-| `activeIds`      | `Number[]`                         | Use to only pass the *initial properties* to the component. Will cause the component's reset. To change the active items dynamically use `activeItems` instead |
-| `onMount`        | `function(active, options)`        | This callback provides you with the `options` and `active` items when component 'mounts'. It means not the actual component lifecycle 'mount', but rather the state when the first options and active items are obtained and rendered. This is a good way of grabbing the options to modify them later |
-| `onActiveChange` | `function(active)`                 | This callback provides you with the `active` items when they change. For example when a user taps on some item. |
-| `onHoverChange`  | `function(hover)`                  | This callback provides you with the `hover` item when it changes. For example when a user hovers over some item |
-| `itemTapped`     | `Function(lastTapped`)             | This callback provides you with the `lastTapped` item when it changes. For example when a user hovers over some item |
-| `onResize`       | `Function(lastTapped)`             |                                                              |
-| `updatedOptions` | `null | Object[]`                  | Each item is an object with `key` and `data` keys on the top level. You can modify the options array obtained from the `onMount` callback and push it back to the component via the `updatedOptions` prop. If you want to push new item in an array make sure it has a unique `key`. If `null` is passed component will opt-out from updated options render |
-| `activeItems`    | `Object[]`                         | You can dynamicaly pass the selected items. The items you pass should be valid objects with the `key` and `data` props. The best way is to modify the items array you obtained from the `onMount` callback |
-| `direction`      | `String('horizontal' |'vertical')` | This property defines the direction of the items in the layout. Similar to [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) CSS property |
-|                  |                                    |                                                              |
-|                  |                                    |                                                              |
-|                  |                                    |                                                              |
+| Prop name         | Value type                                                   | Description                                                  |
+| ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `isMultiselect`   | `Boolean`                                                    | Defines whether couple of items could be selected simultaneously (consider the checkboxes vs radio buttons) |
+| `itemsNumber`     | `Number`                                                     | If options or JSON aren't passed component will generate the fixed number of items. Use case - images grid |
+| `initialOptions`  | `String[]`                                                   | Use to only pass the *initial properties* to the component. Will cause the component's reset. To change options dynamicaly use `updatedOptions` instead |
+| `json`            | `JSON`                                                       | Accepts JSON object with props and texts in a format of `{"default": [...], "active": [...], "hover": [...]}` where "active" and "hover" are optional. See the *How to use section* for an example |
+| `jsonPath`        | `String`                                                     | Accepts a URL to fetch a JSON object in a format described above. Make sure you're passing a valid JSON (keys and values should be wrapped in quotes) or it will throw an error |
+| `activeIds`       | `Number[]`                                                   | Use to only pass the *initial properties* to the component. Will cause the component's reset. To change the active items dynamically use `activeItems` instead |
+| `onMount`         | `function(active, options)`                                  | This callback provides you with the `options` and `active` items when component 'mounts'. It means not the actual component lifecycle 'mount', but rather the state when the first options and active items are obtained and rendered. This is a good way of grabbing the options to modify them later |
+| `onActiveChange`  | `function(active)`                                           | This callback provides you with the `active` items when they change. For example when a user taps on some item |
+| `onHoverChange`   | `function(hover)`                                            | This callback provides you with the `hover` item when it changes. For example when a user hovers over some item |
+| `itemTapped`      | `function(lastTapped`)                                       | This callback provides you with the `lastTapped` item when it changes. For example when a user hovers over some item |
+| `onResize`        | `function(width, height)`                                    | This callback provides you with the actual `width` and `height` of the content when it changes. Eg when you add or remove the item |
+| `updatedOptions`  | `null | Object[]`                                            | Each item is an object with `key` and `data` keys on the top level. You can modify the options array obtained from the `onMount` callback and push it back to the component via the `updatedOptions` prop. If you want to push new item in an array make sure it has a unique `key`. If `null` is passed component will opt-out from updated options render |
+| `activeItems`     | `Object[]`                                                   | You can dynamicaly pass the selected items. The items you pass should be valid objects with the `key` and `data` props. The best way is to modify the items array you obtained from the `onMount` callback |
+| `ignoreEvents`    | `{tap:boolean, hover:boolean, stateChange:boolean}`          | You can explicitly block some events when needed. Just pass an `ignoreEvents` object with desired keys. Eg if you want to prevent a user from tapping just pass the `ignoreEvents: {tap: true}` and ignore the rest keys |
+| `animateChildren` | `{variants:{}, initial:{}, animate:{}, transition:{}, positionTransition:{}}` | Use this property to pass the animation options to the children inside the component |
+| `direction`       | `'horizontal' |'vertical'`                                   | This property defines the direction of the items in the layout. Similar to [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) CSS property |
+| `wrap`            | `boolean`                                                    | Use this property to allow line wrap if you want to make an items grid [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap) |
+
+
+
+## Override examples
 
