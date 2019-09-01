@@ -16,17 +16,6 @@ const useStore = createStore({
 const textHeight = 48
 const topOffset = 156
 
-const data: any = Data({
-    active: [],
-    itemToDelete: [],
-    options: [],
-    updatedOptions: null,
-    inputValue: "",
-    preventStateChange: false,
-    itemTapped: null,
-    pageScroll: 0,
-})
-
 export const UpdateLabel: Override = () => {
     const [store, setStore] = useStore()
     const [text, setText] = useState()
@@ -62,28 +51,25 @@ export const HideOnEmpty: Override = props => {
 
 export const HandleItemChange: Override = props => {
     const [store, setStore] = useStore()
+    console.log(store.preventStateChange)
     return {
         onMount(options, active) {
             setStore({
                 options: options,
                 active: active,
             })
-            // data.options = options
-            // data.active = active
         },
         onActiveChange(active) {
             setStore({
                 active: active,
             })
-            // data.active = active
         },
         itemTapped(item) {
             setStore({
                 itemTapped: item,
             })
-            // data.itemTapped = item
         },
-        animatePresence: {
+        animateChildren: {
             initial: { height: 0, opacity: 0 },
             animate: { height: 48, opacity: 1 },
             exit: { height: 0, opacity: 0 },
@@ -94,41 +80,48 @@ export const HandleItemChange: Override = props => {
 }
 
 export const DeleteItems: Override = () => {
+    const [store, setStore] = useStore()
     return {
         onClick: () => {
-            const options = data.updatedOptions
-                ? [...data.updatedOptions]
-                : [...data.options]
-            const itemTapped = data.itemTapped
+            const options = store.updatedOptions
+                ? store.updatedOptions
+                : store.options
+            const itemTapped = store.itemTapped
             const filteredOptions = options.filter(
                 item => item.key !== itemTapped.key
             )
-            const active = data.active.filter(
+            const active = store.active.filter(
                 item => item.key !== itemTapped.key
             )
-            data.active = active
-            data.updatedOptions = filteredOptions
+            setStore({
+                updatedOptions: filteredOptions,
+                active: active,
+            })
         },
     }
 }
 
 export const PreventTapWhileScroll: Override = props => {
+    const [store, setStore] = useStore()
     return {
         onPanStart() {
-            data.preventStateChange = true
+            console.log("start")
+            setStore({ preventStateChange: true })
         },
         onPanEnd() {
-            data.preventStateChange = false
+            console.log("stop")
+            setStore({ preventStateChange: false })
         },
     }
 }
 
 export const SetTextValue: Override = () => {
+    const [store, setStore] = useStore()
     return {
         onValueChange: text => {
-            data.inputValue = text
+            setStore({ inputValue: text })
         },
-        value: data.inputValue,
+        value: store.inputValue,
     }
 }
 
@@ -138,16 +131,19 @@ const getTimeStamp = () => {
 }
 
 export const AddItem: Override = () => {
+    const [store, setStore] = useStore()
     return {
         onClick: () => {
-            const options = data.updatedOptions
-                ? [...data.updatedOptions]
-                : [...data.options]
-            if (data.inputValue !== "") {
-                const item = { key: getTimeStamp(), data: data.inputValue }
+            const options = store.updatedOptions
+                ? store.updatedOptions
+                : store.options
+            if (store.inputValue !== "") {
+                const item = { key: getTimeStamp(), data: store.inputValue }
                 options.unshift(item)
-                data.updatedOptions = options
-                data.inputValue = ""
+                setStore({
+                    updatedOptions: options,
+                    inputValue: "",
+                })
             }
         },
     }

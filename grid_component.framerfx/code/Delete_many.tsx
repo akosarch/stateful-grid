@@ -11,7 +11,7 @@ import { colors } from "./Canvas"
 
 const transition = { type: "spring", stiffness: 300, damping: 20 }
 const transition2 = { type: "spring", stiffness: 300, damping: 30 }
-const duration = 0.4
+const duration = 0.35
 const delay = duration * 1.5
 
 const useStore = createStore({
