@@ -340,11 +340,11 @@ export const FixHeaderOnScroll: Override = () => {
 
 export const PreloaderContainer: Override = props => {
     const [children, setChildren] = useState([])
-    const duration = 0.8
+    const duration = 0.6
     const variants = {
         off: { scale: 1 },
         on: (custom: number) => ({
-            scale: 0.5,
+            scale: 0.25,
             transition: {
                 flip: Infinity,
                 ease: "easeInOut",
@@ -370,27 +370,6 @@ export const PreloaderContainer: Override = props => {
         children: children,
     }
 }
-// let i = 0
-// export const PreloaderItem: Override = () => {
-//     i++
-//     const duration = 0.5
-//     const variants = {
-//         off: { scale: 1 },
-//         on: {
-//             scale: 0.5,
-//             transition: {
-//                 flip: Infinity,
-//                 ease: "easeInOut",
-//                 duration: duration,
-//                 delay: (i * duration) / 3,
-//             },
-//         },
-//     }
-//     return {
-//         initial: "off",
-//         animate: "on",
-//     }
-// }
 
 // FUNCTIONS
 function removeItems() {
