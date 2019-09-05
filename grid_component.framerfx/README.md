@@ -129,6 +129,8 @@ Here is a basic component API.
 | `animateChildren` | `{variants:{}, initial:{}, animate:{}, transition:{}, positionTransition:{}}` | Use this property to pass the animation options to the children inside the component |
 | `direction` | `'horizontal' | 'vertical'` |
 | `wrap` | `boolean` | Use this property to allow line wrap if you want to make an items grid. Similar to [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap) CSS property |
+
+
 ## Override examples
 
 Will be added soon. For the refference please take a look at the [EXAMPLE FILE](https://github.com/akosarch/stateful-grid).
