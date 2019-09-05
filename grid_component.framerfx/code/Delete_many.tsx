@@ -6,6 +6,7 @@ import {
     motionValue,
     Data,
 } from "framer"
+import * as React from "react"
 import { useEffect, useState } from "react"
 import { colors } from "./Canvas"
 
@@ -336,6 +337,60 @@ export const FixHeaderOnScroll: Override = () => {
         background: color,
     }
 }
+
+export const PreloaderContainer: Override = props => {
+    const [children, setChildren] = useState([])
+    const duration = 0.8
+    const variants = {
+        off: { scale: 1 },
+        on: (custom: number) => ({
+            scale: 0.5,
+            transition: {
+                flip: Infinity,
+                ease: "easeInOut",
+                duration: duration,
+                delay: (custom * duration) / 3,
+            },
+        }),
+    }
+    useEffect(() => {
+        const children: any = props.children
+        setChildren(
+            children.map((child, i) =>
+                React.cloneElement(child, {
+                    variants: variants,
+                    initial: "off",
+                    animate: "on",
+                    custom: i,
+                })
+            )
+        )
+    }, [])
+    return {
+        children: children,
+    }
+}
+// let i = 0
+// export const PreloaderItem: Override = () => {
+//     i++
+//     const duration = 0.5
+//     const variants = {
+//         off: { scale: 1 },
+//         on: {
+//             scale: 0.5,
+//             transition: {
+//                 flip: Infinity,
+//                 ease: "easeInOut",
+//                 duration: duration,
+//                 delay: (i * duration) / 3,
+//             },
+//         },
+//     }
+//     return {
+//         initial: "off",
+//         animate: "on",
+//     }
+// }
 
 // FUNCTIONS
 function removeItems() {
