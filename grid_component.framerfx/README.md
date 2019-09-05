@@ -101,7 +101,7 @@ To create the tab bar with icons I used another great store component, [Icon Gen
 ]
 ```
 
-![tab_bar](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar_live?raw=true)           
+![tab_bar](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar.png?raw=true)           
 
 As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state change.
 
@@ -127,8 +127,10 @@ Here is a basic component API.
 | `activeItems` | `Object[]` | You can dynamicaly pass the selected items. The items you pass should be valid objects with the `key` and `data` props. The best way is to modify the items array you obtained from the `onMount` callback |
 | `ignoreEvents` | `{tap:boolean, hover:boolean, stateChange:boolean}` | You can explicitly block some events when needed. Just pass an `ignoreEvents` object with desired keys. Eg if you want to prevent a user from tapping just pass the `ignoreEvents: {tap: true}` and ignore the rest keys |
 | `animateChildren` | `{variants:{}, initial:{}, animate:{}, transition:{}, positionTransition:{}}` | Use this property to pass the animation options to the children inside the component |
-| `direction` | `'horizontal' | 'vertical'` |
+| `direction` | `'horizontal','vertical'` | This property defines the direction of the items in the layout. Similar to [flex-direction](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) CSS property |
 | `wrap` | `boolean` | Use this property to allow line wrap if you want to make an items grid. Similar to [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap) CSS property |
+
+
 ## Override examples
 
 Will be added soon. For the refference please take a look at the [EXAMPLE FILE](https://github.com/akosarch/stateful-grid).
