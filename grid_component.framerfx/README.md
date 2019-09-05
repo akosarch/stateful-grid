@@ -8,7 +8,7 @@ It supports the `default`, `active` and `hover` states so far.
 
 Download an [EXAMPLE FILE](https://github.com/akosarch/stateful-grid) from GitHub ⬇️
 
-If you liked the component and want to contribute or leave feedback please hit me via [FACEBOOK](https://www.facebook.com/anton.kosarchyn), [SPECTRUM](https://spectrum.chat/users/anton-kosarchyn)
+If you like the component and want to contribute or leave feedback hit me via [FACEBOOK](https://www.facebook.com/anton.kosarchyn), [SPECTRUM](https://spectrum.chat/users/anton-kosarchyn)
 
 ### Table of content
 
@@ -134,3 +134,4 @@ Here is a basic component API.
 ## Override examples
 
 Will be added soon. For the refference please take a look at the [EXAMPLE FILE](https://github.com/akosarch/stateful-grid).
+
