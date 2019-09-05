@@ -17,7 +17,8 @@ export function StatefulGrid(props: Props) {
     const [jsonOptions, setJSONOptions] = useState([])
     const [active, setActive] = useState([])
     const [hover, setHover] = useState()
-
+    // Use resize observer to calculate the exact content size
+    const [ref, updatedWidth, updatedHeight] = useResizeObserver()
     //FUNCTIONS
     //---------------------------------------------------------------------
 
@@ -45,7 +46,7 @@ export function StatefulGrid(props: Props) {
         // Callback the active items (for overrides)
         !props.ignoreEvents.stateChange && props.onActiveChange(activeItems)
         // Callback recent tapped item (for overrides)
-        !props.ignoreEvents.tap && props.itemTapped(item)
+        // !props.ignoreEvents.tap && props.itemTapped(item)
     }
 
     // Select items at given indexes (props.activeIds)
@@ -150,7 +151,7 @@ export function StatefulGrid(props: Props) {
                 }
             } else {
                 rawHTML = rawHTML.replace(
-                    new RegExp(`\\${tmplt}\\w+`, "g"),
+                    new RegExp(`\\${tmplt}/`, "gi"),
                     item.data
                 )
             }
@@ -192,7 +193,6 @@ export function StatefulGrid(props: Props) {
             ? props.activeState[0]
             : defaultState
         const hoverState = props.hoverState[0]
-        const resCoord = true
         // Is custom props was passed
         const defaultStateProps = item.data.default ? item.data.default : {}
         const activeStateProps = item.data.active
@@ -223,9 +223,6 @@ export function StatefulGrid(props: Props) {
 
     // EFFECTS
     //---------------------------------------------------------------------
-
-    // Use resize observer to calculate the exact content size
-    const [ref, updatedWidth, updatedHeight] = useResizeObserver()
 
     // Parse JSON obtained from props.jsonPath or props.json
     useEffect(() => {
@@ -263,7 +260,7 @@ export function StatefulGrid(props: Props) {
         }
     }, [props.updatedOptions])
 
-    // Reset options
+    // Set active
     useEffect(() => {
         props.activeItems && setActive(props.activeItems)
     }, [props.activeItems])
@@ -298,6 +295,7 @@ export function StatefulGrid(props: Props) {
                     return (
                         <Frame
                             onTap={event => setActiveItem(key)}
+                            onTapStart={() => props.itemTapped(option)}
                             onHoverStart={() => setHoverItem(key, true)}
                             onHoverEnd={() => setHoverItem(key, false)}
                             width={itemWidth}
@@ -306,6 +304,7 @@ export function StatefulGrid(props: Props) {
                             variants={props.animateChildren.variants}
                             initial={props.animateChildren.initial}
                             animate={props.animateChildren.animate}
+                            exit={props.animateChildren.exit}
                             transition={props.animateChildren.transition}
                             positionTransition={
                                 props.animateChildren.positionTransition
@@ -413,6 +412,7 @@ interface Props {
         variants: {}
         initial: {} | string
         animate: {} | string
+        exit: {} | string
         transition: {}
         positionTransition: {}
     }
@@ -439,6 +439,7 @@ StatefulGrid.defaultProps = {
         variants: {},
         initial: {},
         animate: {},
+        exit: {},
         transition: {
             ease: "easeInOut",
             duration: 0.25,

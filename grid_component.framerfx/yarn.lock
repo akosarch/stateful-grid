@@ -94,10 +94,10 @@
     react-feather "^2.0.3"
     webfontloader "^1.6.28"
 
-"@framer/benjamin.input@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.framer.com/@framer/benjamin.input/-/@framer/benjamin.input-1.2.0.tgz#fa9f5ece2061d15c8a6ea036d208eb6462bc770d"
-  integrity sha512-HvuyKieQfculupbBY1/8bkEiN4UGDcveN0uGmL5tftfyK+ew/HbYbFNmH4BHjhZmca/UChSNrm/56u31oJN6ng==
+"@framer/benjamin.input@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.framer.com/@framer/benjamin.input/-/@framer/benjamin.input-1.3.0.tgz#0c6958a3a09b656535cc8aec2d0fe84a03c2e89c"
+  integrity sha512-yrITvE+VOazsW0zumCBFNK9uYjMKdCazJH0UoSMUQmfXYSRhwdEJghZ8+LJk+5SB1AcrCptxodH1wVC24BPJZA==
   dependencies:
     styled-components "^4.0.3"
 
