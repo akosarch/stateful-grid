@@ -133,5 +133,4 @@ Here is a basic component API.
 
 ## Override examples
 
-Will be added soon. For the refference please take a look at the [EXAMPLE FILE](https://github.com/akosarch/stateful-grid).
-
+Will be added soon. For the reference please take a look at the [EXAMPLE FILE](https://github.com/akosarch/stateful-grid).
