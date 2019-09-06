@@ -51,16 +51,18 @@ export function StatefulGrid(props: Props) {
 
     // Select items at given indexes (props.activeIds)
     function setActiveByDefault(activeIds: number[], options: any[]) {
-        // Filter the options with given indexes
-        const filteredOptions = options.filter((elem, id) => {
-            return activeIds.indexOf(id) > -1
-        })
-        const active = props.isMultiselect
-            ? filteredOptions
-            : [filteredOptions[0]]
-        // Finaly, set the new state of selected items
-        // And callback the active items
-        setActive(active)
+        if (activeIds.length) {
+            // Filter the options with given indexes
+            const filteredOptions = options.filter((elem, id) => {
+                return activeIds.indexOf(id) > -1
+            })
+            const active = props.isMultiselect
+                ? filteredOptions
+                : [filteredOptions[0]]
+            // Finaly, set the new state of selected items
+            // And callback the active items
+            setActive(active)
+        }
         props.onMount(options, active)
     }
 
@@ -208,7 +210,7 @@ export function StatefulGrid(props: Props) {
             hover: [hoverState, hoverStateProps],
         }
         // Find if the item is active
-        const activeId = active.findIndex(elem => elem.key == item.key)
+        const activeId = active.findIndex(active => active.key === item.key)
         const transition = `all ${props.animationDuration}s ${props.animationCurve}`
         // Find if the item is hovered
         const currState =
@@ -234,7 +236,6 @@ export function StatefulGrid(props: Props) {
             setJSONOptions(getJSONOptions(props.json))
         }
     }, [props.jsonPath, props.json])
-
     // Set initial values
     useEffect(() => {
         setInitialOptions(
@@ -426,6 +427,9 @@ StatefulGrid.defaultProps = {
     onActiveChange: function() {},
     onHoverChange: function() {},
     onResize: function() {},
+    initialOptions: [],
+    activeIds: [],
+    itemsNumber: 5,
     marginPerSide: false,
     ignoreEvents: {
         tap: false,
@@ -463,7 +467,7 @@ addPropertyControls(StatefulGrid, {
         type: ControlType.Array,
         title: "Options",
         propertyControl: { type: ControlType.String },
-        defaultValue: null,
+        defaultValue: [],
     },
     itemsNumber: {
         type: ControlType.Number,
