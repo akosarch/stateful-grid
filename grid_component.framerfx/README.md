@@ -242,7 +242,7 @@ export const HandleStatefulGrid: Override = props => {
             const removed = options.filter(item =>
             		itemsToRemove.findIndex(rItem => rItem.data === item.data) >= 0
             )
-						setOptions(removed)
+        setOptions(removed)
         }
     }, [itemsToRemove])
     // add items
