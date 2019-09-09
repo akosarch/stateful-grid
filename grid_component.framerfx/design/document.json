@@ -428,8 +428,9 @@
                   "value" : "UzraF33EE"
                 }
               ],
-              "animationCurve" : "ease",
-              "animationDuration" : 0.20000000000000001,
+              "animationCurve" : "1",
+              "animationDuration" : 0.25,
+              "bezierCurve" : "0.645, 0.045, 0.355, 1",
               "bottom" : 0,
               "defaultState" : [
                 {
@@ -2103,8 +2104,9 @@
                   "value" : "rRP7B7Osv"
                 }
               ],
-              "animationCurve" : "ease",
-              "animationDuration" : 0.20000000000000001,
+              "animationCurve" : "1",
+              "animationDuration" : 0.25,
+              "bezierCurve" : "0.645, 0.045, 0.355, 1",
               "bottom" : 0,
               "defaultState" : [
                 {
@@ -4184,8 +4186,9 @@
                   "value" : "UwB9bQcnI"
                 }
               ],
-              "animationCurve" : "ease",
-              "animationDuration" : 0.20000000000000001,
+              "animationCurve" : "1",
+              "animationDuration" : 0.25,
+              "bezierCurve" : "0.645, 0.045, 0.355, 1",
               "bottom" : 0,
               "defaultState" : [
                 {
@@ -15873,8 +15876,9 @@
                   "value" : "BbUCbg_ne"
                 }
               ],
-              "animationCurve" : "ease",
-              "animationDuration" : 0.20000000000000001,
+              "animationCurve" : "1",
+              "animationDuration" : 0.25,
+              "bezierCurve" : "0.645, 0.045, 0.355, 1",
               "bottom" : 0,
               "defaultState" : [
                 {
@@ -16811,7 +16815,7 @@
               {
                 "__class" : "CodeComponentNode",
                 "aspectRatio" : null,
-                "bottom" : null,
+                "bottom" : 0,
                 "centerAnchorX" : 0.5,
                 "centerAnchorY" : 0.5,
                 "children" : [
@@ -16830,8 +16834,9 @@
                       "value" : "KkAhBkj3Z"
                     }
                   ],
-                  "animationCurve" : "ease",
-                  "animationDuration" : 0.20000000000000001,
+                  "animationCurve" : "1",
+                  "animationDuration" : 0.25,
+                  "bezierCurve" : "0.645, 0.045, 0.355, 1",
                   "bottom" : 8,
                   "defaultState" : [
                     {
@@ -16870,12 +16875,12 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 431,
+                "height" : 570,
                 "heightType" : 0,
                 "id" : "J63AROVbe",
                 "intrinsicHeight" : null,
                 "intrinsicWidth" : null,
-                "left" : null,
+                "left" : 24,
                 "locked" : false,
                 "name" : null,
                 "opacity" : 1,
@@ -16889,7 +16894,7 @@
                 "radiusPerCorner" : false,
                 "radiusTopLeft" : 0,
                 "radiusTopRight" : 0,
-                "right" : null,
+                "right" : 24,
                 "rotation" : 0,
                 "top" : 0,
                 "visible" : true,
@@ -19067,8 +19072,9 @@
                   "value" : "mXUf9VBx5"
                 }
               ],
-              "animationCurve" : "ease",
-              "animationDuration" : 0.20000000000000001,
+              "animationCurve" : "1",
+              "animationDuration" : 0.25,
+              "bezierCurve" : "0.645, 0.045, 0.355, 1",
               "bottom" : 0,
               "defaultState" : [
                 {

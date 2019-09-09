@@ -1,4 +1,4 @@
-# Stateful grid (_βeta_)
+# Stateful grid (_Beta_)
 
 This FramerX component is aimed at rendering the data grids and lists with the stateful logic behind it.
 It supports the `default`, `active` and `hover` states so far.
@@ -105,8 +105,6 @@ To create the tab bar with icons I used another great store component, [Icon Gen
 
 As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state change.
 
-
-
 ## API overview
 
 Here is a basic component API.
@@ -131,6 +129,141 @@ Here is a basic component API.
 | `wrap` | `boolean` | Use this property to allow line wrap if you want to make an items grid. Similar to [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap) CSS property |
 
 
-## Override examples
+## Basic overrides
 
-Will be added soon. For the reference please take a look at the [EXAMPLE FILE](https://github.com/akosarch/stateful-grid).
+Download an [EXAMPLE FILE](https://github.com/akosarch/stateful-grid) from GitHub to see more advanced usecases.
+
+**Get options and active items**
+```tsx
+const data = Data({
+  options: [],
+  active: [],
+  hover: {}
+})
+
+export const HandleStatefulGrid: Override = props => {
+    return {
+        onMount(options, active) {
+            data.options = options
+            data.active = active
+        },
+        onActiveChange(active) {
+            data.active = active
+        },
+        onHoverChange(hover) {
+        		data.hover = hover
+        }
+    }
+}
+```
+
+**Get actual content size and applying it to the scroll component**
+```tsx
+const data = Data({
+  height: {},
+})
+
+export const HandleStatefulGrid: Override = props => {
+    return {
+        onResize(width, height) {
+            data.height = height
+        },
+    }
+}
+
+export const Scroll: Override = props => {
+    return {
+        contentHeight: data.height
+    }
+}
+```
+
+**Filter options**
+```tsx
+export const HandleStatefulGrid: Override = props => {
+    const [options, setOptions] = useState([])
+    const [filtered, setFiltered] = useState([])
+    useEffect(() => {
+      if (options.length) {
+          const keyword = "bird"
+          const filteredOptions = options.filter(item =>
+              // item structure can be different while using JSON
+              item.data === keyword
+          )
+          setFiltered(filteredOptions)
+      }
+    }, [options])
+    return {
+        onMount(options, active) {
+            setOptions(options)
+        },
+        updatedOptions: filtered,
+    }
+}
+```
+
+**Sort options**
+```tsx
+export const HandleStatefulGrid: Override = props => {
+    const [options, setOptions] = useState([])
+    const [sorted, setSorted] = useState([])
+    useEffect(() => {
+        if (options.length) {
+            const sortedOptions = options.sort((a, b) => {
+                // item structure can be different while using JSON
+                if (a.data > b.data) return 1
+                if (a.data < b.data) return -1
+                return 0
+            })
+            setSorted(sortedOptions)
+        }
+    }, [options])
+    return {
+        onMount(options, active) {
+            setOptions(options)
+        },
+        updatedOptions: sorted,
+    }
+}
+```
+
+**Add / remove items**
+```tsx
+const data = Data({
+  itemsToAdd: [],
+  itemsToRemove: []
+})
+
+export const HandleStatefulGrid: Override = props => {
+    const [options, setOptions] = useState([])
+        // remove items
+  	useEffect(() => {
+        if (options.length) {
+            const removed = options.filter(item =>
+            		itemsToRemove.findIndex(rItem => rItem.data === item.data) >= 0
+            )
+						setOptions(removed)
+        }
+    }, [itemsToRemove])
+    // add items
+    useEffect(() => {
+        if (options.length) {
+          	// make sure each new item has a unique key
+        		const added = itemsToAdd.map(item => {key: getKey(), data: item})
+            setOptions(added)
+        }
+    }, [itemsToAdd])
+    return {
+        onMount(options, active) {
+            setOptions(options)
+        },
+        updatedOptions: options,
+    }
+}
+
+// function to generate unique keys for the new items
+function getKey() {
+  const date = new Date()
+  return Math.floor(date.getTime() * Math.random())
+}
+```

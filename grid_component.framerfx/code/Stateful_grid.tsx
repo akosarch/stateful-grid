@@ -28,6 +28,19 @@ export function StatefulGrid(props: Props) {
         return Math.floor(date.getTime() * Math.random())
     }
 
+    function getEasingCurve(item: string, type: "js" | "css") {
+        const i = +item
+        const jsBezier = props.bezierCurve
+            .split(",")
+            .map(e => Number.parseFloat(e))
+        const cssBezier = `bezier-curve(${props.bezierCurve})`
+        const curves = {
+            js: ["linear", "easeInOut", "easeIn", "easeOut", jsBezier],
+            css: ["linear", "ease", "ease-in", "ease-out", cssBezier],
+        }
+        return curves[type][i]
+    }
+
     // Toggle selected based on input indexes
     function setActiveItem(key: number | string) {
         // Get the actual item from given key
@@ -211,7 +224,10 @@ export function StatefulGrid(props: Props) {
         }
         // Find if the item is active
         const activeId = active.findIndex(active => active.key === item.key)
-        const transition = `all ${props.animationDuration}s ${props.animationCurve}`
+        const transition = `all ${props.animationDuration}s ${getEasingCurve(
+            props.animationCurve,
+            "css"
+        )}`
         // Find if the item is hovered
         const currState =
             activeId < 0
@@ -236,6 +252,7 @@ export function StatefulGrid(props: Props) {
             setJSONOptions(getJSONOptions(props.json))
         }
     }, [props.jsonPath, props.json])
+
     // Set initial values
     useEffect(() => {
         setInitialOptions(
@@ -307,9 +324,13 @@ export function StatefulGrid(props: Props) {
                             animate={props.animateChildren.animate}
                             exit={props.animateChildren.exit}
                             transition={props.animateChildren.transition}
-                            positionTransition={
-                                props.animateChildren.positionTransition
-                            }
+                            positionTransition={{
+                                ease: getEasingCurve(
+                                    props.animationCurve,
+                                    "js"
+                                ),
+                                duration: props.animationDuration,
+                            }}
                             custom={i}
                             key={key}
                         >
@@ -394,6 +415,7 @@ interface Props {
     json: { default: any[]; active?: any[]; hover?: any[] }
     activeIds: number[]
     animationCurve: string
+    bezierCurve: string
     animationDuration: number
     defaultState: React.ReactElement[]
     activeState: React.ReactElement[]
@@ -429,26 +451,20 @@ StatefulGrid.defaultProps = {
     onResize: function() {},
     initialOptions: [],
     activeIds: [],
-    itemsNumber: 5,
     marginPerSide: false,
     ignoreEvents: {
         tap: false,
         hover: false,
         stateChange: false,
     },
-    animationCurve: "ease",
-    animationDuration: 0.25,
     animateChildren: {
         initialEnabled: false,
         variants: {},
         initial: {},
         animate: {},
         exit: {},
-        transition: {
-            ease: "easeInOut",
-            duration: 0.25,
-        },
-        positionTransition: { ease: "easeInOut", duration: 0.25 },
+        transition: {},
+        positionTransition: {},
     },
 }
 
@@ -473,9 +489,6 @@ addPropertyControls(StatefulGrid, {
         type: ControlType.Number,
         title: "Items",
         defaultValue: 5,
-        hidden({ initialOptions, jsonPath, json }) {
-            return initialOptions && jsonPath && json
-        },
     },
     direction: {
         type: ControlType.SegmentedEnum,
@@ -501,9 +514,17 @@ addPropertyControls(StatefulGrid, {
         min: 0,
     },
     animationCurve: {
-        type: ControlType.String,
+        type: ControlType.Enum,
+        defaultValue: "1",
         title: "Curve",
-        defaultValue: "ease",
+        options: ["0", "1", "2", "3", "4"],
+        optionTitles: ["linear", "ease", "easeIn", "easeOut", "bezier"],
+    },
+    bezierCurve: {
+        type: ControlType.String,
+        defaultValue: "0.645, 0.045, 0.355, 1",
+        title: "Bezier",
+        hidden: ({ animationCurve }) => animationCurve !== "4",
     },
     animationDuration: {
         type: ControlType.Number,
@@ -511,7 +532,7 @@ addPropertyControls(StatefulGrid, {
         step: 0.1,
         min: 0,
         max: 10,
-        defaultValue: 0.2,
+        defaultValue: 0.25,
         displayStepper: true,
     },
     defaultState: {
