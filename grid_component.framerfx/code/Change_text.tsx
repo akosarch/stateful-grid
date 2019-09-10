@@ -54,9 +54,8 @@ export const HandleTabChange: Override = () => {
     const [options, setOptions] = useState([])
     const findCurrentPage = (options, active) => {
         if (options.length && active.length) {
-            const selectedItem = active[0]
             const selectedId = options.findIndex(
-                elem => selectedItem.key == elem.key
+                elem => active[0].key == elem.key
             )
             if (selectedId >= 0) {
                 return selectedId

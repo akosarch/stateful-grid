@@ -43,23 +43,25 @@ export function StatefulGrid(props: Props) {
 
     // Toggle selected based on input indexes
     function setActiveItem(key: number | string) {
-        // Get the actual item from given key
-        const itemId = options.findIndex(item => item.key === key)
-        const item = options[itemId]
-        // Check if item already exists in active array
-        const activeId = active.findIndex(item => item.key === key)
-        const activeItems = props.isMultiselect
-            ? activeId < 0
-                ? [...active, item] // Select item
-                : active.filter((item, id) => id !== activeId) // Deselect item
-            : [item]
+        if (!props.ignoreEvents.tap) {
+            // Get the actual item from given key
+            const itemId = options.findIndex(item => item.key === key)
+            const item = options[itemId]
+            // Check if item already exists in active array
+            const activeId = active.findIndex(item => item.key === key)
+            const activeItems = props.isMultiselect
+                ? activeId < 0
+                    ? [...active, item] // Select item
+                    : active.filter((item, id) => id !== activeId) // Deselect item
+                : [item]
 
-        // Finaly, set the new state of selected items
-        !props.ignoreEvents.stateChange && setActive(activeItems)
-        // Callback the active items (for overrides)
-        !props.ignoreEvents.stateChange && props.onActiveChange(activeItems)
-        // Callback recent tapped item (for overrides)
-        // !props.ignoreEvents.tap && props.itemTapped(item)
+            // Finaly, set the new state of selected items
+            !props.ignoreEvents.stateChange && setActive(activeItems)
+            // Callback the active items (for overrides)
+            !props.ignoreEvents.stateChange && props.onActiveChange(activeItems)
+            // Callback recent tapped item (for overrides)
+            props.itemTapped(item)
+        }
     }
 
     // Select items at given indexes (props.activeIds)
@@ -157,11 +159,11 @@ export function StatefulGrid(props: Props) {
             let rawHTML = props.rawHTML
             // If text is populated through json
             // else use simple options
-            if (toProps.text) {
-                for (let key in toProps.text) {
+            if (Object.keys(toProps).length) {
+                for (let key in toProps) {
                     rawHTML = rawHTML.replace(
                         new RegExp(`\\${tmplt}${key}`, "gi"),
-                        toProps.text[key]
+                        toProps[key]
                     )
                 }
             } else {

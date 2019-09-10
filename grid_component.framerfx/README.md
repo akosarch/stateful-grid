@@ -54,7 +54,8 @@ For example, if we're making the tracklist for some music band (eg. Pantera), we
 ```json
 "default": [
   {
-    "text": {"name": "Walk", "album": "Vulgar Display of Power"},
+    "name": "Walk", 
+    "album": "Vulgar Display of Power",
   },
 ]
 ```
@@ -69,7 +70,8 @@ You can pass other properties unlike text. To display the album cover, for examp
 ```json
 "default": [
   {
-    "text": {"name": "Walk", "album": "Vulgar Display of Power"},
+    "name": "Walk", 
+    "album": "Vulgar Display of Power",
     "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/PanteraVulgarDisplayofPower.jpg/220px-PanteraVulgarDisplayofPower.jpg"
 	},
 ]
@@ -84,7 +86,7 @@ To create the tab bar with icons I used another great store component, [Icon Gen
 ```json
 "default": [
  	{
-    "text": {"tab": "Activity"}, 
+    "tab": "Activity", 
     "icon": "activity",
     "background": "#EAB00E",
     "textColor": "#CCC"
@@ -92,7 +94,7 @@ To create the tab bar with icons I used another great store component, [Icon Gen
 ],
 "active": [
 	{
-    "text": {"tab": "Activity"},
+    "tab": "Activity",
     "icon": "activity",
     "background": "#EAB00E",
     "color": "#EAB00E",

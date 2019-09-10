@@ -4202,7 +4202,7 @@
 
               ],
               "isMultiselect" : false,
-              "itemsNumber" : 3,
+              "itemsNumber" : 0,
               "jsonPath" : "design\/assets\/tabs.json",
               "left" : 0,
               "margin" : 0,
@@ -14091,7 +14091,7 @@
             "clip" : true,
             "codeComponentIdentifier" : "@framer\/ehmorris.remote-image-images-via-url\/.\/Remote Image.tsx_RemoteImage",
             "codeComponentProps" : {
-              "fillMode" : "fill",
+              "fillMode" : "cover",
               "url" : "https:\/\/source.unsplash.com\/random"
             },
             "codeOverrideEnabled" : false,
@@ -15110,7 +15110,7 @@
             "clip" : true,
             "codeComponentIdentifier" : "@framer\/ehmorris.remote-image-images-via-url\/.\/Remote Image.tsx_RemoteImage",
             "codeComponentProps" : {
-              "fillMode" : "fill",
+              "fillMode" : "cover",
               "url" : "https:\/\/source.unsplash.com\/random"
             },
             "codeOverrideEnabled" : false,

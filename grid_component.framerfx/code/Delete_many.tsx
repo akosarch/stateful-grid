@@ -139,7 +139,6 @@ export const AnimateCounter: Override = props => {
             x: targetX,
             y: [0, -40, 24],
             background: color,
-            // scaleX: [0.4, 1, 1],
             scale: [1, 1, 0.6],
             transition: {
                 x: { ease: "linear", duration: duration },
