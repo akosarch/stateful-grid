@@ -23,13 +23,15 @@ export const HandleItemChange: Override = props => {
             activeItems[data.currPage] = active
             data.active = activeItems
         },
+        animateChildren: {
+            positionTransition: { duration: 0 },
+        },
     }
 }
 
 export const UpdateLabel: Override = () => {
     const [text, setText] = useState()
     const [textOffset, setTextOffset] = useState(topOffset)
-
     useEffect(() => {
         const activeText = data.active[data.currPage]
         if (activeText) {
@@ -43,7 +45,6 @@ export const UpdateLabel: Override = () => {
             setTextOffset(activeText.length > 0 ? textOffset : topOffset)
         }
     }, [data.active, data.currPage])
-
     return {
         text: text,
         top: textOffset,
