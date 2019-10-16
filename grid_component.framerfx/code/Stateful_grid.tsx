@@ -148,7 +148,7 @@ export function StatefulGrid(props: Props) {
         }
         const tmplt = "$"
         // Iterate throught all the props from json
-        // If prop exists - assing newProp
+        // If prop exists - assign newProp
         for (let key in toProps) {
             if (props[key]) {
                 updatedProps = { ...updatedProps, [key]: toProps[key] }
@@ -162,7 +162,7 @@ export function StatefulGrid(props: Props) {
             if (Object.keys(toProps).length) {
                 for (let key in toProps) {
                     rawHTML = rawHTML.replace(
-                        new RegExp(`\\${tmplt}${key}`, "gi"),
+                        new RegExp(`\\${tmplt}${key}/`, "gi"),
                         toProps[key]
                     )
                 }

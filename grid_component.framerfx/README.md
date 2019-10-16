@@ -10,6 +10,17 @@ Download an [EXAMPLE FILE](https://github.com/akosarch/stateful-grid) from GitHu
 
 If you like the component and want to contribute or leave feedback hit me via [FACEBOOK](https://www.facebook.com/anton.kosarchyn), [SPECTRUM](https://spectrum.chat/users/anton-kosarchyn)
 
+
+
+### Updates
+
+**October 16, 2019**
+
+- Template string should now contain `/` closing tag at the end to work with the the JSON.
+  So the string `$money saved` should become `$money/ saved` where `$money/` is a template.
+
+
+
 ### Table of content
 
 - **How to use**
@@ -28,7 +39,7 @@ If you like the component and want to contribute or leave feedback hit me via [F
 
 To use the component you need to pass it at least one design state - `default`. It could be some frame from your canvas or design component. Use vertical `…` sign at the right side to attach the desired component to it. The same way you can pass another state of the component like `active` or `hover` if you need one. 
 
-![](https://github.com/akosarch/stateful-grid/blob/master/readme_images/design_states.png?raw=true)  
+![](https://github.com/akosarch/stateful-grid/blob/master/readme_images/design_states.png?raw=true)   
 
 > It's recommended to use `design components` for the states to maintain the same children order and hierarchy which is crucial for the component to work properly.
 
@@ -39,7 +50,7 @@ But while keeping the structure intact between the states you are free to make a
 There are several ways of populate items inside the grid component. 
 Briefly `numbers generator`, `options` or `JSON` .
 
-![options](https://github.com/akosarch/stateful-grid/blob/master/readme_images/options.png?raw=true) 
+![options](https://github.com/akosarch/stateful-grid/blob/master/readme_images/options.png?raw=true)  
 
 By default, the component uses `numbers generator` to populate items. It's useful if you want to render the fixed number of elements, eg. images grid. You can override this behavior passing the `options` item. It accepts an array of strings to populate items. It's useful if you want a simple list eg. ToDo, where each item has only one text element you want to override. If you'd like to render complex items with several texts and other properties to override use `JSON` instead.
 
@@ -59,9 +70,9 @@ For example, if we're making the tracklist for some music band (eg. Pantera), we
   },
 ]
 ```
-![design_component](https://github.com/akosarch/stateful-grid/blob/master/readme_images/design_component.png?raw=true)   
+![design_component](https://github.com/akosarch/stateful-grid/blob/master/readme_images/design_component.png?raw=true)    
 
-As you may noticed we named our text `$name` and `$album` so the component knows where to render the appropriate data from `JSON`. 
+As you may noticed we named our text `$name/` and `$album/` so the component knows where to render the appropriate data from `JSON`. 
 
 ### Passing other props
 
@@ -103,7 +114,7 @@ To create the tab bar with icons I used another great store component, [Icon Gen
 ]
 ```
 
-![tab_bar](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar.png?raw=true)           
+![tab_bar](https://github.com/akosarch/stateful-grid/blob/master/readme_images/tab_bar.png?raw=true)            
 
 As you can see here I also pass data for the `active` state, so the component knows how the item should look after the state change.
 
