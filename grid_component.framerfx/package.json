@@ -22,5 +22,5 @@
 		"use-resize-observer": "^4.0.0"
 	},
 	"name": "@framer/martiankid.stateful-grid",
-	"version": "1.4.0"
+	"version": "1.5.0"
 }
