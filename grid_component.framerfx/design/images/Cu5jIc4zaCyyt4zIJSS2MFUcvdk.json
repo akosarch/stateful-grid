@@ -1,0 +1,55 @@
+{
+"default": 
+    [
+        {
+            "name": "Walk", 
+            "album": "Vulgar Display of Power",
+            "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/PanteraVulgarDisplayofPower.jpg/220px-PanteraVulgarDisplayofPower.jpg"
+        },
+        {
+            "name": "Cowboys From Hell", 
+            "album": "Cowboys From Hell",
+            "url" : "https://upload.wikimedia.org/wikipedia/ru/thumb/a/a8/CowboysFromHell.jpg/270px-CowboysFromHell.jpg"
+        },
+        {
+            "name": "Cemetery Gates", 
+            "album": "Cowboys From Hell",
+            "url": "https://upload.wikimedia.org/wikipedia/ru/thumb/a/a8/CowboysFromHell.jpg/270px-CowboysFromHell.jpg"
+        },
+        {
+            "name": "I'm Broken", 
+            "album": "Far Beyond Driven",
+            "url": "https://upload.wikimedia.org/wikipedia/ru/thumb/d/d3/Pantera-FarBeyondDriven.jpg/270px-Pantera-FarBeyondDriven.jpg"
+        },
+        {
+            "name": "5 Minutes Alone", 
+            "album": "Far Beyond Driven",
+            "url": "https://upload.wikimedia.org/wikipedia/ru/thumb/d/d3/Pantera-FarBeyondDriven.jpg/270px-Pantera-FarBeyondDriven.jpg"
+        },
+        {
+            "name": "Domination", 
+            "album": "Cowboys From Hell",
+            "url": "https://upload.wikimedia.org/wikipedia/ru/thumb/a/a8/CowboysFromHell.jpg/270px-CowboysFromHell.jpg"
+        },
+        {
+            "name": "Mouth For War", 
+            "album": "Vulgar Display of Power",
+            "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/PanteraVulgarDisplayofPower.jpg/220px-PanteraVulgarDisplayofPower.jpg"
+        },
+        {
+            "name": "This Love", 
+            "album": "Vulgar Display of Power",
+            "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/PanteraVulgarDisplayofPower.jpg/220px-PanteraVulgarDisplayofPower.jpg"
+        },
+        {
+            "name": "Hollow", 
+            "album": "Vulgar Display of Power",
+            "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/PanteraVulgarDisplayofPower.jpg/220px-PanteraVulgarDisplayofPower.jpg"
+        },
+        {
+            "name": "Fucking Hostile", 
+            "album": "Vulgar Display of Power",
+            "url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/PanteraVulgarDisplayofPower.jpg/220px-PanteraVulgarDisplayofPower.jpg"
+        }
+    ]
+}

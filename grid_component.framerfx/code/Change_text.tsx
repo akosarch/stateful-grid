@@ -11,7 +11,7 @@ const data: any = Data({
     currPage: 0,
 })
 
-export const HandleItemChange: Override = props => {
+export const HandleItemChange: Override = (props) => {
     return {
         onMount(options, active) {
             const activeItems = [...data.active]
@@ -56,7 +56,7 @@ export const HandleTabChange: Override = () => {
     const findCurrentPage = (options, active) => {
         if (options.length && active[0]) {
             const selectedId = options.findIndex(
-                elem => active[0].key == elem.key
+                (elem) => active[0].key == elem.key
             )
             if (selectedId >= 0) {
                 return selectedId
