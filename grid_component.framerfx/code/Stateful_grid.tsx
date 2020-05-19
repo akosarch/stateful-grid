@@ -155,7 +155,11 @@ export function StatefulGrid(props: Props) {
                 updatedProps = { ...updatedProps, [key]: toProps[key] }
             }
             if (props["name"] === key) {
-                updatedProps = { ...updatedProps, text: toProps[key] }
+                updatedProps = {
+                    ...updatedProps,
+                    text: toProps[key],
+                    style: { color: key },
+                }
             }
         }
         // Else use plain text value

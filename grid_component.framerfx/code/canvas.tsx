@@ -2,9 +2,9 @@
 import { createDesignComponent, CanvasStore } from "framer"
 const canvas = CanvasStore.shared(); // CANVAS_DATA;
 export const Default = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string,text?:string}>(canvas, "id_IL0M96bfz", {text:"string"}, 327,48);
-export const Default_1 = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string,tab?:string}>(canvas, "id_ihuhkcRUu", {tab:"string"}, 75,64);
-export const Default_2 = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string,text?:string}>(canvas, "id_QBBVGggPP", {text:"string"}, 327,48);
-export const Default_3 = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string,text?:string}>(canvas, "id_rYzddnaaM", {text:"string"}, 375,48);
+export const Default_1 = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string,text?:string}>(canvas, "id_rYzddnaaM", {text:"string"}, 375,48);
+export const Default_2 = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string,tab?:string}>(canvas, "id_ihuhkcRUu", {tab:"string"}, 75,64);
+export const Default_3 = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string,text?:string}>(canvas, "id_QBBVGggPP", {text:"string"}, 327,48);
 export const Default_state = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string,name?:string,album?:string}>(canvas, "id_KkeUb3xXt", {name:"string",album:"string"}, 375,80);
 
 export const colors = Object.freeze({
