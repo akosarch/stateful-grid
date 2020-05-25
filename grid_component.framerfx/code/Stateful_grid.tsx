@@ -19,7 +19,6 @@ export function StatefulGrid(props: Props) {
     const [hover, setHover] = useState()
     // Use resize observer to calculate the exact content size
     const [ref, updatedWidth, updatedHeight] = useResizeObserver()
-
     //FUNCTIONS
     //---------------------------------------------------------------------
 
@@ -33,7 +32,7 @@ export function StatefulGrid(props: Props) {
         const i = +item
         const jsBezier = props.bezierCurve
             .split(",")
-            .map((e) => Number.parseFloat(e))
+            .map(e => Number.parseFloat(e))
         const cssBezier = `bezier-curve(${props.bezierCurve})`
         const curves = {
             js: ["linear", "easeInOut", "easeIn", "easeOut", jsBezier],
@@ -46,10 +45,10 @@ export function StatefulGrid(props: Props) {
     function setActiveItem(key: number | string) {
         if (!props.ignoreEvents.tap) {
             // Get the actual item from given key
-            const itemId = options.findIndex((item) => item.key === key)
+            const itemId = options.findIndex(item => item.key === key)
             const item = options[itemId]
             // Check if item already exists in active array
-            const activeId = active.findIndex((item) => item.key === key)
+            const activeId = active.findIndex(item => item.key === key)
             const activeItems = props.isMultiselect
                 ? activeId < 0
                     ? [...active, item] // Select item
@@ -86,7 +85,7 @@ export function StatefulGrid(props: Props) {
     function setHoverItem(key: number | string, condition: boolean) {
         if (!props.ignoreEvents.hover) {
             // Get the actual item from given key
-            const itemId = options.findIndex((item) => item.key === key)
+            const itemId = options.findIndex(item => item.key === key)
             const item = condition ? options[itemId] : null
             // Finaly, set the new state of selected items
             // And callback the active items
@@ -136,7 +135,7 @@ export function StatefulGrid(props: Props) {
         }
     }
 
-    // The function bellow handle the props change to the desired
+    // The function bellow handel the props change to the desired
     // Eg text, colors, icons etc
     function updateProps(fromState, to, item, transition) {
         const [toState, toProps] = to
@@ -147,52 +146,41 @@ export function StatefulGrid(props: Props) {
             ...props.style,
             transition: transition,
         }
-        // const tmplt = "$"
+        const tmplt = "$"
         // Iterate throught all the props from json
         // If prop exists - assign newProp
         for (let key in toProps) {
             if (props[key]) {
                 updatedProps = { ...updatedProps, [key]: toProps[key] }
             }
-            if (props["name"] === key) {
-                updatedProps = {
-                    ...updatedProps,
-                    text: toProps[key],
-                    style: { color: key },
-                }
-            }
-        }
-        // Else use plain text value
-        if (props["name"] === "text") {
-            updatedProps = { ...updatedProps, text: item.data }
         }
         // Replace text with the given options
-        // if (props.rawHTML) {
-        //     let rawHTML = props.rawHTML
-        //     // If text is populated through json
-        //     // else use simple options
-        //     if (Object.keys(toProps).length) {
-        //         for (let key in toProps) {
-        //             rawHTML = rawHTML.replace(
-        //                 new RegExp(`\\${tmplt}${key}/`, "gi"),
-        //                 toProps[key]
-        //             )
-        //         }
-        //     } else {
-        //         rawHTML = rawHTML.replace(
-        //             new RegExp(`\\${tmplt}/`, "gi"),
-        //             item.data
-        //         )
-        //     }
-        //     // Replace the text color if given
-        //     if (toProps.textColor) {
-        //         rawHTML = rawHTML.replace(
-        //             new RegExp("-webkit-text-fill-color:.*?;"),
-        //             `-webkit-text-fill-color:${toProps.textColor};`
-        //         )
-        //     }
-        //     updatedProps = { ...updatedProps, rawHTML: rawHTML }
-        // }
+        if (props.rawHTML) {
+            let rawHTML = props.rawHTML
+            // If text is populated through json
+            // else use simple options
+            if (Object.keys(toProps).length) {
+                for (let key in toProps) {
+                    rawHTML = rawHTML.replace(
+                        new RegExp(`\\${tmplt}${key}/`, "gi"),
+                        toProps[key]
+                    )
+                }
+            } else {
+                rawHTML = rawHTML.replace(
+                    new RegExp(`\\${tmplt}/`, "gi"),
+                    item.data
+                )
+            }
+            // Replace the text color if given
+            if (toProps.textColor) {
+                rawHTML = rawHTML.replace(
+                    new RegExp("-webkit-text-fill-color:.*?;"),
+                    `-webkit-text-fill-color:${toProps.textColor};`
+                )
+            }
+            updatedProps = { ...updatedProps, rawHTML: rawHTML }
+        }
         // Iterate through each of the child if there is any
         // And recursively call the function to update props on child elements
         // Assing returned object as a new child
@@ -237,7 +225,7 @@ export function StatefulGrid(props: Props) {
             hover: [hoverState, hoverStateProps],
         }
         // Find if the item is active
-        const activeId = active.findIndex((active) => active.key === item.key)
+        const activeId = active.findIndex(active => active.key === item.key)
         const transition = `all ${props.animationDuration}s ${getEasingCurve(
             props.animationCurve,
             "css"
@@ -260,8 +248,8 @@ export function StatefulGrid(props: Props) {
     useEffect(() => {
         if (props.jsonPath) {
             fetch(props.jsonPath)
-                .then((response) => response.json())
-                .then((json) => setJSONOptions(getJSONOptions(json)))
+                .then(response => response.json())
+                .then(json => setJSONOptions(getJSONOptions(json)))
         } else if (props.json) {
             setJSONOptions(getJSONOptions(props.json))
         }
@@ -282,7 +270,7 @@ export function StatefulGrid(props: Props) {
             // if item was removed => remove it from selected as well
             const activeItems = active.filter((original, i) => {
                 const id = props.updatedOptions.findIndex(
-                    (updated) => updated.key === original.key
+                    updated => updated.key === original.key
                 )
                 return id >= 0
             })
@@ -326,7 +314,7 @@ export function StatefulGrid(props: Props) {
                     // Create a Frame for the react component
                     return (
                         <Frame
-                            onTap={(event) => setActiveItem(key)}
+                            onTap={event => setActiveItem(key)}
                             onTapStart={() => props.itemTapped(option)}
                             onHoverStart={() => setHoverItem(key, true)}
                             onHoverEnd={() => setHoverItem(key, false)}
@@ -458,11 +446,11 @@ interface Props {
 // DEFAULT PROPERTIES
 
 StatefulGrid.defaultProps = {
-    onMount: function () {},
-    itemTapped: function () {},
-    onActiveChange: function () {},
-    onHoverChange: function () {},
-    onResize: function () {},
+    onMount: function() {},
+    itemTapped: function() {},
+    onActiveChange: function() {},
+    onHoverChange: function() {},
+    onResize: function() {},
     initialOptions: [],
     activeIds: [],
     marginPerSide: false,

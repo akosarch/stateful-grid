@@ -140,23 +140,18 @@
   resolved "https://registry.framer.com/@framer/framer.device-skin-apple-iphone8-space-gray/-/@framer/framer.device-skin-apple-iphone8-space-gray-1.0.0.tgz#336e100533d33e4fc7cd10507ccf64a8bc96637a"
   integrity sha512-WNnCJXI6Pgpep5tK2SQ5NVhPf7fBZIMvLWdYTF0nS0mG0QfWKgllT5YN3LGwKqOYI7mnzSlOQR1PPFFk8gOVVA==
 
-"@framer/jordanrobertdobson.text-color-tool@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.framer.com/@framer/jordanrobertdobson.text-color-tool/-/@framer/jordanrobertdobson.text-color-tool-1.0.0.tgz#a8fb8bb871937fbd6067642825126f85ea4e3969"
-  integrity sha512-0sg7cSr+FUpi+YK6jDSlmh89tLvv6CyQQCKg4mFAVjRfyio9P2jz20W6KYoKZ4W7PT0m6NXgAcIKReHV1xzbLQ==
-
 "@framer/kasimir.iphone-x-kit@^1.21.0":
   version "1.21.0"
   resolved "https://registry.framer.com/@framer/kasimir.iphone-x-kit/-/@framer/kasimir.iphone-x-kit-1.21.0.tgz#3346b679f219f1c2284cd67b41a8022c632887c0"
   integrity sha512-3MofK5Eq1H2UJ0vuB2fZun9MyhGhg7sVHK4QF16K9xyZVrtu9J4qQah0muqIOHarFCPNdg44Q98IYRetZ/NduA==
 
 "@material-ui/core@^4.9.5":
-  version "4.9.14"
-  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.9.14.tgz#4388f82cf94554cd3a935774fc12820f3c607a8a"
-  integrity sha512-71oYrOpInx5honJ9GzZlygPjmsFhn7Bui61/SWLJsPTkMnfvuZfU3qVqlEHjXyDsnZ+uKmLAIdsrOYnphJxxXw==
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.10.0.tgz#e214e8f7981ff7975a918404b94508418642e463"
+  integrity sha512-yVlHe4b8AaoiTHhCOZeszHZ+T2iHU5DncdMGeNcQaaaO+q/Qrq0hxP3iFzTbgjRWnWwftEVQL668GRxcPJVRaQ==
   dependencies:
     "@babel/runtime" "^7.4.4"
-    "@material-ui/styles" "^4.9.14"
+    "@material-ui/styles" "^4.10.0"
     "@material-ui/system" "^4.9.14"
     "@material-ui/types" "^5.1.0"
     "@material-ui/utils" "^4.9.12"
@@ -175,10 +170,10 @@
   dependencies:
     "@babel/runtime" "^7.4.4"
 
-"@material-ui/styles@^4.9.14":
-  version "4.9.14"
-  resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.9.14.tgz#0a9e93a2bf24e8daa0811411a6f3dabdafbe9a07"
-  integrity sha512-zecwWKgRU2VzdmutNovPB4s5LKI0TWyZKc/AHfPu9iY8tg4UoLjpa4Rn9roYrRfuTbBZHI6b0BXcQ8zkis0nzQ==
+"@material-ui/styles@^4.10.0":
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.10.0.tgz#2406dc23aa358217aa8cc772e6237bd7f0544071"
+  integrity sha512-XPwiVTpd3rlnbfrgtEJ1eJJdFCXZkHxy8TrdieaTvwxNYj42VnnCyFzxYeNW9Lhj4V1oD8YtQ6S5Gie7bZDf7Q==
   dependencies:
     "@babel/runtime" "^7.4.4"
     "@emotion/hash" "^0.8.0"

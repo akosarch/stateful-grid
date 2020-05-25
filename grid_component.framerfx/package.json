@@ -19,7 +19,6 @@
 		"@framer/benjamin.input": "1.5.0",
 		"@framer/ehmorris.remote-image-images-via-url": "^1.3.0",
 		"@framer/framer.default": "^1.71.0",
-		"@framer/jordanrobertdobson.text-color-tool": "^1.0.0",
 		"@framer/kasimir.iphone-x-kit": "^1.21.0",
 		"use-resize-observer": "^4.0.0"
 	},

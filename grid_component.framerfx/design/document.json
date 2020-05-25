@@ -425,7 +425,7 @@
                 {
                   "enabled" : true,
                   "type" : "componentinstance",
-                  "value" : "q_VoWl4IQ"
+                  "value" : "UzraF33EE"
                 }
               ],
               "animationCurve" : "1",
@@ -436,7 +436,7 @@
                 {
                   "enabled" : true,
                   "type" : "componentinstance",
-                  "value" : "QBBVGggPP"
+                  "value" : "OLyqGiEHw"
                 }
               ],
               "direction" : "vertical",
@@ -630,6 +630,848 @@
         "top" : 176,
         "visible" : true,
         "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "borderBottom" : 1,
+            "borderColor" : "hsla(0, 0%, 13%, 0.1)",
+            "borderEnabled" : 1,
+            "borderLeft" : 1,
+            "borderPerSide" : false,
+            "borderRight" : 1,
+            "borderStyle" : "solid",
+            "borderTop" : 1,
+            "borderWidth" : 1,
+            "bottom" : null,
+            "centerAnchorX" : 0.57339449541284404,
+            "centerAnchorY" : 0.98958333333333337,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(0, 0, 0, 0.1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 1,
+            "heightType" : 0,
+            "id" : "zAIN6DunP",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : "separator",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "OLyqGiEHw",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : 0,
+            "rotation" : 0,
+            "top" : 47,
+            "visible" : true,
+            "width" : 279,
+            "widthType" : 0
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "bottom" : null,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.17125382262996941,
+            "centerAnchorY" : 0.5,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 16,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "cl0ax_nMV",
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isTarget" : true,
+            "left" : 48,
+            "locked" : false,
+            "name" : "$\/",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "OLyqGiEHw",
+            "right" : null,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "shadows" : [
+
+            ],
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "FONT:HelveticaNeue",
+                      "SIZE:16",
+                      "LETTERSPACING:0",
+                      "COLOR:#BBBBBB",
+                      "LINEHEIGHT:1"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "FONT:HelveticaNeue"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "SIZE:16"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "COLOR:#BBBBBB"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1"
+                    }
+                  ],
+                  "key" : "bhv04",
+                  "text" : "$\/",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#BBBBBB;font-size:16px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$\/<\/span><\/span><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 16,
+                  "width" : 16
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : null,
+            "visible" : true,
+            "width" : 16,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : 1,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "bottom" : null,
+            "centerAnchorX" : 0.042813455657492352,
+            "centerAnchorY" : 0.5,
+            "children" : [
+
+            ],
+            "clip" : false,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "#DDDDDD",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 6,
+            "heightType" : 0,
+            "id" : "rn2uJNJGf",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "OLyqGiEHw",
+            "previewSettings" : null,
+            "radius" : 50,
+            "radiusBottomLeft" : 50,
+            "radiusBottomRight" : 50,
+            "radiusIsRelative" : true,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 50,
+            "radiusTopRight" : 50,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 6,
+            "widthType" : 0
+          }
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "duplicatedFrom" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillLinearGradient" : {
+          "__class" : "LinearGradient",
+          "alpha" : 1,
+          "angle" : 180,
+          "stops" : [
+            {
+              "__class" : "GradientColorStop",
+              "position" : 0,
+              "value" : "rgba(0,0,0,0)"
+            },
+            {
+              "__class" : "GradientColorStop",
+              "position" : 1,
+              "value" : "black"
+            }
+          ]
+        },
+        "fillRadialGradient" : {
+          "__class" : "RadialGradient",
+          "alpha" : 1,
+          "centerAnchorX" : 0.5,
+          "centerAnchorY" : 0.5,
+          "heightFactor" : 0.5,
+          "stops" : [
+            {
+              "__class" : "GradientColorStop",
+              "position" : 0,
+              "value" : "rgba(0,0,0,0)"
+            },
+            {
+              "__class" : "GradientColorStop",
+              "position" : 1,
+              "value" : "black"
+            }
+          ],
+          "widthFactor" : 0.5
+        },
+        "fillType" : "color",
+        "framePreset" : null,
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 48,
+        "heightType" : 0,
+        "id" : "OLyqGiEHw",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : -520,
+        "locked" : false,
+        "name" : "default",
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "M7kkACvDM",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 80,
+        "visible" : true,
+        "width" : 327,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "borderBottom" : 1,
+            "borderColor" : "hsla(0, 0%, 0%, 0.1)",
+            "borderEnabled" : 1,
+            "borderLeft" : 1,
+            "borderPerSide" : false,
+            "borderRight" : 1,
+            "borderStyle" : "solid",
+            "borderTop" : 1,
+            "borderWidth" : 1,
+            "bottom" : null,
+            "centerAnchorX" : 0.57339449541284404,
+            "centerAnchorY" : 0.98958333333333337,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(0, 0, 0, 0.1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 1,
+            "heightType" : 0,
+            "id" : "M1lj2EWoV",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : "separator",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "UzraF33EE",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : 0,
+            "rotation" : 0,
+            "top" : 47,
+            "visible" : true,
+            "width" : 279,
+            "widthType" : 0
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "bottom" : null,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.17125382262996941,
+            "centerAnchorY" : 0.5,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 16,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "fxN_wzLHx",
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isTarget" : true,
+            "left" : 48,
+            "locked" : false,
+            "name" : "$\/",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "UzraF33EE",
+            "right" : null,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "shadows" : [
+
+            ],
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "FONT:HelveticaNeue",
+                      "SIZE:16",
+                      "LETTERSPACING:0",
+                      "COLOR:rgba(235, 176, 14, 1.00)",
+                      "LINEHEIGHT:1"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "FONT:HelveticaNeue"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "SIZE:16"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "COLOR:rgba(235, 176, 14, 1.00)"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1"
+                    }
+                  ],
+                  "key" : "bhv04",
+                  "text" : "$\/",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(235, 176, 14, 1.00);font-size:16px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$\/<\/span><\/span><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 16,
+                  "width" : 16
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : null,
+            "visible" : true,
+            "width" : 16,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : 1,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "bottom" : null,
+            "centerAnchorX" : 0.042813455657492352,
+            "centerAnchorY" : 0.5,
+            "children" : [
+
+            ],
+            "clip" : false,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(234, 176, 14, 1.00)",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 16,
+            "heightType" : 0,
+            "id" : "VgXKRDOEZ",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "UzraF33EE",
+            "previewSettings" : null,
+            "radius" : 50,
+            "radiusBottomLeft" : 50,
+            "radiusBottomRight" : 50,
+            "radiusIsRelative" : true,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 50,
+            "radiusTopRight" : 50,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 16,
+            "widthType" : 0
+          }
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "duplicatedFrom" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillLinearGradient" : {
+          "__class" : "LinearGradient",
+          "alpha" : 1,
+          "angle" : 180,
+          "stops" : [
+            {
+              "__class" : "GradientColorStop",
+              "position" : 0,
+              "value" : "rgba(0,0,0,0)"
+            },
+            {
+              "__class" : "GradientColorStop",
+              "position" : 1,
+              "value" : "black"
+            }
+          ]
+        },
+        "fillRadialGradient" : {
+          "__class" : "RadialGradient",
+          "alpha" : 1,
+          "centerAnchorX" : 0.5,
+          "centerAnchorY" : 0.5,
+          "heightFactor" : 0.5,
+          "stops" : [
+            {
+              "__class" : "GradientColorStop",
+              "position" : 0,
+              "value" : "rgba(0,0,0,0)"
+            },
+            {
+              "__class" : "GradientColorStop",
+              "position" : 1,
+              "value" : "black"
+            }
+          ],
+          "widthFactor" : 0.5
+        },
+        "fillType" : "color",
+        "framePreset" : null,
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 48,
+        "heightType" : 0,
+        "id" : "UzraF33EE",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : -520,
+        "locked" : false,
+        "name" : "active",
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "M7kkACvDM",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : -16,
+        "visible" : true,
+        "width" : 327,
         "widthType" : 0
       },
       {
@@ -1042,10 +1884,10 @@
                 {
                   "enabled" : true,
                   "type" : "componentinstance",
-                  "value" : "U6E4D763_"
+                  "value" : "rRP7B7Osv"
                 }
               ],
-              "animationCurve" : "0",
+              "animationCurve" : "1",
               "animationDuration" : 0.25,
               "bezierCurve" : "0.645, 0.045, 0.355, 1",
               "bottom" : 0,
@@ -1258,6 +2100,121 @@
         "centerAnchorX" : 0.5,
         "centerAnchorY" : 0.5,
         "children" : [
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "bottom" : null,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.17125382262996941,
+            "centerAnchorY" : 0.5,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : [
+              "cl0ax_nMV"
+            ],
+            "exportOptions" : [
+
+            ],
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 16,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "AoaCuwJtz",
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isTarget" : true,
+            "left" : 48,
+            "locked" : false,
+            "name" : "$\/",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "IL0M96bfz",
+            "right" : null,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "shadows" : [
+
+            ],
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "FONT:HelveticaNeue",
+                      "SIZE:16",
+                      "LETTERSPACING:0",
+                      "COLOR:#000",
+                      "LINEHEIGHT:1"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "FONT:HelveticaNeue"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "SIZE:16"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "COLOR:#000"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1"
+                    }
+                  ],
+                  "key" : "bhv04",
+                  "text" : "$\/",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#000;font-size:16px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$\/<\/span><\/span><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 16,
+                  "width" : 16
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : null,
+            "visible" : true,
+            "width" : 16,
+            "widthType" : 0
+          },
           {
             "__class" : "FrameNode",
             "aspectRatio" : 1,
@@ -1686,116 +2643,6 @@
             "widthType" : 0
           },
           {
-            "__class" : "TextNode",
-            "autoSize" : false,
-            "blur" : 12,
-            "blurEnabled" : 0,
-            "blurType" : "layer",
-            "bottom" : null,
-            "brightness" : 100,
-            "brightnessEnabled" : 0,
-            "centerAnchorX" : 0.49235474006116209,
-            "centerAnchorY" : 0.51041666666666663,
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : true,
-            "contrast" : 100,
-            "contrastEnabled" : 0,
-            "duplicatedFrom" : null,
-            "exportOptions" : [
-
-            ],
-            "grayscale" : 0,
-            "grayScaleEnabled" : 0,
-            "height" : 19,
-            "heightType" : 0,
-            "hueRotate" : 0,
-            "hueRotateEnabled" : 0,
-            "id" : "X1Vei_ysK",
-            "invert" : 0,
-            "invertEnabled" : 0,
-            "isTarget" : true,
-            "left" : 48,
-            "locked" : false,
-            "name" : "text",
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "IL0M96bfz",
-            "right" : null,
-            "rotation" : 0,
-            "saturate" : 100,
-            "saturateEnabled" : 0,
-            "sepia" : 0,
-            "sepiaEnabled" : 0,
-            "shadows" : [
-
-            ],
-            "styledText" : {
-              "__class" : "StyledTextDraft",
-              "blocks" : [
-                {
-                  "data" : {
-                    "emptyStyle" : [
-                      "FONT:HelveticaNeue",
-                      "SIZE:16",
-                      "LETTERSPACING:0",
-                      "LINEHEIGHT:1.2",
-                      "ALIGN:left",
-                      "COLOR:hsl(0, 0%, 0%)"
-                    ]
-                  },
-                  "depth" : 0,
-                  "entityRanges" : [
-
-                  ],
-                  "inlineStyleRanges" : [
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "FONT:HelveticaNeue"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "SIZE:16"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "LETTERSPACING:0"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "LINEHEIGHT:1.2"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "ALIGN:left"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "COLOR:hsl(0, 0%, 0%)"
-                    }
-                  ],
-                  "key" : "1bo75",
-                  "text" : "text",
-                  "type" : "unstyled"
-                }
-              ],
-              "entityMap" : {
-
-              }
-            },
-            "textVerticalAlignment" : "top",
-            "top" : 15,
-            "visible" : true,
-            "width" : 226,
-            "widthType" : 0
-          },
-          {
             "__class" : "FrameNode",
             "aspectRatio" : null,
             "blendingEnabled" : 0,
@@ -2061,7 +2908,7 @@
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
         "isExternalMaster" : null,
-        "isMaster" : true,
+        "isMaster" : false,
         "isTarget" : false,
         "left" : 55,
         "locked" : false,
@@ -2080,7 +2927,7 @@
         "replicaInfo" : null,
         "right" : null,
         "rotation" : 0,
-        "top" : 78,
+        "top" : 80,
         "visible" : true,
         "width" : 327,
         "widthType" : 0
@@ -2094,14 +2941,754 @@
         "centerAnchorX" : 0.5,
         "centerAnchorY" : 0.5,
         "children" : [
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "bottom" : null,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.17125382262996941,
+            "centerAnchorY" : 0.5,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : [
+              "cl0ax_nMV",
+              "AoaCuwJtz"
+            ],
+            "exportOptions" : [
 
+            ],
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 16,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "L_08FBiZG",
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isTarget" : true,
+            "left" : 48,
+            "locked" : false,
+            "name" : "$\/",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "rRP7B7Osv",
+            "right" : null,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "shadows" : [
+
+            ],
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "FONT:HelveticaNeue",
+                      "SIZE:16",
+                      "LETTERSPACING:0",
+                      "COLOR:#BBBBBB",
+                      "LINEHEIGHT:1"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "FONT:HelveticaNeue"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "SIZE:16"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "COLOR:#BBBBBB"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1"
+                    }
+                  ],
+                  "key" : "bhv04",
+                  "text" : "$\/",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#BBBBBB;font-size:16px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$\/<\/span><\/span><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 16,
+                  "width" : 16
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : null,
+            "visible" : true,
+            "width" : 16,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : 1,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "borderBottom" : 2,
+            "borderColor" : "#222",
+            "borderEnabled" : -1,
+            "borderLeft" : 2,
+            "borderPerSide" : false,
+            "borderRight" : 2,
+            "borderStyle" : "solid",
+            "borderTop" : 2,
+            "borderWidth" : 2,
+            "bottom" : null,
+            "boxShadows" : [
+
+            ],
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.03669724770642202,
+            "centerAnchorY" : 0.5,
+            "children" : [
+              {
+                "__class" : "FrameNode",
+                "aspectRatio" : null,
+                "blendingEnabled" : 0,
+                "blendingMode" : "normal",
+                "bottom" : null,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.5,
+                "children" : [
+                  {
+                    "__class" : "FrameNode",
+                    "aspectRatio" : null,
+                    "blendingEnabled" : 0,
+                    "blendingMode" : "luminosity",
+                    "bottom" : null,
+                    "centerAnchorX" : 0.5,
+                    "centerAnchorY" : 0.5,
+                    "children" : [
+
+                    ],
+                    "clip" : true,
+                    "codeOverrideEnabled" : false,
+                    "constraintsLocked" : true,
+                    "duplicatedFrom" : null,
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "#BBBBBB",
+                    "fillEnabled" : true,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillLinearGradient" : {
+                      "__class" : "LinearGradient",
+                      "alpha" : 1,
+                      "angle" : 180,
+                      "stops" : [
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 0,
+                          "value" : "rgba(0,0,0,0)"
+                        },
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 1,
+                          "value" : "black"
+                        }
+                      ]
+                    },
+                    "fillRadialGradient" : {
+                      "__class" : "RadialGradient",
+                      "alpha" : 1,
+                      "centerAnchorX" : 0.5,
+                      "centerAnchorY" : 0.5,
+                      "heightFactor" : 0.5,
+                      "stops" : [
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 0,
+                          "value" : "rgba(0,0,0,0)"
+                        },
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 1,
+                          "value" : "black"
+                        }
+                      ],
+                      "widthFactor" : 0.5
+                    },
+                    "fillType" : "color",
+                    "framePreset" : null,
+                    "guidesX" : [
+
+                    ],
+                    "guidesY" : [
+
+                    ],
+                    "height" : 2,
+                    "heightType" : 0,
+                    "id" : "eJSqcm40z",
+                    "intrinsicHeight" : null,
+                    "intrinsicWidth" : null,
+                    "isExternalMaster" : null,
+                    "isMaster" : false,
+                    "isTarget" : false,
+                    "left" : 0,
+                    "locked" : false,
+                    "name" : "plus",
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "Zzsxr_c3J",
+                    "previewSettings" : null,
+                    "radius" : 2,
+                    "radiusBottomLeft" : 2,
+                    "radiusBottomRight" : 2,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 2,
+                    "radiusTopRight" : 2,
+                    "replicaInfo" : null,
+                    "right" : null,
+                    "rotation" : 0,
+                    "top" : 5,
+                    "visible" : true,
+                    "width" : 12,
+                    "widthType" : 0
+                  },
+                  {
+                    "__class" : "FrameNode",
+                    "aspectRatio" : null,
+                    "blendingEnabled" : 0,
+                    "blendingMode" : "luminosity",
+                    "bottom" : null,
+                    "centerAnchorX" : 0.5,
+                    "centerAnchorY" : 0.5,
+                    "children" : [
+
+                    ],
+                    "clip" : true,
+                    "codeOverrideEnabled" : false,
+                    "constraintsLocked" : true,
+                    "duplicatedFrom" : null,
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "#BBBBBB",
+                    "fillEnabled" : true,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillLinearGradient" : {
+                      "__class" : "LinearGradient",
+                      "alpha" : 1,
+                      "angle" : 180,
+                      "stops" : [
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 0,
+                          "value" : "rgba(0,0,0,0)"
+                        },
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 1,
+                          "value" : "black"
+                        }
+                      ]
+                    },
+                    "fillRadialGradient" : {
+                      "__class" : "RadialGradient",
+                      "alpha" : 1,
+                      "centerAnchorX" : 0.5,
+                      "centerAnchorY" : 0.5,
+                      "heightFactor" : 0.5,
+                      "stops" : [
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 0,
+                          "value" : "rgba(0,0,0,0)"
+                        },
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 1,
+                          "value" : "black"
+                        }
+                      ],
+                      "widthFactor" : 0.5
+                    },
+                    "fillType" : "color",
+                    "framePreset" : null,
+                    "guidesX" : [
+
+                    ],
+                    "guidesY" : [
+
+                    ],
+                    "height" : 2,
+                    "heightType" : 0,
+                    "id" : "ixUXrgoeu",
+                    "intrinsicHeight" : null,
+                    "intrinsicWidth" : null,
+                    "isExternalMaster" : null,
+                    "isMaster" : false,
+                    "isTarget" : false,
+                    "left" : 0,
+                    "locked" : false,
+                    "name" : "plus",
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "Zzsxr_c3J",
+                    "previewSettings" : null,
+                    "radius" : 2,
+                    "radiusBottomLeft" : 2,
+                    "radiusBottomRight" : 2,
+                    "radiusIsRelative" : false,
+                    "radiusPerCorner" : false,
+                    "radiusTopLeft" : 2,
+                    "radiusTopRight" : 2,
+                    "replicaInfo" : null,
+                    "right" : null,
+                    "rotation" : 90,
+                    "top" : 5,
+                    "visible" : true,
+                    "width" : 12,
+                    "widthType" : 0
+                  }
+                ],
+                "clip" : false,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : false,
+                "duplicatedFrom" : null,
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillLinearGradient" : {
+                  "__class" : "LinearGradient",
+                  "alpha" : 1,
+                  "angle" : 180,
+                  "stops" : [
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 0,
+                      "value" : "rgba(0,0,0,0)"
+                    },
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 1,
+                      "value" : "black"
+                    }
+                  ]
+                },
+                "fillRadialGradient" : {
+                  "__class" : "RadialGradient",
+                  "alpha" : 1,
+                  "centerAnchorX" : 0.5,
+                  "centerAnchorY" : 0.5,
+                  "heightFactor" : 0.5,
+                  "stops" : [
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 0,
+                      "value" : "rgba(0,0,0,0)"
+                    },
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 1,
+                      "value" : "black"
+                    }
+                  ],
+                  "widthFactor" : 0.5
+                },
+                "fillType" : "color",
+                "framePreset" : null,
+                "guidesX" : [
+
+                ],
+                "guidesY" : [
+
+                ],
+                "height" : 12,
+                "heightType" : 0,
+                "id" : "Zzsxr_c3J",
+                "intrinsicHeight" : null,
+                "intrinsicWidth" : null,
+                "isExternalMaster" : null,
+                "isMaster" : false,
+                "isTarget" : false,
+                "left" : null,
+                "locked" : false,
+                "name" : "plus",
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "FOWiHQeH7",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "replicaInfo" : null,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 12,
+                "widthType" : 0
+              }
+            ],
+            "clip" : false,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(221, 221, 221, 0)",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 24,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "FOWiHQeH7",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 0,
+            "locked" : false,
+            "name" : "body",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "rRP7B7Osv",
+            "previewSettings" : null,
+            "radius" : 50,
+            "radiusBottomLeft" : 50,
+            "radiusBottomRight" : 50,
+            "radiusIsRelative" : true,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 50,
+            "radiusTopRight" : 50,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 45,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "top" : 12,
+            "visible" : true,
+            "width" : 24,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "bottom" : null,
+            "centerAnchorX" : 0.57339449541284404,
+            "centerAnchorY" : 0.98958333333333337,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "#DDDDDD",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 1,
+            "heightType" : 0,
+            "id" : "zNZpe3lgg",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : "separator",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "rRP7B7Osv",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : 0,
+            "rotation" : 0,
+            "top" : 47,
+            "visible" : true,
+            "width" : 279,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "bottom" : null,
+            "centerAnchorX" : 0.24464831804281345,
+            "centerAnchorY" : 0.51041666666666663,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "#999",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 1,
+            "heightType" : 0,
+            "id" : "HCN1cUFEe",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 48,
+            "locked" : false,
+            "name" : "line",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "rRP7B7Osv",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : 24,
+            "visible" : true,
+            "width" : 64,
+            "widthType" : 0
+          }
         ],
         "clip" : false,
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
-        "duplicatedFrom" : [
-          "IL0M96bfz"
-        ],
+        "duplicatedFrom" : null,
         "exportOptions" : [
 
         ],
@@ -2159,7 +3746,7 @@
         ],
         "height" : 48,
         "heightType" : 0,
-        "id" : "U6E4D763_",
+        "id" : "rRP7B7Osv",
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
         "isExternalMaster" : null,
@@ -2169,7 +3756,7 @@
         "locked" : false,
         "name" : "active",
         "opacity" : 1,
-        "originalid" : "IL0M96bfz",
+        "originalid" : null,
         "parentid" : "M7kkACvDM",
         "previewSettings" : null,
         "radius" : 0,
@@ -2179,104 +3766,10 @@
         "radiusPerCorner" : false,
         "radiusTopLeft" : 0,
         "radiusTopRight" : 0,
-        "replicaInfo" : {
-          "master" : "IL0M96bfz",
-          "overrides" : {
-            "c3JvKNKxO" : {
-              "fillEnabled" : false,
-              "rotation" : 45
-            },
-            "eD9T2pIAh" : {
-
-            },
-            "IL0M96bfz" : {
-              "bottom" : null,
-              "centerAnchorX" : 0.5,
-              "centerAnchorY" : 0.5,
-              "left" : 55,
-              "name" : "active",
-              "right" : null,
-              "top" : -20
-            },
-            "LDq4aXL9O" : {
-
-            },
-            "llbIUDFef" : {
-              "width" : 100
-            },
-            "sbL3gPffh" : {
-              "fillColor" : "rgba(191, 191, 191, 1.00)"
-            },
-            "X1Vei_ysK" : {
-              "opacity" : 0.40000000000000002,
-              "styledText" : {
-                "__class" : "StyledTextDraft",
-                "blocks" : [
-                  {
-                    "data" : {
-                      "emptyStyle" : [
-                        "FONT:HelveticaNeue",
-                        "SIZE:16",
-                        "LETTERSPACING:0",
-                        "LINEHEIGHT:1.2",
-                        "ALIGN:left",
-                        "COLOR:hsl(0, 0%, 0%)"
-                      ]
-                    },
-                    "depth" : 0,
-                    "entityRanges" : [
-
-                    ],
-                    "inlineStyleRanges" : [
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "FONT:HelveticaNeue"
-                      },
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "SIZE:16"
-                      },
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "LETTERSPACING:0"
-                      },
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "LINEHEIGHT:1.2"
-                      },
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "ALIGN:left"
-                      },
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "COLOR:hsl(0, 0%, 0%)"
-                      }
-                    ],
-                    "key" : "1bo75",
-                    "text" : "text",
-                    "type" : "unstyled"
-                  }
-                ],
-                "entityMap" : {
-
-                }
-              }
-            },
-            "ylCpjN9je" : {
-              "fillColor" : "rgba(191, 191, 191, 1.00)"
-            }
-          }
-        },
+        "replicaInfo" : null,
         "right" : null,
         "rotation" : 0,
-        "top" : -20,
+        "top" : -16,
         "visible" : true,
         "width" : 327,
         "widthType" : 0
@@ -2290,67 +3783,6 @@
         "centerAnchorX" : 0,
         "centerAnchorY" : 0,
         "children" : [
-          {
-            "__class" : "CodeComponentNode",
-            "aspectRatio" : 1,
-            "bottom" : null,
-            "centerAnchorX" : 0.5013333333333333,
-            "centerAnchorY" : 0.074962518740629688,
-            "children" : [
-
-            ],
-            "clip" : true,
-            "codeComponentIdentifier" : "@framer\/jordanrobertdobson.text-color-tool\/.\/TextColorTool.tsx_TextColorTool",
-            "codeComponentPackageVersion" : "1.71.0",
-            "codeComponentProps" : {
-              "enabled" : true,
-              "readme" : [
-
-              ],
-              "visible" : true
-            },
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              "zMSGURpqP"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(255,255,255,1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillType" : "color",
-            "height" : 100,
-            "heightType" : 0,
-            "id" : "Wi0zXhEPQ",
-            "intrinsicHeight" : 300,
-            "intrinsicWidth" : 300,
-            "left" : null,
-            "locked" : true,
-            "name" : null,
-            "opacity" : 0,
-            "originalid" : null,
-            "parentid" : "gtYkFkwKB",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "right" : null,
-            "rotation" : 0,
-            "top" : 0,
-            "visible" : true,
-            "width" : 100,
-            "widthType" : 0
-          },
           {
             "__class" : "CodeComponentNode",
             "aspectRatio" : null,
@@ -2509,7 +3941,7 @@
                 {
                   "enabled" : true,
                   "type" : "componentinstance",
-                  "value" : "wElw6_jFy"
+                  "value" : "UwB9bQcnI"
                 }
               ],
               "animationCurve" : "1",
@@ -2529,7 +3961,7 @@
               ],
               "isMultiselect" : false,
               "itemsNumber" : 0,
-              "jsonPath" : "data:framer\/asset-reference,04gDN4ggioECtbdS8gGwMyFk.json?originalFilename=tabs.json",
+              "jsonPath" : "data:framer\/asset-reference,okrW0tXHnmEcCKdHg1xxhjfQs.json?originalFilename=tabs.json",
               "left" : 0,
               "margin" : 0,
               "marginPerSide" : false,
@@ -4164,186 +5596,6 @@
             "widthType" : 0
           },
           {
-            "__class" : "TextNode",
-            "autoSize" : false,
-            "bottom" : null,
-            "centerAnchorX" : 0.52666666666666662,
-            "centerAnchorY" : 0.375,
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : true,
-            "duplicatedFrom" : null,
-            "exportOptions" : [
-
-            ],
-            "height" : 16,
-            "heightType" : 0,
-            "id" : "WZZA2wtYn",
-            "isTarget" : true,
-            "left" : 80,
-            "locked" : false,
-            "name" : "name",
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "KkeUb3xXt",
-            "right" : null,
-            "rotation" : 0,
-            "styledText" : {
-              "__class" : "StyledTextDraft",
-              "blocks" : [
-                {
-                  "data" : {
-                    "emptyStyle" : [
-                      "FONT:HelveticaNeue",
-                      "SIZE:16",
-                      "LETTERSPACING:0",
-                      "LINEHEIGHT:1",
-                      "ALIGN:left",
-                      "COLOR:rgba(255, 255, 255, 1.00)"
-                    ]
-                  },
-                  "depth" : 0,
-                  "entityRanges" : [
-
-                  ],
-                  "inlineStyleRanges" : [
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "FONT:HelveticaNeue"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "SIZE:16"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "LETTERSPACING:0"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "LINEHEIGHT:1"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "ALIGN:left"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "COLOR:rgba(255, 255, 255, 1.00)"
-                    }
-                  ],
-                  "key" : "f9al8",
-                  "text" : "name",
-                  "type" : "unstyled"
-                }
-              ],
-              "entityMap" : {
-
-              }
-            },
-            "textVerticalAlignment" : "top",
-            "top" : null,
-            "visible" : true,
-            "width" : 235,
-            "widthType" : 0
-          },
-          {
-            "__class" : "TextNode",
-            "autoSize" : false,
-            "bottom" : null,
-            "centerAnchorX" : 0.52666666666666662,
-            "centerAnchorY" : 0.625,
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : true,
-            "duplicatedFrom" : null,
-            "exportOptions" : [
-
-            ],
-            "height" : 16,
-            "heightType" : 0,
-            "id" : "V7pUi5yo4",
-            "isTarget" : true,
-            "left" : 80,
-            "locked" : false,
-            "name" : "album",
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "KkeUb3xXt",
-            "right" : null,
-            "rotation" : 0,
-            "styledText" : {
-              "__class" : "StyledTextDraft",
-              "blocks" : [
-                {
-                  "data" : {
-                    "emptyStyle" : [
-                      "FONT:HelveticaNeue",
-                      "LETTERSPACING:0",
-                      "SIZE:14",
-                      "ALIGN:left",
-                      "COLOR:#999999",
-                      "LINEHEIGHT:1"
-                    ]
-                  },
-                  "depth" : 0,
-                  "entityRanges" : [
-
-                  ],
-                  "inlineStyleRanges" : [
-                    {
-                      "length" : 5,
-                      "offset" : 0,
-                      "style" : "FONT:HelveticaNeue"
-                    },
-                    {
-                      "length" : 5,
-                      "offset" : 0,
-                      "style" : "LETTERSPACING:0"
-                    },
-                    {
-                      "length" : 5,
-                      "offset" : 0,
-                      "style" : "SIZE:14"
-                    },
-                    {
-                      "length" : 5,
-                      "offset" : 0,
-                      "style" : "ALIGN:left"
-                    },
-                    {
-                      "length" : 5,
-                      "offset" : 0,
-                      "style" : "COLOR:#999999"
-                    },
-                    {
-                      "length" : 5,
-                      "offset" : 0,
-                      "style" : "LINEHEIGHT:1"
-                    }
-                  ],
-                  "key" : "f9al8",
-                  "text" : "album",
-                  "type" : "unstyled"
-                }
-              ],
-              "entityMap" : {
-
-              }
-            },
-            "textVerticalAlignment" : "top",
-            "top" : null,
-            "visible" : true,
-            "width" : 235,
-            "widthType" : 0
-          },
-          {
             "__class" : "FrameNode",
             "aspectRatio" : null,
             "blendingEnabled" : 0,
@@ -4691,6 +5943,251 @@
             "visible" : true,
             "width" : 24,
             "widthType" : 0
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "bottom" : null,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.28666666666666668,
+            "centerAnchorY" : 0.375,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : [
+              "cl0ax_nMV",
+              "AoaCuwJtz"
+            ],
+            "exportOptions" : [
+
+            ],
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 16,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "nijD9Gn1e",
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isTarget" : true,
+            "left" : 80,
+            "locked" : false,
+            "name" : "$\/",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "KkeUb3xXt",
+            "right" : null,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "shadows" : [
+
+            ],
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "FONT:HelveticaNeue",
+                      "SIZE:16",
+                      "LETTERSPACING:0",
+                      "LINEHEIGHT:1",
+                      "COLOR:#fff",
+                      "ALIGN:left"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "FONT:HelveticaNeue"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "SIZE:16"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "COLOR:#fff"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "ALIGN:left"
+                    }
+                  ],
+                  "key" : "bhv04",
+                  "text" : "$name\/",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#fff;font-size:16px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$name\/<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 16,
+                  "width" : 55
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : 22,
+            "visible" : true,
+            "width" : 55,
+            "widthType" : 0
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "bottom" : 22,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.27866666666666667,
+            "centerAnchorY" : 0.63749999999999996,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : [
+              "cl0ax_nMV",
+              "AoaCuwJtz",
+              "nijD9Gn1e"
+            ],
+            "exportOptions" : [
+
+            ],
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 14,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "BtjZcG4Od",
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isTarget" : true,
+            "left" : 80,
+            "locked" : false,
+            "name" : "$\/",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "KkeUb3xXt",
+            "right" : null,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "shadows" : [
+
+            ],
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "FONT:HelveticaNeue",
+                      "LETTERSPACING:0",
+                      "LINEHEIGHT:1",
+                      "SIZE:14",
+                      "COLOR:#bbb",
+                      "ALIGN:left"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 7,
+                      "offset" : 0,
+                      "style" : "FONT:HelveticaNeue"
+                    },
+                    {
+                      "length" : 7,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 7,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1"
+                    },
+                    {
+                      "length" : 7,
+                      "offset" : 0,
+                      "style" : "SIZE:14"
+                    },
+                    {
+                      "length" : 7,
+                      "offset" : 0,
+                      "style" : "COLOR:#bbb"
+                    },
+                    {
+                      "length" : 7,
+                      "offset" : 0,
+                      "style" : "ALIGN:left"
+                    }
+                  ],
+                  "key" : "bhv04",
+                  "text" : "$album\/",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#bbb;font-size:14px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$album\/<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 14,
+                  "width" : 53
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : null,
+            "visible" : true,
+            "width" : 53,
+            "widthType" : 0
           }
         ],
         "clip" : true,
@@ -4758,7 +6255,7 @@
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
         "isExternalMaster" : null,
-        "isMaster" : true,
+        "isMaster" : false,
         "isTarget" : false,
         "left" : 55,
         "locked" : false,
@@ -4791,7 +6288,811 @@
         "centerAnchorX" : 1.1759999999999999,
         "centerAnchorY" : 0.75862068965517238,
         "children" : [
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : 1,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "borderEnabled" : 0,
+            "bottom" : null,
+            "centerAnchorX" : 0.10666666666666667,
+            "centerAnchorY" : 0.5,
+            "children" : [
+              {
+                "__class" : "CodeComponentNode",
+                "aspectRatio" : 1,
+                "bottom" : null,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.5,
+                "children" : [
 
+                ],
+                "clip" : true,
+                "codeComponentIdentifier" : "@framer\/ehmorris.remote-image-images-via-url\/.\/Remote Image.tsx_RemoteImage",
+                "codeComponentPackageVersion" : null,
+                "codeComponentProps" : {
+                  "fillMode" : "cover",
+                  "url" : "https:\/\/lastfm-img2.akamaized.net\/i\/u\/770x0\/8f711e0a143749098da2468d54d1cb8f.jpg"
+                },
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : true,
+                "duplicatedFrom" : [
+                  "yr72DlJaf"
+                ],
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "rgba(255,255,255,1)",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillLinearGradient" : {
+                  "__class" : "LinearGradient",
+                  "alpha" : 1,
+                  "angle" : 180,
+                  "stops" : [
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 0,
+                      "value" : "rgba(0,0,0,0)"
+                    },
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 1,
+                      "value" : "black"
+                    }
+                  ]
+                },
+                "fillRadialGradient" : {
+                  "__class" : "RadialGradient",
+                  "alpha" : 1,
+                  "centerAnchorX" : 0.5,
+                  "centerAnchorY" : 0.5,
+                  "heightFactor" : 0.5,
+                  "stops" : [
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 0,
+                      "value" : "rgba(0,0,0,0)"
+                    },
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 1,
+                      "value" : "black"
+                    }
+                  ],
+                  "widthFactor" : 0.5
+                },
+                "fillType" : "color",
+                "height" : 50,
+                "heightType" : 0,
+                "id" : "r9GloPSkZ",
+                "intrinsicHeight" : 300,
+                "intrinsicWidth" : 300,
+                "left" : null,
+                "locked" : false,
+                "name" : null,
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "pO6A6eb37",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusIsRelative" : false,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "replicaInfo" : null,
+                "right" : null,
+                "rotation" : 0,
+                "top" : null,
+                "visible" : true,
+                "width" : 50,
+                "widthType" : 0
+              }
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "contrast" : 146,
+            "duplicatedFrom" : [
+              "PpIU4gF50"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255, 255, 255, 1.00)",
+            "fillEnabled" : false,
+            "fillImage" : "s30HIL3yieRm0AcZ1nCp7uUw.png",
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : 160,
+            "fillImagePixelWidth" : 160,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "grayscale" : 100,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 48,
+            "heightType" : 0,
+            "hueRotate" : 90,
+            "id" : "pO6A6eb37",
+            "intrinsicHeight" : 80,
+            "intrinsicWidth" : 80,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "MfYnGlsXW",
+            "previewSettings" : null,
+            "radius" : 50,
+            "radiusBottomLeft" : 50,
+            "radiusBottomRight" : 50,
+            "radiusIsRelative" : true,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 50,
+            "radiusTopRight" : 50,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 48,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "bottom" : 0,
+            "centerAnchorX" : 0.57466666666666666,
+            "centerAnchorY" : 0.99375000000000002,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "duplicatedFrom" : [
+              "O30QFQAnH"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "#333",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 1,
+            "heightType" : 0,
+            "id" : "wv6Xgu7mC",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 80,
+            "locked" : false,
+            "name" : "separator",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "MfYnGlsXW",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 271,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "bottom" : null,
+            "centerAnchorX" : 0.89333333333333331,
+            "centerAnchorY" : 0.5,
+            "children" : [
+              {
+                "__class" : "ShapeContainerNode",
+                "autoSize" : true,
+                "bottom" : null,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.5,
+                "children" : [
+                  {
+                    "__class" : "StarShapeNode",
+                    "aspectRatio" : 1,
+                    "duplicatedFrom" : [
+                      "t7l54vFpm"
+                    ],
+                    "exportOptions" : [
+
+                    ],
+                    "fillColor" : "hsl(0, 0%, 100%)",
+                    "fillEnabled" : true,
+                    "fillImage" : null,
+                    "fillImageOriginalName" : null,
+                    "fillImagePixelHeight" : null,
+                    "fillImagePixelWidth" : null,
+                    "fillImageResize" : "fill",
+                    "fillLinearGradient" : {
+                      "__class" : "LinearGradient",
+                      "alpha" : 1,
+                      "angle" : 180,
+                      "stops" : [
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 0,
+                          "value" : "rgba(0,0,0,0)"
+                        },
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 1,
+                          "value" : "black"
+                        }
+                      ]
+                    },
+                    "fillRadialGradient" : {
+                      "__class" : "RadialGradient",
+                      "alpha" : 1,
+                      "centerAnchorX" : 0.5,
+                      "centerAnchorY" : 0.5,
+                      "heightFactor" : 0.5,
+                      "stops" : [
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 0,
+                          "value" : "rgba(0,0,0,0)"
+                        },
+                        {
+                          "__class" : "GradientColorStop",
+                          "position" : 1,
+                          "value" : "black"
+                        }
+                      ],
+                      "widthFactor" : 0.5
+                    },
+                    "fillType" : "color",
+                    "height" : 16,
+                    "id" : "EEGE4AnL1",
+                    "locked" : false,
+                    "name" : null,
+                    "opacity" : 1,
+                    "originalid" : null,
+                    "parentid" : "GGrzMtZ0h",
+                    "radius" : 0,
+                    "rotation" : 0,
+                    "spikeCount" : 5,
+                    "spikeDepth" : 50,
+                    "visible" : true,
+                    "width" : 16,
+                    "x" : 4,
+                    "y" : 4
+                  }
+                ],
+                "constraintsLocked" : false,
+                "duplicatedFrom" : [
+                  "gS4EGQG67"
+                ],
+                "exportIncludesBackground" : false,
+                "exportOptions" : [
+
+                ],
+                "fillColor" : "#FFF",
+                "fillEnabled" : false,
+                "fillImage" : null,
+                "fillImageOriginalName" : null,
+                "fillImagePixelHeight" : null,
+                "fillImagePixelWidth" : null,
+                "fillImageResize" : "fill",
+                "fillLinearGradient" : {
+                  "__class" : "LinearGradient",
+                  "alpha" : 1,
+                  "angle" : 180,
+                  "stops" : [
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 0,
+                      "value" : "rgba(0,0,0,0)"
+                    },
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 1,
+                      "value" : "black"
+                    }
+                  ]
+                },
+                "fillRadialGradient" : {
+                  "__class" : "RadialGradient",
+                  "alpha" : 1,
+                  "centerAnchorX" : 0.5,
+                  "centerAnchorY" : 0.5,
+                  "heightFactor" : 0.5,
+                  "stops" : [
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 0,
+                      "value" : "rgba(0,0,0,0)"
+                    },
+                    {
+                      "__class" : "GradientColorStop",
+                      "position" : 1,
+                      "value" : "black"
+                    }
+                  ],
+                  "widthFactor" : 0.5
+                },
+                "fillType" : "color",
+                "height" : 24,
+                "heightType" : 0,
+                "id" : "GGrzMtZ0h",
+                "left" : null,
+                "locked" : false,
+                "name" : "star",
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "s3rwfw6tv",
+                "previewSettings" : null,
+                "radius" : 0,
+                "radiusBottomLeft" : 0,
+                "radiusBottomRight" : 0,
+                "radiusPerCorner" : false,
+                "radiusTopLeft" : 0,
+                "radiusTopRight" : 0,
+                "right" : null,
+                "sizeToFit" : false,
+                "top" : null,
+                "visible" : true,
+                "width" : 24,
+                "widthType" : 0
+              }
+            ],
+            "clip" : false,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : [
+              "bhGIoZcZB"
+            ],
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 24,
+            "heightType" : 0,
+            "id" : "s3rwfw6tv",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : "star",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "MfYnGlsXW",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : 28,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 24,
+            "widthType" : 0
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "bottom" : null,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.28666666666666668,
+            "centerAnchorY" : 0.375,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : [
+              "cl0ax_nMV",
+              "AoaCuwJtz",
+              "nijD9Gn1e"
+            ],
+            "exportOptions" : [
+
+            ],
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 16,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "hn8UflbGS",
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isTarget" : true,
+            "left" : 80,
+            "locked" : false,
+            "name" : "$\/",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "MfYnGlsXW",
+            "right" : null,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "shadows" : [
+
+            ],
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "FONT:HelveticaNeue",
+                      "SIZE:16",
+                      "LETTERSPACING:0",
+                      "LINEHEIGHT:1",
+                      "COLOR:#fff",
+                      "ALIGN:left"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "FONT:HelveticaNeue"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "SIZE:16"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "COLOR:#fff"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "ALIGN:left"
+                    }
+                  ],
+                  "key" : "bhv04",
+                  "text" : "$name\/",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#fff;font-size:16px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$name\/<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 16,
+                  "width" : 55
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : 22,
+            "visible" : true,
+            "width" : 55,
+            "widthType" : 0
+          },
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "bottom" : 22,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.27866666666666667,
+            "centerAnchorY" : 0.63749999999999996,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : [
+              "cl0ax_nMV",
+              "AoaCuwJtz",
+              "nijD9Gn1e",
+              "BtjZcG4Od"
+            ],
+            "exportOptions" : [
+
+            ],
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 14,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "GBjuGzQpY",
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isTarget" : true,
+            "left" : 80,
+            "locked" : false,
+            "name" : "$\/",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "MfYnGlsXW",
+            "right" : null,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "shadows" : [
+
+            ],
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "FONT:HelveticaNeue",
+                      "LETTERSPACING:0",
+                      "LINEHEIGHT:1",
+                      "SIZE:14",
+                      "COLOR:#bbb",
+                      "ALIGN:left"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "FONT:HelveticaNeue"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "SIZE:14"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "COLOR:#bbb"
+                    },
+                    {
+                      "length" : 6,
+                      "offset" : 0,
+                      "style" : "ALIGN:left"
+                    }
+                  ],
+                  "key" : "bhv04",
+                  "text" : "$name\/",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#bbb;font-size:14px;letter-spacing:0px;line-height:1;font-weight:400\"><span data-text=\"true\">$name\/<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 14,
+                  "width" : 49
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : null,
+            "visible" : true,
+            "width" : 49,
+            "widthType" : 0
+          }
         ],
         "clip" : true,
         "codeOverrideEnabled" : false,
@@ -4856,7 +7157,7 @@
         ],
         "height" : 80,
         "heightType" : 0,
-        "id" : "OOJnATp_Z",
+        "id" : "MfYnGlsXW",
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
         "isExternalMaster" : null,
@@ -4864,9 +7165,9 @@
         "isTarget" : false,
         "left" : 55,
         "locked" : false,
-        "name" : "active_state",
+        "name" : "default_state",
         "opacity" : 1,
-        "originalid" : "KkeUb3xXt",
+        "originalid" : null,
         "parentid" : "M7kkACvDM",
         "previewSettings" : null,
         "radius" : 0,
@@ -4876,38 +7177,7 @@
         "radiusPerCorner" : false,
         "radiusTopLeft" : 0,
         "radiusTopRight" : 0,
-        "replicaInfo" : {
-          "master" : "KkeUb3xXt",
-          "overrides" : {
-            "bhGIoZcZB" : {
-              "opacity" : 1
-            },
-            "gS4EGQG67" : {
-
-            },
-            "KkeUb3xXt" : {
-              "bottom" : null,
-              "centerAnchorX" : 1.1759999999999999,
-              "centerAnchorY" : 0.75862068965517238,
-              "left" : 55,
-              "name" : "active_state",
-              "right" : null,
-              "top" : 1143
-            },
-            "O30QFQAnH" : {
-
-            },
-            "PpIU4gF50" : {
-
-            },
-            "yr72DlJaf" : {
-              "codeComponentProps" : {
-                "fillMode" : "cover",
-                "url" : "https:\/\/lastfm-img2.akamaized.net\/i\/u\/770x0\/8f711e0a143749098da2468d54d1cb8f.jpg"
-              }
-            }
-          }
-        },
+        "replicaInfo" : null,
         "right" : null,
         "rotation" : 0,
         "top" : 1143,
@@ -9334,7 +11604,225 @@
             "bottom" : null,
             "brightness" : 100,
             "brightnessEnabled" : 0,
-            "centerAnchorX" : 0.10133333333333333,
+            "centerAnchorX" : 0.36533333333333334,
+            "centerAnchorY" : 0.51041666666666663,
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "contrast" : 100,
+            "contrastEnabled" : 0,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "grayscale" : 0,
+            "grayScaleEnabled" : 0,
+            "height" : 19,
+            "heightType" : 0,
+            "hueRotate" : 0,
+            "hueRotateEnabled" : 0,
+            "id" : "YUn5u31oe",
+            "invert" : 0,
+            "invertEnabled" : 0,
+            "isTarget" : false,
+            "left" : 24,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 0.20000000000000001,
+            "originalid" : null,
+            "parentid" : "sguAfa2pR",
+            "right" : 24,
+            "rotation" : 0,
+            "saturate" : 100,
+            "saturateEnabled" : 0,
+            "sepia" : 0,
+            "sepiaEnabled" : 0,
+            "shadows" : [
+
+            ],
+            "styledText" : {
+              "__class" : "StyledTextDraft",
+              "blocks" : [
+                {
+                  "data" : {
+                    "emptyStyle" : [
+                      "FONT:HelveticaNeue",
+                      "SIZE:16",
+                      "LETTERSPACING:0",
+                      "LINEHEIGHT:1.2",
+                      "ALIGN:left",
+                      "COLOR:var(--token-a78fe925-b21a-49f7-91b0-0bf19dbb7f62, rgb(0, 0, 0)) \/* {\"name\":\"black\"} *\/"
+                    ]
+                  },
+                  "depth" : 0,
+                  "entityRanges" : [
+
+                  ],
+                  "inlineStyleRanges" : [
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "FONT:HelveticaNeue"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "SIZE:16"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "LETTERSPACING:0"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "LINEHEIGHT:1.2"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "ALIGN:left"
+                    },
+                    {
+                      "length" : 2,
+                      "offset" : 0,
+                      "style" : "COLOR:var(--token-a78fe925-b21a-49f7-91b0-0bf19dbb7f62, rgb(0, 0, 0)) \/* {\"name\":\"black\"} *\/"
+                    }
+                  ],
+                  "key" : "1bo75",
+                  "text" : "$\/",
+                  "type" : "unstyled"
+                }
+              ],
+              "cached" : {
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:var(--token-a78fe925-b21a-49f7-91b0-0bf19dbb7f62, rgb(0, 0, 0)) \/* {&quot;name&quot;:&quot;black&quot;} *\/;font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">$\/<\/span><\/span><\/div><\/div>",
+                "os" : "macos 10_15 framerx",
+                "size" : {
+                  "height" : 19,
+                  "width" : 16
+                },
+                "width" : 0
+              },
+              "entityMap" : {
+
+              }
+            },
+            "textVerticalAlignment" : "top",
+            "top" : 15,
+            "visible" : true,
+            "width" : 16,
+            "widthType" : 0
+          }
+        ],
+        "clip" : false,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "duplicatedFrom" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillLinearGradient" : {
+          "__class" : "LinearGradient",
+          "alpha" : 1,
+          "angle" : 180,
+          "stops" : [
+            {
+              "__class" : "GradientColorStop",
+              "position" : 0,
+              "value" : "rgba(0,0,0,0)"
+            },
+            {
+              "__class" : "GradientColorStop",
+              "position" : 1,
+              "value" : "black"
+            }
+          ]
+        },
+        "fillRadialGradient" : {
+          "__class" : "RadialGradient",
+          "alpha" : 1,
+          "centerAnchorX" : 0.5,
+          "centerAnchorY" : 0.5,
+          "heightFactor" : 0.5,
+          "stops" : [
+            {
+              "__class" : "GradientColorStop",
+              "position" : 0,
+              "value" : "rgba(0,0,0,0)"
+            },
+            {
+              "__class" : "GradientColorStop",
+              "position" : 1,
+              "value" : "black"
+            }
+          ],
+          "widthFactor" : 0.5
+        },
+        "fillType" : "color",
+        "framePreset" : null,
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 48,
+        "heightType" : 0,
+        "id" : "sguAfa2pR",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 55,
+        "locked" : false,
+        "name" : "active",
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "M7kkACvDM",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 3813,
+        "visible" : true,
+        "width" : 375,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0.5,
+        "centerAnchorY" : 0.5,
+        "children" : [
+          {
+            "__class" : "TextNode",
+            "autoSize" : true,
+            "blur" : 12,
+            "blurEnabled" : 0,
+            "blurType" : "layer",
+            "bottom" : null,
+            "brightness" : 100,
+            "brightnessEnabled" : 0,
+            "centerAnchorX" : 0.48266666666666669,
             "centerAnchorY" : 0.51041666666666663,
             "clip" : true,
             "codeOverrideEnabled" : false,
@@ -9354,14 +11842,14 @@
             "id" : "Ij5Kvsok_",
             "invert" : 0,
             "invertEnabled" : 0,
-            "isTarget" : true,
+            "isTarget" : false,
             "left" : 24,
             "locked" : false,
-            "name" : "text",
+            "name" : null,
             "opacity" : 1,
             "originalid" : null,
             "parentid" : "rYzddnaaM",
-            "right" : null,
+            "right" : 24,
             "rotation" : 0,
             "saturate" : 100,
             "saturateEnabled" : 0,
@@ -9390,47 +11878,47 @@
                   ],
                   "inlineStyleRanges" : [
                     {
-                      "length" : 4,
+                      "length" : 2,
                       "offset" : 0,
                       "style" : "FONT:HelveticaNeue"
                     },
                     {
-                      "length" : 4,
+                      "length" : 2,
                       "offset" : 0,
                       "style" : "SIZE:16"
                     },
                     {
-                      "length" : 4,
+                      "length" : 2,
                       "offset" : 0,
                       "style" : "LETTERSPACING:0"
                     },
                     {
-                      "length" : 4,
+                      "length" : 2,
                       "offset" : 0,
                       "style" : "LINEHEIGHT:1.2"
                     },
                     {
-                      "length" : 4,
+                      "length" : 2,
                       "offset" : 0,
                       "style" : "ALIGN:left"
                     },
                     {
-                      "length" : 4,
+                      "length" : 2,
                       "offset" : 0,
                       "style" : "COLOR:hsl(0, 0%, 0%)"
                     }
                   ],
                   "key" : "1bo75",
-                  "text" : "text",
+                  "text" : "$\/",
                   "type" : "unstyled"
                 }
               ],
               "cached" : {
-                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">text<\/span><\/span><\/div><\/div>",
+                "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"1bo75-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"1bo75-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:hsl(0, 0%, 0%);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">$\/<\/span><\/span><\/div><\/div>",
                 "os" : "macos 10_15 framerx",
                 "size" : {
                   "height" : 19,
-                  "width" : 28
+                  "width" : 16
                 },
                 "width" : 0
               },
@@ -9441,7 +11929,7 @@
             "textVerticalAlignment" : "top",
             "top" : 15,
             "visible" : true,
-            "width" : 28,
+            "width" : 16,
             "widthType" : 0
           }
         ],
@@ -9510,7 +11998,7 @@
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
         "isExternalMaster" : null,
-        "isMaster" : true,
+        "isMaster" : false,
         "isTarget" : false,
         "left" : 55,
         "locked" : false,
@@ -9530,124 +12018,6 @@
         "right" : null,
         "rotation" : 0,
         "top" : 3907,
-        "visible" : true,
-        "width" : 375,
-        "widthType" : 0
-      },
-      {
-        "__class" : "FrameNode",
-        "aspectRatio" : null,
-        "blendingEnabled" : 0,
-        "blendingMode" : "normal",
-        "bottom" : null,
-        "centerAnchorX" : 0.5,
-        "centerAnchorY" : 0.5,
-        "children" : [
-
-        ],
-        "clip" : false,
-        "codeOverrideEnabled" : false,
-        "constraintsLocked" : false,
-        "duplicatedFrom" : [
-          "rYzddnaaM"
-        ],
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "rgba(255,255,255,1)",
-        "fillEnabled" : true,
-        "fillImage" : null,
-        "fillImageOriginalName" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillLinearGradient" : {
-          "__class" : "LinearGradient",
-          "alpha" : 1,
-          "angle" : 180,
-          "stops" : [
-            {
-              "__class" : "GradientColorStop",
-              "position" : 0,
-              "value" : "rgba(0,0,0,0)"
-            },
-            {
-              "__class" : "GradientColorStop",
-              "position" : 1,
-              "value" : "black"
-            }
-          ]
-        },
-        "fillRadialGradient" : {
-          "__class" : "RadialGradient",
-          "alpha" : 1,
-          "centerAnchorX" : 0.5,
-          "centerAnchorY" : 0.5,
-          "heightFactor" : 0.5,
-          "stops" : [
-            {
-              "__class" : "GradientColorStop",
-              "position" : 0,
-              "value" : "rgba(0,0,0,0)"
-            },
-            {
-              "__class" : "GradientColorStop",
-              "position" : 1,
-              "value" : "black"
-            }
-          ],
-          "widthFactor" : 0.5
-        },
-        "fillType" : "color",
-        "framePreset" : null,
-        "guidesX" : [
-
-        ],
-        "guidesY" : [
-
-        ],
-        "height" : 48,
-        "heightType" : 0,
-        "id" : "uYS7FSWWV",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "isExternalMaster" : null,
-        "isMaster" : false,
-        "isTarget" : false,
-        "left" : 55,
-        "locked" : false,
-        "name" : "active",
-        "opacity" : 1,
-        "originalid" : "rYzddnaaM",
-        "parentid" : "M7kkACvDM",
-        "previewSettings" : null,
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "replicaInfo" : {
-          "master" : "rYzddnaaM",
-          "overrides" : {
-            "Ij5Kvsok_" : {
-              "opacity" : 0.40000000000000002
-            },
-            "rYzddnaaM" : {
-              "bottom" : null,
-              "centerAnchorX" : 0.5,
-              "centerAnchorY" : 0.5,
-              "left" : 55,
-              "name" : "active",
-              "right" : null,
-              "top" : 3813
-            }
-          }
-        },
-        "right" : null,
-        "rotation" : 0,
-        "top" : 3813,
         "visible" : true,
         "width" : 375,
         "widthType" : 0
@@ -13271,8 +15641,8 @@
         "blendingEnabled" : 0,
         "blendingMode" : "normal",
         "bottom" : null,
-        "centerAnchorX" : 0.5,
-        "centerAnchorY" : 0.5,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
         "children" : [
           {
             "__class" : "CodeComponentNode",
@@ -13294,7 +15664,7 @@
                 {
                   "enabled" : true,
                   "type" : "componentinstance",
-                  "value" : "OOJnATp_Z"
+                  "value" : "MfYnGlsXW"
                 }
               ],
               "animationCurve" : "1",
@@ -15545,17 +17915,15 @@
             ],
             "clip" : true,
             "codeComponentIdentifier" : "@framer\/benjamin.icon-generator\/.\/Icon.tsx_Icon",
-            "codeComponentPackageVersion" : "1.21.0",
+            "codeComponentPackageVersion" : null,
             "codeComponentProps" : {
-              "color" : "#999",
+              "color" : "#ccc",
               "icon" : "flag",
               "set" : "feather"
             },
             "codeOverrideEnabled" : false,
-            "constraintsLocked" : false,
-            "duplicatedFrom" : [
-              "@framer\/benjamin.icon-generator\/.\/Icon.tsx_Icon"
-            ],
+            "constraintsLocked" : true,
+            "duplicatedFrom" : null,
             "exportOptions" : [
 
             ],
@@ -15566,10 +17934,47 @@
             "fillImagePixelHeight" : null,
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
             "fillType" : "color",
             "height" : 24,
             "heightType" : 0,
-            "id" : "JWYottooO",
+            "id" : "WuvEkpMNh",
             "intrinsicHeight" : 24,
             "intrinsicWidth" : 24,
             "left" : 26,
@@ -15586,6 +17991,7 @@
             "radiusPerCorner" : false,
             "radiusTopLeft" : 0,
             "radiusTopRight" : 0,
+            "replicaInfo" : null,
             "right" : null,
             "rotation" : 0,
             "top" : null,
@@ -15599,7 +18005,7 @@
             "blendingEnabled" : 0,
             "blendingMode" : "normal",
             "bottom" : null,
-            "centerAnchorX" : 0.50666666666666671,
+            "centerAnchorX" : 0.5,
             "centerAnchorY" : 0.5,
             "children" : [
               {
@@ -15632,9 +18038,9 @@
                 "invert" : 0,
                 "invertEnabled" : 0,
                 "isTarget" : true,
-                "left" : 0,
+                "left" : 1,
                 "locked" : false,
-                "name" : "tab",
+                "name" : "$tab\/",
                 "opacity" : 1,
                 "originalid" : null,
                 "parentid" : "Ox3Yt8Df7",
@@ -15658,7 +18064,7 @@
                           "SIZE:14",
                           "FONT:HelveticaNeue-Medium",
                           "COLOR:rgba(234, 176, 14, 1.00)",
-                          "ALIGN:left"
+                          "ALIGN:center"
                         ]
                       },
                       "depth" : 0,
@@ -15667,47 +18073,47 @@
                       ],
                       "inlineStyleRanges" : [
                         {
-                          "length" : 3,
+                          "length" : 5,
                           "offset" : 0,
                           "style" : "LETTERSPACING:0"
                         },
                         {
-                          "length" : 3,
+                          "length" : 5,
                           "offset" : 0,
                           "style" : "LINEHEIGHT:1.2"
                         },
                         {
-                          "length" : 3,
+                          "length" : 5,
                           "offset" : 0,
                           "style" : "SIZE:14"
                         },
                         {
-                          "length" : 3,
+                          "length" : 5,
                           "offset" : 0,
                           "style" : "FONT:HelveticaNeue-Medium"
                         },
                         {
-                          "length" : 3,
+                          "length" : 5,
                           "offset" : 0,
                           "style" : "COLOR:rgba(234, 176, 14, 1.00)"
                         },
                         {
-                          "length" : 3,
+                          "length" : 5,
                           "offset" : 0,
-                          "style" : "ALIGN:left"
+                          "style" : "ALIGN:center"
                         }
                       ],
                       "key" : "bhv04",
-                      "text" : "tab",
+                      "text" : "$tab\/",
                       "type" : "unstyled"
                     }
                   ],
                   "cached" : {
-                    "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue-Medium&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(234, 176, 14, 1.00);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">tab<\/span><\/span><\/div><\/div>",
+                    "html" : "<div class='DraftEditor-alignCenter'><div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue-Medium&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(234, 176, 14, 1.00);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">$tab\/<\/span><\/span><\/div><\/div>",
                     "os" : "macos 10_15 framerx",
                     "size" : {
                       "height" : 16,
-                      "width" : 22
+                      "width" : 35
                     },
                     "width" : 0
                   },
@@ -15718,7 +18124,7 @@
                 "textVerticalAlignment" : "top",
                 "top" : null,
                 "visible" : true,
-                "width" : 22,
+                "width" : 35,
                 "widthType" : 0
               }
             ],
@@ -15789,7 +18195,7 @@
             "isExternalMaster" : null,
             "isMaster" : false,
             "isTarget" : false,
-            "left" : 27,
+            "left" : 19,
             "locked" : false,
             "name" : "label",
             "opacity" : 0,
@@ -15808,7 +18214,7 @@
             "rotation" : 0,
             "top" : null,
             "visible" : true,
-            "width" : 22,
+            "width" : 37,
             "widthType" : 0
           }
         ],
@@ -15877,7 +18283,7 @@
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
         "isExternalMaster" : null,
-        "isMaster" : true,
+        "isMaster" : false,
         "isTarget" : false,
         "left" : -1097,
         "locked" : false,
@@ -15907,17 +18313,427 @@
         "blendingEnabled" : 0,
         "blendingMode" : "normal",
         "bottom" : null,
-        "centerAnchorX" : 0.10000000000000001,
-        "centerAnchorY" : 1.325,
+        "centerAnchorX" : 1.4399999999999999,
+        "centerAnchorY" : 0.8125,
         "children" : [
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "bottom" : null,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.5,
+            "children" : [
 
+            ],
+            "clip" : true,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgb(234, 176, 14)",
+            "fillEnabled" : true,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 40,
+            "heightType" : 0,
+            "id" : "GKLhe0fQG",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : null,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 0.20000000000000001,
+            "originalid" : null,
+            "parentid" : "UwB9bQcnI",
+            "previewSettings" : null,
+            "radius" : 24,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 8,
+            "radiusTopRight" : 8,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 118,
+            "widthType" : 0
+          },
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : 1,
+            "bottom" : null,
+            "centerAnchorX" : 0.25333333333333335,
+            "centerAnchorY" : 0.5,
+            "children" : [
+
+            ],
+            "clip" : true,
+            "codeComponentIdentifier" : "@framer\/benjamin.icon-generator\/.\/Icon.tsx_Icon",
+            "codeComponentPackageVersion" : null,
+            "codeComponentProps" : {
+              "color" : "rgba(234, 176, 14, 1.00)",
+              "icon" : "flag",
+              "set" : "feather"
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "height" : 24,
+            "heightType" : 0,
+            "id" : "NXaPMPnkoL3_Cj6oaW",
+            "intrinsicHeight" : 24,
+            "intrinsicWidth" : 24,
+            "left" : 26,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "UwB9bQcnI",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 24,
+            "widthType" : 0
+          },
+          {
+            "__class" : "FrameNode",
+            "aspectRatio" : null,
+            "blendingEnabled" : 0,
+            "blendingMode" : "normal",
+            "bottom" : null,
+            "centerAnchorX" : 0.51000000000000001,
+            "centerAnchorY" : 0.5,
+            "children" : [
+              {
+                "__class" : "TextNode",
+                "autoSize" : true,
+                "blur" : 12,
+                "blurEnabled" : 0,
+                "blurType" : "layer",
+                "bottom" : null,
+                "brightness" : 100,
+                "brightnessEnabled" : 0,
+                "centerAnchorX" : 0.5,
+                "centerAnchorY" : 0.5,
+                "clip" : true,
+                "codeOverrideEnabled" : false,
+                "constraintsLocked" : true,
+                "contrast" : 100,
+                "contrastEnabled" : 0,
+                "duplicatedFrom" : null,
+                "exportOptions" : [
+
+                ],
+                "grayscale" : 0,
+                "grayScaleEnabled" : 0,
+                "height" : 16,
+                "heightType" : 0,
+                "hueRotate" : 0,
+                "hueRotateEnabled" : 0,
+                "id" : "OqJCMypZh",
+                "invert" : 0,
+                "invertEnabled" : 0,
+                "isTarget" : true,
+                "left" : 0,
+                "locked" : false,
+                "name" : "$tab\/",
+                "opacity" : 1,
+                "originalid" : null,
+                "parentid" : "xJNIcipsz",
+                "right" : null,
+                "rotation" : 0,
+                "saturate" : 100,
+                "saturateEnabled" : 0,
+                "sepia" : 0,
+                "sepiaEnabled" : 0,
+                "shadows" : [
+
+                ],
+                "styledText" : {
+                  "__class" : "StyledTextDraft",
+                  "blocks" : [
+                    {
+                      "data" : {
+                        "emptyStyle" : [
+                          "LETTERSPACING:0",
+                          "LINEHEIGHT:1.2",
+                          "ALIGN:left",
+                          "COLOR:rgba(234, 176, 14, 1.00)",
+                          "SIZE:14",
+                          "FONT:HelveticaNeue-Medium"
+                        ]
+                      },
+                      "depth" : 0,
+                      "entityRanges" : [
+
+                      ],
+                      "inlineStyleRanges" : [
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "LETTERSPACING:0"
+                        },
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "LINEHEIGHT:1.2"
+                        },
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "ALIGN:left"
+                        },
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "COLOR:rgba(234, 176, 14, 1.00)"
+                        },
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "SIZE:14"
+                        },
+                        {
+                          "length" : 5,
+                          "offset" : 0,
+                          "style" : "FONT:HelveticaNeue-Medium"
+                        }
+                      ],
+                      "key" : "bhv04",
+                      "text" : "$tab\/",
+                      "type" : "unstyled"
+                    }
+                  ],
+                  "cached" : {
+                    "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue-Medium&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(234, 176, 14, 1.00);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">$tab\/<\/span><\/span><\/div><\/div>",
+                    "os" : "macos 10_15 framerx",
+                    "size" : {
+                      "height" : 16,
+                      "width" : 35
+                    },
+                    "width" : 0
+                  },
+                  "entityMap" : {
+
+                  }
+                },
+                "textVerticalAlignment" : "top",
+                "top" : null,
+                "visible" : true,
+                "width" : 35,
+                "widthType" : 0
+              }
+            ],
+            "clip" : false,
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : true,
+            "duplicatedFrom" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImageOriginalName" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillLinearGradient" : {
+              "__class" : "LinearGradient",
+              "alpha" : 1,
+              "angle" : 180,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ]
+            },
+            "fillRadialGradient" : {
+              "__class" : "RadialGradient",
+              "alpha" : 1,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.5,
+              "heightFactor" : 0.5,
+              "stops" : [
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 0,
+                  "value" : "rgba(0,0,0,0)"
+                },
+                {
+                  "__class" : "GradientColorStop",
+                  "position" : 1,
+                  "value" : "black"
+                }
+              ],
+              "widthFactor" : 0.5
+            },
+            "fillType" : "color",
+            "framePreset" : null,
+            "guidesX" : [
+
+            ],
+            "guidesY" : [
+
+            ],
+            "height" : 16,
+            "heightType" : 0,
+            "id" : "xJNIcipsz",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "isExternalMaster" : null,
+            "isMaster" : false,
+            "isTarget" : false,
+            "left" : 58,
+            "locked" : false,
+            "name" : "label",
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "UwB9bQcnI",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "replicaInfo" : null,
+            "right" : null,
+            "rotation" : 0,
+            "top" : null,
+            "visible" : true,
+            "width" : 37,
+            "widthType" : 0
+          }
         ],
         "clip" : true,
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
-        "duplicatedFrom" : [
-          "ihuhkcRUu"
-        ],
+        "duplicatedFrom" : null,
         "exportOptions" : [
 
         ],
@@ -15975,17 +18791,17 @@
         ],
         "height" : 64,
         "heightType" : 0,
-        "id" : "wElw6_jFy",
+        "id" : "UwB9bQcnI",
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
         "isExternalMaster" : null,
         "isMaster" : false,
         "isTarget" : false,
-        "left" : -972,
+        "left" : -982,
         "locked" : false,
         "name" : "active",
         "opacity" : 1,
-        "originalid" : "ihuhkcRUu",
+        "originalid" : null,
         "parentid" : "M7kkACvDM",
         "previewSettings" : null,
         "radius" : 0,
@@ -15995,123 +18811,7 @@
         "radiusPerCorner" : false,
         "radiusTopLeft" : 0,
         "radiusTopRight" : 0,
-        "replicaInfo" : {
-          "master" : "ihuhkcRUu",
-          "overrides" : {
-            "gsO9Qwgbq" : {
-              "aspectRatio" : null,
-              "opacity" : 0.20000000000000001,
-              "width" : 118
-            },
-            "ihuhkcRUu" : {
-              "bottom" : null,
-              "centerAnchorX" : 0.10000000000000001,
-              "centerAnchorY" : 1.325,
-              "left" : -972,
-              "name" : "active",
-              "right" : null,
-              "top" : 925,
-              "width" : 150
-            },
-            "JWYottooO" : {
-              "centerAnchorX" : 0.29999999999999999,
-              "codeComponentProps" : {
-                "color" : "rgba(234, 176, 15, 1.00)",
-                "icon" : "flag",
-                "set" : "feather"
-              },
-              "left" : 33
-            },
-            "Ox3Yt8Df7" : {
-              "centerAnchorX" : 0.50666666666666671,
-              "left" : 65,
-              "opacity" : 1,
-              "width" : 22
-            },
-            "pBRd84n5G" : {
-              "centerAnchorX" : 0.5,
-              "codeOverrideEnabled" : false,
-              "left" : 0,
-              "right" : null,
-              "styledText" : {
-                "__class" : "StyledTextDraft",
-                "blocks" : [
-                  {
-                    "data" : {
-                      "emptyStyle" : [
-                        "LETTERSPACING:0",
-                        "LINEHEIGHT:1.2",
-                        "SIZE:14",
-                        "FONT:HelveticaNeue-Medium",
-                        "COLOR:rgba(234, 176, 14, 1.00)",
-                        "ALIGN:left"
-                      ]
-                    },
-                    "depth" : 0,
-                    "entityRanges" : [
-
-                    ],
-                    "inlineStyleRanges" : [
-                      {
-                        "length" : 3,
-                        "offset" : 0,
-                        "style" : "LETTERSPACING:0"
-                      },
-                      {
-                        "length" : 3,
-                        "offset" : 0,
-                        "style" : "LINEHEIGHT:1.2"
-                      },
-                      {
-                        "length" : 3,
-                        "offset" : 0,
-                        "style" : "SIZE:14"
-                      },
-                      {
-                        "length" : 3,
-                        "offset" : 0,
-                        "style" : "FONT:HelveticaNeue-Medium"
-                      },
-                      {
-                        "length" : 3,
-                        "offset" : 0,
-                        "style" : "COLOR:rgba(234, 176, 14, 1.00)"
-                      },
-                      {
-                        "length" : 3,
-                        "offset" : 0,
-                        "style" : "ALIGN:left"
-                      }
-                    ],
-                    "key" : "bhv04",
-                    "text" : "tab",
-                    "type" : "unstyled"
-                  }
-                ],
-                "cached" : {
-                  "html" : "<div class='DraftEditor-alignLeft'><div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue-Medium&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(234, 176, 14, 1.00);font-size:14px;letter-spacing:0px;line-height:1.2;font-weight:500\"><span data-text=\"true\">tab<\/span><\/span><\/div><\/div>",
-                  "os" : "macos 10_15 framerx",
-                  "size" : {
-                    "height" : 16,
-                    "width" : 22
-                  },
-                  "width" : 0
-                },
-                "entityMap" : {
-
-                }
-              },
-              "width" : 22
-            },
-            "WuvEkpMNh" : {
-              "codeComponentProps" : {
-                "color" : "rgba(234, 176, 15, 1.00)",
-                "icon" : "flag",
-                "set" : "feather"
-              }
-            }
-          }
-        },
+        "replicaInfo" : null,
         "right" : null,
         "rotation" : 0,
         "top" : 925,
@@ -16216,7 +18916,7 @@
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
             "fillType" : "color",
-            "height" : 240,
+            "height" : 248,
             "heightType" : 0,
             "id" : "wzQ8SJZQu",
             "intrinsicHeight" : null,
@@ -17471,7 +20171,7 @@
             {
               "enabled" : true,
               "type" : "componentinstance",
-              "value" : "uYS7FSWWV"
+              "value" : "sguAfa2pR"
             },
             {
               "enabled" : true,
@@ -17575,628 +20275,6 @@
         "top" : 3625,
         "visible" : true,
         "width" : 375,
-        "widthType" : 0
-      },
-      {
-        "__class" : "FrameNode",
-        "aspectRatio" : null,
-        "blendingEnabled" : 0,
-        "blendingMode" : "normal",
-        "bottom" : null,
-        "centerAnchorX" : 0.73733333333333329,
-        "centerAnchorY" : 0.2353823088455772,
-        "children" : [
-          {
-            "__class" : "TextNode",
-            "autoSize" : true,
-            "blur" : 12,
-            "blurEnabled" : 0,
-            "blurType" : "layer",
-            "bottom" : null,
-            "brightness" : 100,
-            "brightnessEnabled" : 0,
-            "centerAnchorX" : 0.19418960244648317,
-            "centerAnchorY" : 0.51041666666666663,
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : true,
-            "contrast" : 100,
-            "contrastEnabled" : 0,
-            "duplicatedFrom" : [
-              "cl0ax_nMV"
-            ],
-            "exportOptions" : [
-
-            ],
-            "grayscale" : 0,
-            "grayScaleEnabled" : 0,
-            "height" : 19,
-            "heightType" : 0,
-            "hueRotate" : 0,
-            "hueRotateEnabled" : 0,
-            "id" : "w8_1iAaAK",
-            "invert" : 0,
-            "invertEnabled" : 0,
-            "isTarget" : true,
-            "left" : 48,
-            "locked" : false,
-            "name" : "text",
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "QBBVGggPP",
-            "right" : null,
-            "rotation" : 0,
-            "saturate" : 100,
-            "saturateEnabled" : 0,
-            "sepia" : 0,
-            "sepiaEnabled" : 0,
-            "shadows" : [
-
-            ],
-            "styledText" : {
-              "__class" : "StyledTextDraft",
-              "blocks" : [
-                {
-                  "data" : {
-                    "emptyStyle" : [
-                      "FONT:HelveticaNeue",
-                      "SIZE:16",
-                      "LETTERSPACING:0",
-                      "LINEHEIGHT:1.2",
-                      "COLOR:#BBBBBB"
-                    ]
-                  },
-                  "depth" : 0,
-                  "entityRanges" : [
-
-                  ],
-                  "inlineStyleRanges" : [
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "FONT:HelveticaNeue"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "SIZE:16"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "LETTERSPACING:0"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "LINEHEIGHT:1.2"
-                    },
-                    {
-                      "length" : 4,
-                      "offset" : 0,
-                      "style" : "COLOR:#BBBBBB"
-                    }
-                  ],
-                  "key" : "bhv04",
-                  "text" : "text",
-                  "type" : "unstyled"
-                }
-              ],
-              "cached" : {
-                "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:#BBBBBB;font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">text<\/span><\/span><\/div>",
-                "os" : "macos 10_15 framerx",
-                "size" : {
-                  "height" : 19,
-                  "width" : 28
-                },
-                "width" : 0
-              },
-              "entityMap" : {
-
-              }
-            },
-            "textVerticalAlignment" : "top",
-            "top" : 15,
-            "visible" : true,
-            "width" : 28,
-            "widthType" : 0
-          },
-          {
-            "__class" : "FrameNode",
-            "aspectRatio" : null,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
-            "borderBottom" : 1,
-            "borderColor" : "hsla(0, 0%, 13%, 0.1)",
-            "borderEnabled" : 1,
-            "borderLeft" : 1,
-            "borderPerSide" : false,
-            "borderRight" : 1,
-            "borderStyle" : "solid",
-            "borderTop" : 1,
-            "borderWidth" : 1,
-            "bottom" : null,
-            "centerAnchorX" : 0.57339449541284404,
-            "centerAnchorY" : 0.98958333333333337,
-            "children" : [
-
-            ],
-            "clip" : true,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : true,
-            "duplicatedFrom" : [
-              "zAIN6DunP"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "rgba(0, 0, 0, 0.1)",
-            "fillEnabled" : false,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillLinearGradient" : {
-              "__class" : "LinearGradient",
-              "alpha" : 1,
-              "angle" : 180,
-              "stops" : [
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 0,
-                  "value" : "rgba(0,0,0,0)"
-                },
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 1,
-                  "value" : "black"
-                }
-              ]
-            },
-            "fillRadialGradient" : {
-              "__class" : "RadialGradient",
-              "alpha" : 1,
-              "centerAnchorX" : 0.5,
-              "centerAnchorY" : 0.5,
-              "heightFactor" : 0.5,
-              "stops" : [
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 0,
-                  "value" : "rgba(0,0,0,0)"
-                },
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 1,
-                  "value" : "black"
-                }
-              ],
-              "widthFactor" : 0.5
-            },
-            "fillType" : "color",
-            "framePreset" : null,
-            "guidesX" : [
-
-            ],
-            "guidesY" : [
-
-            ],
-            "height" : 1,
-            "heightType" : 0,
-            "id" : "MbElzjKiy",
-            "intrinsicHeight" : null,
-            "intrinsicWidth" : null,
-            "isExternalMaster" : null,
-            "isMaster" : false,
-            "isTarget" : false,
-            "left" : null,
-            "locked" : false,
-            "name" : "separator",
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "QBBVGggPP",
-            "previewSettings" : null,
-            "radius" : 0,
-            "radiusBottomLeft" : 0,
-            "radiusBottomRight" : 0,
-            "radiusIsRelative" : false,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 0,
-            "radiusTopRight" : 0,
-            "replicaInfo" : null,
-            "right" : 0,
-            "rotation" : 0,
-            "top" : 47,
-            "visible" : true,
-            "width" : 279,
-            "widthType" : 0
-          },
-          {
-            "__class" : "FrameNode",
-            "aspectRatio" : 1,
-            "blendingEnabled" : 0,
-            "blendingMode" : "normal",
-            "bottom" : null,
-            "centerAnchorX" : 0.042813455657492352,
-            "centerAnchorY" : 0.5,
-            "children" : [
-
-            ],
-            "clip" : false,
-            "codeOverrideEnabled" : false,
-            "constraintsLocked" : true,
-            "duplicatedFrom" : [
-              "rn2uJNJGf"
-            ],
-            "exportOptions" : [
-
-            ],
-            "fillColor" : "#DDDDDD",
-            "fillEnabled" : true,
-            "fillImage" : null,
-            "fillImageOriginalName" : null,
-            "fillImagePixelHeight" : null,
-            "fillImagePixelWidth" : null,
-            "fillImageResize" : "fill",
-            "fillLinearGradient" : {
-              "__class" : "LinearGradient",
-              "alpha" : 1,
-              "angle" : 180,
-              "stops" : [
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 0,
-                  "value" : "rgba(0,0,0,0)"
-                },
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 1,
-                  "value" : "black"
-                }
-              ]
-            },
-            "fillRadialGradient" : {
-              "__class" : "RadialGradient",
-              "alpha" : 1,
-              "centerAnchorX" : 0.5,
-              "centerAnchorY" : 0.5,
-              "heightFactor" : 0.5,
-              "stops" : [
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 0,
-                  "value" : "rgba(0,0,0,0)"
-                },
-                {
-                  "__class" : "GradientColorStop",
-                  "position" : 1,
-                  "value" : "black"
-                }
-              ],
-              "widthFactor" : 0.5
-            },
-            "fillType" : "color",
-            "framePreset" : null,
-            "guidesX" : [
-
-            ],
-            "guidesY" : [
-
-            ],
-            "height" : 6,
-            "heightType" : 0,
-            "id" : "MAnKFXI7u",
-            "intrinsicHeight" : null,
-            "intrinsicWidth" : null,
-            "isExternalMaster" : null,
-            "isMaster" : false,
-            "isTarget" : false,
-            "left" : null,
-            "locked" : false,
-            "name" : null,
-            "opacity" : 1,
-            "originalid" : null,
-            "parentid" : "QBBVGggPP",
-            "previewSettings" : null,
-            "radius" : 50,
-            "radiusBottomLeft" : 50,
-            "radiusBottomRight" : 50,
-            "radiusIsRelative" : true,
-            "radiusPerCorner" : false,
-            "radiusTopLeft" : 50,
-            "radiusTopRight" : 50,
-            "replicaInfo" : null,
-            "right" : null,
-            "rotation" : 0,
-            "top" : null,
-            "visible" : true,
-            "width" : 6,
-            "widthType" : 0
-          }
-        ],
-        "clip" : true,
-        "codeOverrideEnabled" : false,
-        "constraintsLocked" : false,
-        "duplicatedFrom" : [
-          "OLyqGiEHw"
-        ],
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "rgba(255,255,255,1)",
-        "fillEnabled" : true,
-        "fillImage" : null,
-        "fillImageOriginalName" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillLinearGradient" : {
-          "__class" : "LinearGradient",
-          "alpha" : 1,
-          "angle" : 180,
-          "stops" : [
-            {
-              "__class" : "GradientColorStop",
-              "position" : 0,
-              "value" : "rgba(0,0,0,0)"
-            },
-            {
-              "__class" : "GradientColorStop",
-              "position" : 1,
-              "value" : "black"
-            }
-          ]
-        },
-        "fillRadialGradient" : {
-          "__class" : "RadialGradient",
-          "alpha" : 1,
-          "centerAnchorX" : 0.5,
-          "centerAnchorY" : 0.5,
-          "heightFactor" : 0.5,
-          "stops" : [
-            {
-              "__class" : "GradientColorStop",
-              "position" : 0,
-              "value" : "rgba(0,0,0,0)"
-            },
-            {
-              "__class" : "GradientColorStop",
-              "position" : 1,
-              "value" : "black"
-            }
-          ],
-          "widthFactor" : 0.5
-        },
-        "fillType" : "color",
-        "framePreset" : null,
-        "guidesX" : [
-
-        ],
-        "guidesY" : [
-
-        ],
-        "height" : 48,
-        "heightType" : 0,
-        "id" : "QBBVGggPP",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "isExternalMaster" : null,
-        "isMaster" : true,
-        "isTarget" : false,
-        "left" : -520,
-        "locked" : false,
-        "name" : "default",
-        "opacity" : 1,
-        "originalid" : null,
-        "parentid" : "M7kkACvDM",
-        "previewSettings" : null,
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "replicaInfo" : null,
-        "right" : null,
-        "rotation" : 0,
-        "top" : 78,
-        "visible" : true,
-        "width" : 327,
-        "widthType" : 0
-      },
-      {
-        "__class" : "FrameNode",
-        "aspectRatio" : null,
-        "blendingEnabled" : 0,
-        "blendingMode" : "normal",
-        "bottom" : null,
-        "centerAnchorX" : 0.73733333333333329,
-        "centerAnchorY" : 0.2353823088455772,
-        "children" : [
-
-        ],
-        "clip" : true,
-        "codeOverrideEnabled" : false,
-        "constraintsLocked" : false,
-        "duplicatedFrom" : [
-          "OLyqGiEHw",
-          "QBBVGggPP",
-          "y4ZsIpPCA"
-        ],
-        "exportOptions" : [
-
-        ],
-        "fillColor" : "rgba(255,255,255,1)",
-        "fillEnabled" : true,
-        "fillImage" : null,
-        "fillImageOriginalName" : null,
-        "fillImagePixelHeight" : null,
-        "fillImagePixelWidth" : null,
-        "fillImageResize" : "fill",
-        "fillLinearGradient" : {
-          "__class" : "LinearGradient",
-          "alpha" : 1,
-          "angle" : 180,
-          "stops" : [
-            {
-              "__class" : "GradientColorStop",
-              "position" : 0,
-              "value" : "rgba(0,0,0,0)"
-            },
-            {
-              "__class" : "GradientColorStop",
-              "position" : 1,
-              "value" : "black"
-            }
-          ]
-        },
-        "fillRadialGradient" : {
-          "__class" : "RadialGradient",
-          "alpha" : 1,
-          "centerAnchorX" : 0.5,
-          "centerAnchorY" : 0.5,
-          "heightFactor" : 0.5,
-          "stops" : [
-            {
-              "__class" : "GradientColorStop",
-              "position" : 0,
-              "value" : "rgba(0,0,0,0)"
-            },
-            {
-              "__class" : "GradientColorStop",
-              "position" : 1,
-              "value" : "black"
-            }
-          ],
-          "widthFactor" : 0.5
-        },
-        "fillType" : "color",
-        "framePreset" : null,
-        "guidesX" : [
-
-        ],
-        "guidesY" : [
-
-        ],
-        "height" : 48,
-        "heightType" : 0,
-        "id" : "q_VoWl4IQ",
-        "intrinsicHeight" : null,
-        "intrinsicWidth" : null,
-        "isExternalMaster" : null,
-        "isMaster" : false,
-        "isTarget" : false,
-        "left" : -520,
-        "locked" : false,
-        "name" : "active",
-        "opacity" : 1,
-        "originalid" : "QBBVGggPP",
-        "parentid" : "M7kkACvDM",
-        "previewSettings" : null,
-        "radius" : 0,
-        "radiusBottomLeft" : 0,
-        "radiusBottomRight" : 0,
-        "radiusIsRelative" : false,
-        "radiusPerCorner" : false,
-        "radiusTopLeft" : 0,
-        "radiusTopRight" : 0,
-        "replicaInfo" : {
-          "master" : "QBBVGggPP",
-          "overrides" : {
-            "dKNAyQDKi" : {
-
-            },
-            "MAnKFXI7u" : {
-              "fillColor" : "rgba(234, 176, 15, 1.00)",
-              "height" : 16,
-              "width" : 16
-            },
-            "MbElzjKiy" : {
-
-            },
-            "QBBVGggPP" : {
-              "bottom" : null,
-              "centerAnchorX" : 0.73733333333333329,
-              "centerAnchorY" : 0.2353823088455772,
-              "codeOverrideEnabled" : false,
-              "left" : -520,
-              "name" : "active",
-              "right" : null,
-              "top" : -20
-            },
-            "w8_1iAaAK" : {
-              "styledText" : {
-                "__class" : "StyledTextDraft",
-                "blocks" : [
-                  {
-                    "data" : {
-                      "emptyStyle" : [
-                        "FONT:HelveticaNeue",
-                        "SIZE:16",
-                        "LETTERSPACING:0",
-                        "LINEHEIGHT:1.2",
-                        "COLOR:rgba(234, 176, 15, 1.00)"
-                      ]
-                    },
-                    "depth" : 0,
-                    "entityRanges" : [
-
-                    ],
-                    "inlineStyleRanges" : [
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "FONT:HelveticaNeue"
-                      },
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "SIZE:16"
-                      },
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "LETTERSPACING:0"
-                      },
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "LINEHEIGHT:1.2"
-                      },
-                      {
-                        "length" : 4,
-                        "offset" : 0,
-                        "style" : "COLOR:rgba(234, 176, 15, 1.00)"
-                      }
-                    ],
-                    "key" : "bhv04",
-                    "text" : "text",
-                    "type" : "unstyled"
-                  }
-                ],
-                "cached" : {
-                  "html" : "<div data-offset-key=\"bhv04-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"bhv04-0-0\" style=\"tab-size:4;user-select:none;font-family:&quot;HelveticaNeue&quot;, &quot;Helvetica Neue&quot;, sans-serif;-webkit-text-fill-color:rgba(234, 176, 15, 1.00);font-size:16px;letter-spacing:0px;line-height:1.2;font-weight:400\"><span data-text=\"true\">text<\/span><\/span><\/div>",
-                  "os" : "macos 10_15 framerx",
-                  "size" : {
-                    "height" : 19,
-                    "width" : 28
-                  },
-                  "width" : 0
-                },
-                "entityMap" : {
-
-                }
-              }
-            }
-          }
-        },
-        "right" : null,
-        "rotation" : 0,
-        "top" : -20,
-        "visible" : true,
-        "width" : 327,
         "widthType" : 0
       }
     ],
